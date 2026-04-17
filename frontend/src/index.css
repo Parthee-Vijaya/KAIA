@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* ============================================================
+   BudgetIndsigt Design System
+   Premium dark dashboard theme (Linear/Vercel-inspired)
+   ============================================================ */
+
+/* ----- Tailwind v4 Theme ----- */
+@theme {
+  --color-primary: #6366f1;
+  --color-primary-light: #818cf8;
+  --color-secondary: #22d3ee;
+  --color-accent: #f472b6;
+  --color-success: #22c55e;
+  --color-warning: #eab308;
+  --color-danger: #ef4444;
+  --color-bg-base: #09090f;
+  --color-bg-surface: #111118;
+  --color-bg-raised: #1a1a25;
+  --color-bg-overlay: #222230;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-tertiary: #64748b;
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border-default: rgba(255, 255, 255, 0.10);
+  --color-border-hover: rgba(255, 255, 255, 0.16);
+  --color-budget: #3b82f6;
+  --color-population: #f59e0b;
+  --color-legislation: #8b5cf6;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* ----- Base Styles ----- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  background: #09090f;
+  color: #f8fafc;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle fixed radial spotlight -- no animation */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 800px 600px at 30% 15%, rgba(99, 102, 241, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 600px 400px at 75% 80%, rgba(34, 211, 238, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Brugerdefineret markering/selection */
+::selection {
+  background: rgba(99, 102, 241, 0.4);
+  color: #f8fafc;
+}
+
+::-moz-selection {
+  background: rgba(99, 102, 241, 0.4);
+  color: #f8fafc;
+}
+
+/* ============================================================
+   Scrollbar Styling
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 3px;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.10) rgba(255, 255, 255, 0.02);
+}
+
+/* ============================================================
+   Surface Utility Classes (replacing old glass classes)
+   Class names preserved for backward compatibility
+   ============================================================ */
+
+/* Standard surface */
+.glass {
+  background: #111118;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
+/* Strong surface */
+.glass-strong {
+  background: #1a1a25;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Interactive surface (hover via CSS) */
+.glass-hover {
+  background: #111118;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.glass-hover:hover {
+  background: #1a1a25;
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-1px);
+}
+
+/* Card surface */
+.glass-card {
+  background: #111118;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.10);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* ============================================================
+   Typography Utility Classes
+   ============================================================ */
+.heading-lg {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  color: #f8fafc;
+}
+
+.heading-md {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  color: #f8fafc;
+}
+
+.heading-sm {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #f8fafc;
+}
+
+.body-md {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+.body-sm {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #94a3b8;
+}
+
+.caption {
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  color: #64748b;
+}
+
+.overline {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748b;
+}
+
+/* ============================================================
+   Interactive Utility Classes
+   ============================================================ */
+
+/* Card with hover interaction */
+.card-interactive {
+  background: #111118;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.card-interactive:hover {
+  background: #1a1a25;
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Chip/tag with hover interaction */
+.chip-interactive {
+  background: #111118;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+.chip-interactive:hover {
+  background: rgba(99, 102, 241, 0.10);
+  border-color: rgba(99, 102, 241, 0.25);
+  color: #f8fafc;
+}
+
+/* Primary button */
+.btn-primary {
+  background: #6366f1;
+  color: #f8fafc;
+  transition: background 0.15s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #818cf8;
+}
+
+.btn-primary:disabled {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.2);
+  cursor: not-allowed;
+}
+
+/* ============================================================
+   Animationer
+   ============================================================ */
+
+/* fadeIn -- glider op med fade */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* slideDown -- glider ned fra top */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Typing dots -- AI tænke-indikator */
+@keyframes typingDot {
+  0%, 60%, 100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-4px);
+  }
+}
+
+.typing-dots span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 2px;
+  background: #818cf8;
+  border-radius: 50%;
+  animation: typingDot 1.4s ease-in-out infinite;
+}
+
+.typing-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Pulse glow -- pulserende lysstyrke til status-indikatorer */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 4px rgba(99, 102, 241, 0.4);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(99, 102, 241, 0.6);
+    opacity: 0.9;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* Shimmer loading -- skeleton loading effekt */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.03) 25%,
+    rgba(255, 255, 255, 0.06) 50%,
+    rgba(255, 255, 255, 0.03) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s ease-in-out infinite;
+  border-radius: 8px;
+}
+
+/* ============================================================
+   Markdown Content Styling
+   Bruges til AI-genererede svar med react-markdown
+   ============================================================ */
+.markdown-content {
+  line-height: 1.75;
+  color: #e2e8f0;
+}
+
+.markdown-content h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.markdown-content h2 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-content h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-content p {
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+}
+
+.markdown-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-content ul li {
+  margin-bottom: 0.375rem;
+  color: #cbd5e1;
+}
+
+.markdown-content ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-content ol li {
+  margin-bottom: 0.375rem;
+  color: #cbd5e1;
+}
+
+.markdown-content strong {
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+.markdown-content code {
+  background: rgba(99, 102, 241, 0.12);
+  color: #a5b4fc;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.875em;
+  font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+}
+
+.markdown-content pre {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.markdown-content pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.85em;
+  color: #e2e8f0;
+}
+
+.markdown-content blockquote {
+  border-left: 3px solid #6366f1;
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-bottom: 1rem;
+  color: #94a3b8;
+  font-style: italic;
+  background: rgba(99, 102, 241, 0.05);
+  padding: 0.75rem 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.markdown-content a {
+  color: #818cf8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.markdown-content a:hover {
+  color: #a5b4fc;
+}
+
+.markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 0.9em;
+}
+
+.markdown-content th {
+  background: #1a1a25;
+  padding: 0.625rem 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #e2e8f0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.markdown-content td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: #cbd5e1;
+}
+
+.markdown-content tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* ============================================================
+   Kilde-citations -- inline badges i AI-svar
+   ============================================================ */
+.source-citation {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(99, 102, 241, 0.12);
+  color: #a5b4fc;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  vertical-align: middle;
+  margin: 0 2px;
+  line-height: 1.4;
+}
+
+.source-citation:hover {
+  background: rgba(99, 102, 241, 0.20);
+  border-color: rgba(99, 102, 241, 0.35);
+  color: #c7d2fe;
+}
+
+.source-citation .source-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background: rgba(99, 102, 241, 0.25);
+  border-radius: 50%;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+/* ============================================================
+   KPI-kort styling
+   ============================================================ */
+.kpi-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.kpi-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  background: #6366f1;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.kpi-card:hover::before {
+  opacity: 1;
+}
+
+/* KPI-kort med farve-temaer */
+.kpi-card[data-theme="primary"]::before {
+  background: #6366f1;
+}
+
+.kpi-card[data-theme="secondary"]::before {
+  background: #22d3ee;
+}
+
+.kpi-card[data-theme="success"]::before {
+  background: #22c55e;
+}
+
+.kpi-card[data-theme="warning"]::before {
+  background: #eab308;
+}
+
+.kpi-card[data-theme="danger"]::before {
+  background: #ef4444;
+}
+
+.kpi-card[data-theme="budget"]::before {
+  background: #3b82f6;
+}
+
+.kpi-card[data-theme="population"]::before {
+  background: #f59e0b;
+}
+
+.kpi-card[data-theme="legislation"]::before {
+  background: #8b5cf6;
+}
+
+/* ============================================================
+   Alert / Status Farveklasser
+   Bruges til budgetafvigelser og advarsler
+   ============================================================ */
+.alert-green {
+  background: rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(34, 197, 94, 0.18);
+  color: #4ade80;
+}
+
+.alert-green .alert-icon {
+  color: #22c55e;
+}
+
+.alert-yellow {
+  background: rgba(234, 179, 8, 0.08);
+  border: 1px solid rgba(234, 179, 8, 0.18);
+  color: #facc15;
+}
+
+.alert-yellow .alert-icon {
+  color: #eab308;
+}
+
+.alert-red {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.18);
+  color: #f87171;
+}
+
+.alert-red .alert-icon {
+  color: #ef4444;
+}
+
+/* ============================================================
+   Diverse Hjælpeklasser
+   ============================================================ */
+
+/* Tekst gradient -- til overskrifter og accenttekst */
+.text-gradient {
+  background: linear-gradient(135deg, #818cf8, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Divider med subtil glow */
+.divider-glow {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(99, 102, 241, 0.2),
+    rgba(34, 211, 238, 0.1),
+    transparent
+  );
+}
+
+/* Focus ring til input-elementer */
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+}
+
+/* Transition utility for alle interaktive elementer */
+.transition-gpu {
+  transition: all 0.2s ease;
+  will-change: transform;
+}

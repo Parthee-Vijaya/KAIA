@@ -1,0 +1,191 @@
+.analysis-activity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  min-height: 64px;
+  color: var(--text, #252525);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.analysis-activity > span {
+  min-width: 0;
+}
+.analysis-activity-graphic {
+  width: 112px;
+  height: 56px;
+  flex: 0 0 auto;
+  overflow: visible;
+}
+.analysis-activity-connections {
+  stroke: var(--petrol, #006f71);
+  stroke-width: 0.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.22;
+}
+.analysis-activity-curve {
+  stroke: var(--primary, #bc4d30);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  animation: kaia-activity-curve 3.6s ease-in-out infinite;
+}
+.analysis-activity-point {
+  fill: var(--primary, #bc4d30);
+  animation: kaia-activity-points 3.6s ease-in-out infinite;
+  animation-delay: var(--point-delay);
+}
+.analysis-activity-point--petrol {
+  fill: var(--petrol, #006f71);
+}
+.analysis-activity--simulation .analysis-activity-curve {
+  stroke: var(--petrol, #006f71);
+}
+.analysis-activity--compact {
+  min-height: 38px;
+  gap: 10px;
+  font-size: 11px;
+}
+.analysis-activity--compact .analysis-activity-graphic {
+  width: 72px;
+  height: 36px;
+}
+.kaia-result-reveal {
+  min-width: 0;
+  animation: kaia-result-reveal 240ms ease-out both;
+}
+.streaming-answer {
+  border: 1px solid var(--line, #e4e5e8);
+  border-radius: 14px;
+  background: var(--paper, #fff);
+  margin: 18px 0 26px;
+  padding: 24px 28px;
+  min-height: 200px;
+}
+.streaming-answer-identity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+.streaming-answer-identity > span {
+  color: var(--muted, #535e70);
+  margin-left: auto;
+  font-size: 11px;
+}
+.streaming-answer-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  line-height: 1.85;
+  margin: 8px 0 0;
+}
+.streaming-caret {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 5px;
+  vertical-align: -2px;
+  background: var(--primary, #bc4d30);
+  animation: kaia-stream-caret 900ms ease-in-out infinite;
+}
+.streaming-answer-skeleton {
+  display: grid;
+  gap: 12px;
+  margin: 4px 0 14px;
+}
+.streaming-answer-skeleton > span {
+  height: 9px;
+  border-radius: 3px;
+  background: linear-gradient(100deg, #f0f1f2 15%, #e4e5e8 45%, #f0f1f2 75%);
+  background-size: 250% 100%;
+  animation: kaia-stream-shimmer 2s ease-in-out infinite;
+}
+.streaming-answer-skeleton > span:nth-child(2) {
+  width: 89%;
+}
+.streaming-answer-skeleton > span:nth-child(3) {
+  width: 62%;
+}
+@keyframes kaia-stream-caret {
+  50% {
+    opacity: 0.15;
+  }
+}
+@keyframes kaia-stream-shimmer {
+  to {
+    background-position: -170% 0;
+  }
+}
+.reduced-motion .streaming-answer *,
+.reduced-motion .streaming-caret {
+  animation: none !important;
+  transition: none !important;
+}
+@media (max-width: 560px) {
+  .streaming-answer {
+    padding: 20px 16px;
+  }
+  .streaming-answer-identity {
+    flex-wrap: wrap;
+  }
+  .streaming-answer-identity > span {
+    font-size: 10px;
+  }
+}
+@keyframes kaia-activity-curve {
+  0%,
+  100% {
+    stroke-dashoffset: 1;
+    opacity: 0.35;
+  }
+  42%,
+  76% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+@keyframes kaia-activity-points {
+  0%,
+  100% {
+    transform: translate(var(--point-from-x), var(--point-from-y));
+    opacity: 0.35;
+  }
+  42%,
+  76% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes kaia-result-reveal {
+  from {
+    opacity: 0.55;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reduced-motion .analysis-activity *,
+.reduced-motion .kaia-result-reveal {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+}
+.reduced-motion .analysis-activity-curve {
+  stroke-dashoffset: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .streaming-answer *,
+  .analysis-activity *,
+  .kaia-result-reveal {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+  .analysis-activity-curve {
+    stroke-dashoffset: 0;
+  }
+}

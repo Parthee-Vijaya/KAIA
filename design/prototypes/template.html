@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#252525">
+  <title>K.A.I.A. · Tre nye dashboardforslag</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./fonts/geist-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#kaia-dashboard-designs">Gå til prototypen</a>
+  <header class="preview-bar">
+    <div class="preview-caption"><span class="preview-label">K.A.I.A.</span><span>Designstudie <span class="preview-revision">02</span></span></div>
+    <nav aria-label="Vælg designforslag" class="design-tabs">
+      <a href="?design=overblik" data-design="overblik" aria-current="page"><span>01</span> Overblik</a>
+      <a href="?design=fremblik" data-design="fremblik"><span>02</span> Fremblik</a>
+      <a href="?design=analysebord" data-design="analysebord"><span>03</span> Analysebord</a>
+    </nav>
+    <button class="preview-about" data-local-view="om">Om prototypen {icon:info}</button>
+  </header>
+
+  <div id="kaia-dashboard-designs">
+    <section id="kaia-overblik" class="kaia-prototype a-shell" aria-label="Forslag 1 · Overblik">
+      <aside class="a-sidebar">
+        <div class="a-brand">{{brand}}</div>
+        <button class="new-chat" data-reset-chat aria-label="Ny samtale" title="Ny samtale">{icon:plus}<span>Ny samtale</span>{icon:arrow-up-right}</button>
+        <nav class="a-nav" aria-label="Hovednavigation">
+          <button aria-current="page" data-local-view="overblik" aria-label="Mit overblik" title="Mit overblik">{icon:squares-four}<span>Mit overblik</span></button>
+          <button data-local-view="samtaler" aria-label="Samtaler" title="Samtaler">{icon:chat-circle}<span>Samtaler</span><small>3</small></button>
+          <button data-local-view="indsigter" aria-label="Gemte indsigter" title="Gemte indsigter">{icon:bookmark-simple}<span>Gemte indsigter</span></button>
+          <button data-local-view="scenarier" aria-label="Scenarier" title="Scenarier">{icon:sliders-horizontal}<span>Scenarier</span></button>
+        </nav>
+        <div class="a-sidebar-context"><p class="eyebrow">DIT ADGANGSOMRÅDE</p><strong>Skoleområdet</strong><span>16 skoler · tværgående overblik</span><button class="text-link" data-local-view="scope">Se din adgang {icon:arrow-right}</button></div>
+        <div class="a-history"><p class="eyebrow">SENEST UNDERSØGT</p><button data-prompt="Sammenlign med sidste års data">Skoleområdet · sidste år {icon:arrow-up-right}</button><button data-prompt="Vis prognosen frem til 2032">Frem mod 2032 {icon:arrow-up-right}</button></div>
+        <div class="a-sidebar-bottom"><button class="settings-button" data-local-view="indstillinger" aria-label="Indstillinger" title="Indstillinger">{icon:gear-six}<span>Indstillinger</span></button>{{profile}}</div>
+      </aside>
+      <div class="workspace">
+        <header class="app-topbar"><div class="breadcrumb">Kalundborg {icon:caret-right}<strong>Mit overblik</strong></div>{{statuses}}</header>
+        <main class="a-main">
+          <div class="welcome"><div><p class="eyebrow">DIT KOMMUNALE OVERBLIK</p><h1>Goddag, Parthee<span>.</span></h1><p>Gode beslutninger begynder med et godt spørgsmål.</p></div><div class="identity"><span>Aktiv rolle</span><strong>Direktion</strong><small>AI Program Lead</small></div></div>
+          {{scope}}
+          {{chat}}
+          {{shortcuts}}
+          <div class="section-heading"><h2>Skoleområdet lige nu</h2><span>Januar–september 2026</span></div>
+          {{stats}}
+          <div class="a-grid">
+            <section class="panel"><header class="panel-header"><div><p class="eyebrow">PROGNOSE</p><h3>Et blik på de kommende år</h3><p>Skoleområdet · årlig nettoudgift</p></div><button class="icon-button" data-export aria-label="Eksportér prognosens tal">{icon:download-simple}</button></header><div class="k-forecast" data-metric="net"></div><button class="panel-footer-link" data-prompt="Forklar prognosen frem til 2032">Undersøg forudsætningerne {icon:arrow-right}</button></section>
+            <section class="panel"><header class="panel-header"><div><p class="eyebrow">SAMMENLIGNING</p><h3>Hvordan ligger vi?</h3><p>Nettoudgift pr. elev · samme periode</p></div></header>{{compare}}<p class="data-caveat">Sorø er valgt ud fra simuleret strukturlighed. Alle økonomi- og elevtal er fiktive.</p><button class="panel-footer-link" data-prompt="Hvorfor er Sorø en sammenlignelig kommune?">Undersøg sammenligningen {icon:arrow-right}</button></section>
+          </div>
+          <section class="evidence-row"><span class="evidence-mark">{icon:files}</span><div><p class="eyebrow">BAG TALLENE</p><h3>Økonomi med en forklaring</h3><p>Åbn beregningsgrundlaget, perioderne og de simulerede kilder.</p></div><button class="outline-button" data-local-view="kilder">Se grundlaget {icon:arrow-up-right}</button></section>
+          {{footer}}
+        </main>
+      </div>
+    </section>
+
+    <section id="kaia-fremblik" class="kaia-prototype b-shell" aria-label="Forslag 2 · Fremblik" hidden>
+      <header class="b-topbar">{{brand}}<nav class="b-nav" aria-label="Hovednavigation"><button aria-current="page" data-local-view="overblik">Mit overblik</button><button data-local-view="samtaler">Samtaler</button><button data-local-view="indsigter">Indsigter</button><button data-local-view="scenarier">Scenarier</button></nav><div class="b-account">{{profile}}<button class="icon-button" data-local-view="indstillinger" aria-label="Indstillinger">{icon:gear-six}</button></div></header>
+      <main class="b-main">
+        <div class="welcome b-welcome"><div><p class="eyebrow">FRA OVERBLIK TIL FREMBLIK</p><h1>Hvad bliver det næste, Parthee<span>?</span></h1><p>Undersøg udviklingen. Afprøv mulighederne.</p></div>{{statuses}}</div>
+        <div class="b-context"><strong>Direktion</strong><span>AI Program Lead</span><i></i><button data-local-view="scope">Skoleområdet {icon:caret-down}</button><i></i><span>Snapshot · 30. september 2026</span></div>
+        {{chat}}
+        {{shortcuts}}
+        <div class="section-heading"><h2>Et længere perspektiv</h2><span>Versionsfast prognose · 2026–2032</span></div>
+        <div class="b-grid">
+          <section class="panel b-forecast"><header class="panel-header"><div><p class="eyebrow">UDGIFT PR. ELEV</p><h3>Hvad venter forude?</h3><p>Helår · kroner pr. elev</p></div><button class="icon-button" data-export aria-label="Eksportér prognosens tal">{icon:download-simple}</button></header><div class="forecast-metrics"><div><span>Årsprognose 2026</span><strong>{{pupil2026}} <small>kr.</small></strong></div><div><span>Basisforløb 2032</span><strong>{{pupil2032}} <small>kr.</small></strong></div><span class="forecast-label">Følsomhedsforløb</span></div><div class="k-forecast" data-metric="perPupil"></div><div class="chart-bottom"><span>2026: årsprognose · efterfølgende år: fremskrivning</span><button class="text-link" data-prompt="Forklar prognosen for udgift pr. elev">Se forudsætninger {icon:arrow-right}</button></div></section>
+          <section class="scenario-panel fb-scenario" data-scenario-panel><p class="eyebrow">PRØV ET SCENARIE</p><h3>Hvad hvis energien<br>bliver dyrere?</h3><p class="scenario-intro">Ændr prisen og se effekten på skoleområdets sidste tre måneder i 2026.</p><label class="slider-heading" for="energy-slider"><span>Ændring i energipris</span><output data-energy-value for="energy-slider">+15 %</output></label><input id="energy-slider" type="range" min="-30" max="50" step="1" value="15" data-energy-slider aria-label="Ændring i energipris"><div class="slider-extremes"><span>−30 %</span><span>+50 %</span></div><div class="k-scenario-result" aria-live="polite"><span>Effekt · oktober–december</span><strong data-energy-delta>+1,1 mio. kr.</strong><div class="scenario-comparison"><span>Baseline <b data-scenario-baseline>321,8 mio. kr.</b></span><div><i data-baseline-bar></i></div><span>Scenarie <b data-energy-total>322,9 mio. kr.</b></span><div><i data-scenario-bar></i></div></div><button class="reset-scenario" data-reset-scenario>{icon:arrow-counter-clockwise} Nulstil</button></div><button class="fb-scenario-action" data-prompt="Hvad sker der, hvis energiprisen stiger 15 procent resten af året?">Undersøg scenariet {icon:arrow-up-right}</button><p class="scenario-fine">Kun energiposter påvirkes. Mængder og øvrige poster fastholdes. Simuleret beregning.</p></section>
+        </div>
+        <section class="panel b-comparison"><div><p class="eyebrow">ET SAMMENLIGNELIGT BLIK</p><h3>Kalundborg og Sorø</h3><p>Pr. elev · januar–september 2026</p></div>{{compare}}<button class="outline-button" data-prompt="Sammenlign med en sammenlignelig kommune">Undersøg forskellen {icon:arrow-up-right}</button></section>
+        {{footer}}
+      </main>
+    </section>
+
+    <section id="kaia-analysebord" class="kaia-prototype c-shell" aria-label="Forslag 3 · Analysebord" hidden>
+      <aside class="c-rail"><button class="rail-new" data-reset-chat aria-label="Ny samtale">{icon:plus}</button><nav aria-label="Hovednavigation"><button aria-current="page" data-local-view="overblik" aria-label="Mit overblik" title="Mit overblik">{icon:squares-four}</button><button data-local-view="samtaler" aria-label="Samtaler" title="Samtaler">{icon:chat-circle}</button><button data-local-view="indsigter" aria-label="Gemte indsigter" title="Gemte indsigter">{icon:bookmark-simple}</button><button data-local-view="scenarier" aria-label="Scenarier" title="Scenarier">{icon:sliders-horizontal}</button></nav><div class="rail-bottom"><button data-local-view="indstillinger" aria-label="Indstillinger" title="Indstillinger">{icon:gear-six}</button><span class="avatar">PV</span></div></aside>
+      <div class="workspace"><header class="app-topbar">{{brand}}<div class="topbar-person">{{statuses}}<span class="person-divider"></span><div><strong>Parthee</strong><span>AI Program Lead</span></div></div></header><main class="c-main">
+        <div class="welcome"><div><p class="eyebrow">DIT ANALYSEBORD</p><h1>Hej, Parthee<span>.</span></h1><p>Spørg frit. Find mønstrene. Følg grundlaget.</p></div><div class="identity"><span>Aktiv rolle</span><strong>Direktion</strong><small>Skoleområdet · 16 skoler</small></div></div>
+        {{scope}}
+        {{chat}}
+        {{shortcuts}}
+        <div class="section-heading"><h2>Fra tal til forklaring</h2><button class="text-link" data-local-view="kilder">Se beregningsgrundlaget {icon:arrow-up-right}</button></div>
+        {{stats}}
+        <div class="c-grid"><section class="panel heatmap-panel"><header class="panel-header"><div><p class="eyebrow">AFVIGELSER</p><h3>Hvor skal vi se nærmere?</h3><p>Fem udvalgte skoler · januar–september 2026</p></div></header><div class="k-heatmap"></div><div class="heatmap-legend"><span><i></i> Merforbrug +</span><span><i></i> Mindreforbrug −</span><span>Stregens længde viser afvigelsen</span></div><button class="panel-footer-link" data-prompt="Hvilke skoler har de største simulerede afvigelser i år?">Undersøg afvigelserne {icon:arrow-right}</button></section><section class="panel"><header class="panel-header"><div><p class="eyebrow">BIDRAG TIL AFVIGELSEN</p><h3>Hvad ligger bag?</h3></div></header><div class="k-waterfall"></div></section></div>
+        <section class="panel c-comparison"><header class="panel-header"><div><p class="eyebrow">KOMMUNEBLIK</p><h3>Samme periode. Et andet perspektiv.</h3><p>Nettoudgift pr. elev · januar–september 2026</p></div><button class="outline-button" data-prompt="Sammenlign skoleområdet med en sammenlignelig kommune">Undersøg {icon:arrow-up-right}</button></header><div class="k-table-wrap">{{peerTable}}</div><p class="data-caveat">Økonomi, elevtal og strukturlighed er simulerede. Et højere beløb viser ikke i sig selv en lavere effektivitet.</p></section>
+        {{footer}}
+      </main></div>
+    </section>
+  </div>
+  <dialog id="preview-dialog" aria-labelledby="dialog-title"><header><h2 id="dialog-title"></h2><button class="icon-button" data-close-dialog aria-label="Luk dialog">{icon:x}</button></header><div id="dialog-body"></div></dialog>
+  <div id="preview-toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script type="application/json" id="kaia-design-data">{{data}}</script>
+</body>
+</html>

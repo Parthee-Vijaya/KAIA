@@ -1,0 +1,255 @@
+.kaia-basis-editor {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 19px;
+  margin: 0 0 26px;
+  background: var(--paper);
+}
+.kaia-basis-editor-heading,
+.kaia-basis-editor-heading > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.kaia-basis-editor-heading {
+  justify-content: space-between;
+}
+.kaia-basis-editor-heading strong {
+  font-size: 13px;
+  font-weight: 600;
+}
+.kaia-basis-editor-heading > div > .kaia-icon {
+  color: var(--petrol);
+}
+.kaia-basis-editor-heading .text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.kaia-basis-preview-notice {
+  margin: 8px 0 0;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.kaia-basis-editor-status {
+  margin: 6px 0 17px;
+  font-size: 10px;
+  color: var(--petrol);
+  line-height: 1.6;
+}
+.kaia-basis-editor-grid {
+  display: grid;
+  grid-template-columns: minmax(175px, 0.6fr) minmax(0, 1.4fr);
+  gap: 23px;
+  align-items: start;
+}
+.kaia-basis-editor-controls {
+  min-width: 0;
+}
+.kaia-basis-control {
+  display: grid;
+  gap: 7px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+.kaia-basis-control:first-child {
+  padding-top: 0;
+}
+.kaia-basis-control > label {
+  font-size: 11px;
+  font-weight: 550;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.kaia-basis-control-value {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+}
+.kaia-basis-control input[type='number'] {
+  width: min(100%, 120px);
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 7px 8px;
+  background: #fff;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--ink);
+}
+.kaia-basis-control-value > span {
+  font-size: 10px;
+  color: var(--muted);
+}
+.kaia-basis-control input[type='range'] {
+  width: 100%;
+  margin: 2px 0;
+  min-height: 23px;
+  accent-color: var(--primary);
+}
+.kaia-basis-control select {
+  min-width: 0;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 11px;
+}
+.kaia-basis-control > small {
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.7;
+}
+.kaia-basis-editor-controls > details {
+  margin-top: 14px;
+}
+.kaia-basis-editor-controls > details > summary {
+  width: 100%;
+  font-size: 10px;
+  justify-content: space-between;
+}
+.kaia-basis-editor-controls > details > div {
+  margin-top: 16px;
+}
+.kaia-basis-editor-result {
+  min-width: 0;
+  position: sticky;
+  top: 15px;
+}
+.kaia-basis-editor-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 16px;
+  margin: 0 0 13px;
+}
+.kaia-basis-editor-metrics span {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.6;
+}
+.kaia-basis-editor-metrics strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 550;
+  letter-spacing: -0.035em;
+  font-variant-numeric: tabular-nums;
+  margin-top: 3px;
+  overflow-wrap: anywhere;
+}
+.kaia-basis-editor-current .chart-panel {
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+  margin: 15px 0 0;
+}
+.kaia-basis-editor-current .chart-header h3 {
+  font-size: 13px;
+}
+.kaia-basis-editor-pending {
+  color: var(--muted);
+  font-size: 10px;
+  margin: 0 0 12px;
+  line-height: 1.7;
+}
+.kaia-basis-editor-current > h4 {
+  font-size: 12px;
+  margin: 0 0 12px;
+  font-weight: 550;
+}
+.kaia-basis-editor-period-note {
+  font-size: 10px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+.kaia-basis-editor-explanation {
+  padding-top: 17px;
+  margin-top: 17px;
+  border-top: 1px solid var(--line);
+}
+.kaia-basis-editor-explanation-title strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 550;
+  line-height: 1.6;
+}
+.kaia-basis-editor-explanation-title > span {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.7;
+  margin-top: 4px;
+}
+.kaia-basis-editor-explanation > p,
+.kaia-basis-editor-error p,
+.kaia-basis-editor-static {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 9px 0;
+}
+.kaia-basis-editor-explanation-text {
+  white-space: pre-wrap;
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--ink);
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+}
+.kaia-basis-editor-stream-status {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  margin-top: 9px;
+}
+.kaia-basis-editor-error {
+  border-left: 2px solid var(--primary);
+  padding-left: 11px;
+  margin: 12px 0;
+}
+.kaia-basis-editor-error .text-button {
+  font-size: 10px;
+}
+@media (max-width: 850px) {
+  .kaia-basis-editor-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .kaia-basis-editor-result {
+    position: static;
+  }
+  .kaia-basis-editor-controls {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 17px;
+  }
+  .kaia-basis-editor-controls > details {
+    grid-column: 1/-1;
+  }
+}
+@media (max-width: 500px) {
+  .kaia-basis-editor {
+    padding: 15px;
+  }
+  .kaia-basis-editor-controls {
+    grid-template-columns: 1fr;
+  }
+  .kaia-basis-editor-metrics strong {
+    font-size: 17px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kaia-basis-editor *,
+  .kaia-basis-editor *::before,
+  .kaia-basis-editor *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

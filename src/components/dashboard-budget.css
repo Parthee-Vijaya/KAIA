@@ -1,0 +1,418 @@
+.kaia-budget-overview {
+  display: grid;
+  gap: 0;
+  min-width: 0;
+  color: #252525;
+}
+.kaia-budget-overview * {
+  box-sizing: border-box;
+}
+.kaia-budget-overview h2,
+.kaia-budget-overview p {
+  margin: 0;
+}
+.kaia-budget-overview button {
+  font: inherit;
+}
+.kaia-budget-overview button:focus-visible {
+  outline: 2px solid #006f71;
+  outline-offset: 4px;
+}
+.kaia-budget-overview button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+.kaia-budget-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.kaia-budget-heading h2 {
+  font-size: 17px;
+  font-weight: 550;
+  letter-spacing: -0.35px;
+}
+.kaia-budget-heading p {
+  color: #535e70;
+  font-size: 11px;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+.kaia-budget-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border: 1px solid #e4e5e8;
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+}
+.kaia-budget-metric {
+  min-width: 0;
+  padding: 21px 20px 18px;
+}
+.kaia-budget-metric + .kaia-budget-metric,
+.kaia-budget-year-missing {
+  border-left: 1px solid #e4e5e8;
+}
+.kaia-budget-metric-label {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px;
+  min-height: 25px;
+  font-size: 11px;
+  color: #535e70;
+}
+.kaia-budget-metric > strong {
+  display: block;
+  font-size: clamp(18px, 1.8vw, 27px);
+  line-height: 1.4;
+  letter-spacing: -0.65px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  margin-top: 4px;
+}
+.kaia-budget-metric-detail {
+  display: flex;
+  gap: 5px 10px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  font-size: 10px;
+  line-height: 1.7;
+  margin-top: 8px;
+}
+.kaia-budget-metric-up .kaia-budget-metric-detail {
+  color: #9b4028;
+}
+.kaia-budget-metric-down .kaia-budget-metric-detail {
+  color: #006f71;
+}
+.kaia-budget-metric-level .kaia-budget-metric-detail {
+  color: #535e70;
+}
+.kaia-budget-percent {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.kaia-budget-metric-note {
+  font-size: 10px;
+  color: #535e70;
+  line-height: 1.7;
+  margin-top: 8px !important;
+}
+.kaia-budget-sources {
+  display: inline-flex;
+  gap: 2px;
+  vertical-align: baseline;
+}
+.kaia-budget-sources button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 4px;
+  padding: 3px 4px;
+  min-width: 22px;
+  min-height: 25px;
+  background: none !important;
+  color: #006f71;
+  font-size: 10px;
+  line-height: 1;
+  cursor: pointer;
+}
+.kaia-budget-sources button:hover {
+  text-decoration: underline;
+}
+.kaia-budget-strip-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px 20px;
+  flex-wrap: wrap;
+  margin: 10px 0 20px;
+}
+.kaia-budget-strip-footer > p {
+  color: #535e70;
+  font-size: 10px;
+  line-height: 1.7;
+  max-width: 620px;
+}
+.kaia-budget-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 1px 0;
+  border: 0;
+  background: none !important;
+  color: #bc4d30;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.kaia-budget-year-panel {
+  min-width: 0;
+  border: 1px solid #e4e5e8;
+  border-radius: 14px;
+  background: #fff;
+  padding: 21px 24px 16px;
+  overflow: hidden;
+}
+.kaia-budget-year-kicker {
+  font-size: 10px;
+  color: #535e70;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.kaia-budget-year-panel .chart-panel {
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.kaia-budget-year-panel .chart-header {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.kaia-budget-year-panel .chart-header > div:first-child {
+  min-width: 0;
+  flex: 1;
+}
+.kaia-budget-overview .kaia-budget-year-panel .chart-header h3 {
+  font-size: 16px;
+  font-weight: 550;
+  letter-spacing: -0.3px;
+  line-height: 1.4;
+}
+.kaia-budget-year-panel .chart-header p {
+  color: #535e70;
+  font-size: 11px;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+.kaia-budget-year-panel .chart-tools {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 4px;
+}
+.kaia-budget-year-panel .chart-tools button {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #e4e5e8;
+  border-radius: 7px;
+  color: #535e70;
+  background: #fff;
+}
+.kaia-budget-year-amounts {
+  display: flex;
+  align-items: baseline;
+  gap: 28px;
+  margin: 16px 0 9px;
+}
+.kaia-budget-year-amounts > div {
+  min-width: 0;
+}
+.kaia-budget-year-amounts > div + div {
+  padding-left: 28px;
+  border-left: 1px solid #e4e5e8;
+}
+.kaia-budget-year-amounts span {
+  display: block;
+  color: #535e70;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.kaia-budget-year-amounts strong {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.65px;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+.kaia-budget-year-panel .chart-canvas {
+  margin: 0 -8px;
+}
+.kaia-budget-year-panel .chart-footer {
+  margin-top: 10px;
+  font-size: 10px;
+}
+.kaia-budget-year-panel .chart-footer .text-button {
+  font-size: 10px;
+  gap: 5px;
+}
+.kaia-budget-year-panel .data-table-scroll {
+  margin-top: 12px;
+}
+.kaia-budget-year-panel table {
+  font-size: 12px;
+}
+.kaia-budget-year-panel caption {
+  font-size: 11px;
+  line-height: 1.7;
+}
+.kaia-budget-year-note {
+  color: #535e70;
+  font-size: 10px;
+  line-height: 1.7;
+  margin-top: 12px !important;
+  max-width: 850px;
+}
+.kaia-budget-year-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  border-top: 1px solid #e4e5e8;
+  margin-top: 13px;
+  padding-top: 11px;
+}
+.kaia-budget-year-footer > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #535e70;
+  font-size: 10px;
+}
+.kaia-budget-missing {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 10px 0;
+  color: #535e70;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.kaia-budget-missing > .kaia-icon {
+  margin-top: 3px;
+}
+.kaia-budget-status-missing {
+  grid-column: span 3;
+  padding: 20px;
+}
+.kaia-budget-year-missing {
+  min-width: 0;
+  padding: 24px 20px 18px;
+  color: #535e70;
+}
+.kaia-budget-year-missing > span {
+  font-size: 11px;
+}
+.kaia-budget-year-missing p {
+  font-size: 10px;
+  line-height: 1.7;
+  margin-top: 9px;
+}
+@media (max-width: 1150px) {
+  .kaia-budget-metric {
+    padding: 18px 14px;
+  }
+  .kaia-budget-metric > strong {
+    font-size: 20px;
+  }
+}
+@media (max-width: 920px) {
+  .kaia-budget-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .kaia-budget-metric:nth-child(3) {
+    border-left: 0;
+  }
+  .kaia-budget-metric:nth-child(n + 3),
+  .kaia-budget-year-missing {
+    border-top: 1px solid #e4e5e8;
+  }
+  .kaia-budget-metric {
+    padding: 20px;
+  }
+  .kaia-budget-metric > strong {
+    font-size: 25px;
+  }
+  .kaia-budget-status-missing {
+    grid-column: 1 / -1;
+  }
+  .kaia-budget-status-missing + .kaia-budget-year-missing,
+  .kaia-budget-status-missing + .kaia-budget-metric {
+    grid-column: 1 / -1;
+    border-left: 0;
+    border-top: 1px solid #e4e5e8;
+  }
+  .kaia-budget-year-panel {
+    padding: 21px 20px 16px;
+  }
+}
+@media (max-width: 560px) {
+  .kaia-budget-heading {
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .kaia-budget-heading h2 {
+    font-size: 16px;
+  }
+  .kaia-budget-metric {
+    padding: 16px 12px;
+  }
+  .kaia-budget-metric > strong {
+    font-size: 20px;
+  }
+  .kaia-budget-metric-label {
+    font-size: 10px;
+  }
+  .kaia-budget-metric-detail {
+    gap: 2px 6px;
+  }
+  .kaia-budget-year-panel {
+    padding: 20px 16px 15px;
+  }
+  .kaia-budget-year-amounts {
+    gap: 16px;
+  }
+  .kaia-budget-year-amounts > div + div {
+    padding-left: 16px;
+  }
+  .kaia-budget-year-amounts strong {
+    font-size: 21px;
+  }
+  .kaia-budget-year-panel .chart-header {
+    flex-wrap: wrap;
+  }
+  .kaia-budget-year-panel .chart-tools {
+    margin-left: auto;
+  }
+  .kaia-budget-year-panel .chart-footer {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+@media (max-width: 380px) {
+  .kaia-budget-strip {
+    grid-template-columns: 1fr;
+  }
+  .kaia-budget-metric + .kaia-budget-metric,
+  .kaia-budget-year-missing {
+    border-left: 0;
+    border-top: 1px solid #e4e5e8;
+  }
+  .kaia-budget-status-missing {
+    grid-column: 1;
+  }
+}

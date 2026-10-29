@@ -1,0 +1,5184 @@
+{
+  "schemaVersion": "1",
+  "datasetVersion": "dst-public-2026-10-20",
+  "status": "verified-public-snapshot",
+  "retrievedAt": "2026-10-20T21:48:34.486Z",
+  "extracts": {
+    "prices": {
+      "metadata": {
+        "id": "PRIS01",
+        "text": "Forbrugerprisindeks",
+        "description": "Forbrugerprisindeks efter varegruppe, enhed og tid",
+        "unit": "-",
+        "updated": "2026-10-12T08:00:00",
+        "active": true,
+        "variables": [
+          {
+            "id": "VAREGR",
+            "text": "varegruppe",
+            "time": false,
+            "values": [
+              {
+                "id": "000000",
+                "text": "00 Forbrugerprisindeks i alt"
+              },
+              {
+                "id": "01",
+                "text": "01 Fødevarer og ikke-alkoholiske drikkevarer"
+              },
+              {
+                "id": "011",
+                "text": "01.1 Fødevarer"
+              },
+              {
+                "id": "0111",
+                "text": "01.1.1 Korn og kornprodukter"
+              },
+              {
+                "id": "01111",
+                "text": "01.1.1.1 Korn"
+              },
+              {
+                "id": "01112",
+                "text": "01.1.1.2 Mel af korn"
+              },
+              {
+                "id": "01113",
+                "text": "01.1.1.3 Brød og bagværk"
+              },
+              {
+                "id": "01114",
+                "text": "01.1.1.4 Morgenmadsprodukter"
+              },
+              {
+                "id": "01115",
+                "text": "01.1.1.5 Makaroni, nudler, couscous og lignende pastaprodukter"
+              },
+              {
+                "id": "01119",
+                "text": "01.1.1.9 Andre formalede  kornprodukter"
+              },
+              {
+                "id": "0112",
+                "text": "01.1.2 Kød"
+              },
+              {
+                "id": "01122",
+                "text": "01.1.2.2 Kød, fersk, kølet eller frosset"
+              },
+              {
+                "id": "011221",
+                "text": "01.1.2.2.1 Oksekød, fersk, kølet eller frosset"
+              },
+              {
+                "id": "011222",
+                "text": "01.1.2.2.2 Grisekød, fersk, kølet eller frosset"
+              },
+              {
+                "id": "011223",
+                "text": "01.1.2.2.3 Lammekød, fersk, kølet eller frosset"
+              },
+              {
+                "id": "011224",
+                "text": "01.1.2.2.4 Fjærkræ, fersk, kølet eller frosset"
+              },
+              {
+                "id": "01123",
+                "text": "01.1.2.3 Kød, tørret, saltet, i saltlage eller røget"
+              },
+              {
+                "id": "01124",
+                "text": "01.1.2.4 Indmad, alle slags"
+              },
+              {
+                "id": "01125",
+                "text": "01.1.2.5 Forarbejdede og tilberedt kød og fjerkræ"
+              },
+              {
+                "id": "0113",
+                "text": "01.1.3 Fisk og skaldyr m.v."
+              },
+              {
+                "id": "01131",
+                "text": "01.1.3.1 Fisk, fersk, kølet eller frosset"
+              },
+              {
+                "id": "01132",
+                "text": "01.1.3.2 Fisk, tørret, saltet eller røget"
+              },
+              {
+                "id": "01133",
+                "text": "01.1.3.3 Tilberedninger af fisk"
+              },
+              {
+                "id": "01134",
+                "text": "01.1.3.4 Skaldyr m.v.,  ferske, kølede eller frosne"
+              },
+              {
+                "id": "01136",
+                "text": "01.1.3.6 Tilberedninger af skaldyr m.v."
+              },
+              {
+                "id": "01137",
+                "text": "01.1.3.7 Lever, rogn o.l fra skaldyr m.v., alle slags"
+              },
+              {
+                "id": "0114",
+                "text": "01.1.4 Mælk, andre mejeriprodukter og æg"
+              },
+              {
+                "id": "01141",
+                "text": "01.1.4.1 Sødmælk"
+              },
+              {
+                "id": "01142",
+                "text": "01.1.4.2 Skummetmælk o.l."
+              },
+              {
+                "id": "01143",
+                "text": "01.1.4.3 Anden mælk og fløde"
+              },
+              {
+                "id": "01144",
+                "text": "01.1.4.4 Ikke-animalsk mælk"
+              },
+              {
+                "id": "01145",
+                "text": "01.1.4.5 Ost"
+              },
+              {
+                "id": "01146",
+                "text": "01.1.4.6 Yoghurt og lignende produkter"
+              },
+              {
+                "id": "01147",
+                "text": "01.1.4.7 Mælkebaserede desserter og drikkevarer"
+              },
+              {
+                "id": "01148",
+                "text": "01.1.4.8 Æg"
+              },
+              {
+                "id": "0115",
+                "text": "01.1.5 Olier og fedtstoffer"
+              },
+              {
+                "id": "01151",
+                "text": "01.1.5.1 Vegetabilske olier"
+              },
+              {
+                "id": "01152",
+                "text": "01.1.5.2 Smør, olier og fedtstoffer baseret på mælk"
+              },
+              {
+                "id": "01153",
+                "text": "01.1.5.3 Margarine og lignende forarbejdede varer"
+              },
+              {
+                "id": "0116",
+                "text": "01.1.6 Frugter og nødder"
+              },
+              {
+                "id": "01161",
+                "text": "01.1.6.1 Dadler, figner og tropiske frugter, friske"
+              },
+              {
+                "id": "01162",
+                "text": "01.1.6.2 Citrusfrugter, friske"
+              },
+              {
+                "id": "01163",
+                "text": "01.1.6.3 Stenfrugter og kernefrugter, friske"
+              },
+              {
+                "id": "01164",
+                "text": "01.1.6.4 Bærfrugter, friske"
+              },
+              {
+                "id": "01165",
+                "text": "01.1.6.5 Andre frugter, friske"
+              },
+              {
+                "id": "01166",
+                "text": "01.1.6.6 Frugter, frosne"
+              },
+              {
+                "id": "01167",
+                "text": "01.1.6.7 Frugter, tørrede"
+              },
+              {
+                "id": "01168",
+                "text": "01.1.6.8 Nødder, alle slags"
+              },
+              {
+                "id": "01169",
+                "text": "01.1.6.9 Frugter og nødder, formalede o.l."
+              },
+              {
+                "id": "0117",
+                "text": "01.1.7 Grøntsager"
+              },
+              {
+                "id": "01171",
+                "text": "01.1.7.1 Salat, salatblandinger, kål ol."
+              },
+              {
+                "id": "01172",
+                "text": "01.1.7.2 Tomater, agurker ol."
+              },
+              {
+                "id": "01173",
+                "text": "01.1.7.3 Bønner, sukkerærter ol."
+              },
+              {
+                "id": "01174",
+                "text": "01.1.7.4 Gulerødder, løg, porrer, champignon ol."
+              },
+              {
+                "id": "01175",
+                "text": "01.1.7.5 Kartofler"
+              },
+              {
+                "id": "01176",
+                "text": "01.1.7.6 Tørrede linser, bønner ol."
+              },
+              {
+                "id": "01178",
+                "text": "01.1.7.8 Grøntsager, dybfrost"
+              },
+              {
+                "id": "01179",
+                "text": "01.1.7.9 Grøntsager, rodknolde og bælgfrugter, formalede o.l."
+              },
+              {
+                "id": "0118",
+                "text": "01.1.8 Sukker, sukkervarer og desserter"
+              },
+              {
+                "id": "01181",
+                "text": "01.1.8.1 Rør- og roesukker"
+              },
+              {
+                "id": "01182",
+                "text": "01.1.8.2 Andet sukker og sukkererstatninger"
+              },
+              {
+                "id": "01183",
+                "text": "01.1.8.3 Syltetøj, marmelade og honning"
+              },
+              {
+                "id": "01184",
+                "text": "01.1.8.4 Nøddesmør o.l."
+              },
+              {
+                "id": "01185",
+                "text": "01.1.8.5 Chokolade, kakao og kakaobaserede fødevarer"
+              },
+              {
+                "id": "01186",
+                "text": "01.1.8.6 Is og sorbet"
+              },
+              {
+                "id": "01189",
+                "text": "01.1.8.9 Andre sukkervarer og desserter"
+              },
+              {
+                "id": "0119",
+                "text": "01.1.9 Færdigretter og andre fødevarer"
+              },
+              {
+                "id": "01191",
+                "text": "01.1.9.1 Færdigretter"
+              },
+              {
+                "id": "01192",
+                "text": "01.1.9.2 Babymad"
+              },
+              {
+                "id": "01193",
+                "text": "01.1.9.3 Salt, smagspræparater og saucer"
+              },
+              {
+                "id": "01194",
+                "text": "01.1.9.4 Krydderier, krydderurter og krydderfrø"
+              },
+              {
+                "id": "01199",
+                "text": "01.1.9.9 Andre fødevarer"
+              },
+              {
+                "id": "012",
+                "text": "01.2 Ikke-alkoholiske drikkevarer"
+              },
+              {
+                "id": "0121",
+                "text": "01.2.1 Frugt- og grøntsagssaft"
+              },
+              {
+                "id": "01210",
+                "text": "01.2.1.0 Frugt- og grøntsagssaft"
+              },
+              {
+                "id": "0122",
+                "text": "01.2.2 Kaffe, alle slags"
+              },
+              {
+                "id": "01220",
+                "text": "01.2.2.0 Kaffe, alle slags"
+              },
+              {
+                "id": "0123",
+                "text": "01.2.3 Te, alle slags"
+              },
+              {
+                "id": "01230",
+                "text": "01.2.3.0 Te, alle slags"
+              },
+              {
+                "id": "0124",
+                "text": "01.2.4 Kakaodrikke"
+              },
+              {
+                "id": "01240",
+                "text": "01.2.4.0 Kakaodrikke"
+              },
+              {
+                "id": "0125",
+                "text": "01.2.5 Vand"
+              },
+              {
+                "id": "01250",
+                "text": "01.2.5.0 Vand"
+              },
+              {
+                "id": "0126",
+                "text": "01.2.6 Læskedrikke"
+              },
+              {
+                "id": "01260",
+                "text": "01.2.6.0 Læskedrikke"
+              },
+              {
+                "id": "0129",
+                "text": "01.2.9 Andre ikke-alkoholiske drikkevarer"
+              },
+              {
+                "id": "01290",
+                "text": "01.2.9.0 Andre ikke-alkoholiske drikkevarer"
+              },
+              {
+                "id": "02",
+                "text": "02 Alkoholiske drikkevarer og tobak"
+              },
+              {
+                "id": "021",
+                "text": "02.1 Alkoholiske drikkevarer"
+              },
+              {
+                "id": "0211",
+                "text": "02.1.1 Spiritus"
+              },
+              {
+                "id": "02110",
+                "text": "02.1.1.0 Spiritus"
+              },
+              {
+                "id": "0212",
+                "text": "02.1.2 Vin"
+              },
+              {
+                "id": "02121",
+                "text": "02.1.2.1 Vin af druer"
+              },
+              {
+                "id": "02122",
+                "text": "02.1.2.2 Hedvin"
+              },
+              {
+                "id": "0213",
+                "text": "02.1.3 Øl"
+              },
+              {
+                "id": "02130",
+                "text": "02.1.3.0 Øl"
+              },
+              {
+                "id": "0219",
+                "text": "02.1.9 Andre alkoholiske drikkevarer"
+              },
+              {
+                "id": "02190",
+                "text": "02.1.9.0 Andre alkoholiske drikkevarer"
+              },
+              {
+                "id": "023",
+                "text": "02.3 Tobak"
+              },
+              {
+                "id": "0230",
+                "text": "02.3.0 Tobak"
+              },
+              {
+                "id": "02301",
+                "text": "02.3.0.1 Cigaretter"
+              },
+              {
+                "id": "02302",
+                "text": "02.3.0.2 Cigarer"
+              },
+              {
+                "id": "02309",
+                "text": "02.3.0.9 Andre tobaksvarer"
+              },
+              {
+                "id": "03",
+                "text": "03 Beklædning og fodtøj"
+              },
+              {
+                "id": "031",
+                "text": "03.1 Beklædning"
+              },
+              {
+                "id": "0311",
+                "text": "03.1.1 Materialer til beklædning"
+              },
+              {
+                "id": "03110",
+                "text": "03.1.1.0 Materialer til beklædning"
+              },
+              {
+                "id": "0312",
+                "text": "03.1.2 Beklædningsartikler"
+              },
+              {
+                "id": "03121",
+                "text": "03.1.2.1 Beklædningsartikler til mænd eller drenge"
+              },
+              {
+                "id": "03122",
+                "text": "03.1.2.2 Beklædningsartikler til kvinder eller piger"
+              },
+              {
+                "id": "03123",
+                "text": "03.1.2.3 Beklædningsartikler til småbørn (under 2 år)"
+              },
+              {
+                "id": "0313",
+                "text": "03.1.3 Andre beklædningsartikler og andet beklædningstilbehør"
+              },
+              {
+                "id": "03131",
+                "text": "03.1.3.1 Andre beklædningsartikler"
+              },
+              {
+                "id": "03132",
+                "text": "03.1.3.2 Beklædningstilbehør"
+              },
+              {
+                "id": "0314",
+                "text": "03.1.4 Vask, rensning, reparation, skræddersyning og leje af beklædning"
+              },
+              {
+                "id": "03141",
+                "text": "03.1.4.1 Vask og rensning af beklædning"
+              },
+              {
+                "id": "03142",
+                "text": "03.1.4.2 Reparation, skræddersyning og leje af beklædning"
+              },
+              {
+                "id": "032",
+                "text": "03.2 Fodtøj"
+              },
+              {
+                "id": "0321",
+                "text": "03.2.1 Sko og andet fodtøj"
+              },
+              {
+                "id": "03211",
+                "text": "03.2.1.1 Fodtøj til mænd"
+              },
+              {
+                "id": "03212",
+                "text": "03.2.1.2 Fodtøj til kvinder"
+              },
+              {
+                "id": "03213",
+                "text": "03.2.1.3 Fodtøj til børn, herunder småbørn"
+              },
+              {
+                "id": "0322",
+                "text": "03.2.2 Vask, rensning, reparation og leje af fodtøj"
+              },
+              {
+                "id": "03220",
+                "text": "03.2.2.0 Vask, rensning og reparation af fodtøj"
+              },
+              {
+                "id": "04",
+                "text": "04 Bolig, vand, elektricitet, gas og andet brændsel"
+              },
+              {
+                "id": "041",
+                "text": "04.1 Faktisk husleje"
+              },
+              {
+                "id": "0411",
+                "text": "04.1.1 Faktisk husleje betalt af lejere for primær bolig"
+              },
+              {
+                "id": "04110",
+                "text": "04.1.1.0 Faktisk husleje betalt af lejere for primær bolig"
+              },
+              {
+                "id": "0412",
+                "text": "04.1.2 Andre faktiske lejebetalinger"
+              },
+              {
+                "id": "04121",
+                "text": "04.1.2.1 Faktisk husleje betalt af lejere for sekundære boliger"
+              },
+              {
+                "id": "042",
+                "text": "04.2 Imputeret lejeværdi"
+              },
+              {
+                "id": "0421",
+                "text": "04.2.1 Imputeret lejeværdi af egen primær bolig"
+              },
+              {
+                "id": "04210",
+                "text": "04.2.1.0 Imputeret lejeværdi af egen primær bolig"
+              },
+              {
+                "id": "0422",
+                "text": "04.2.2 Andre imputerede lejeværdier"
+              },
+              {
+                "id": "04220",
+                "text": "04.2.2.0 Andre imputerede lejeværdier"
+              },
+              {
+                "id": "043",
+                "text": "04.3 Vedligeholdelse, reparation og sikring af boligen"
+              },
+              {
+                "id": "0431",
+                "text": "04.3.1 Sikringsudstyr og -materialer til vedligeholdelse og reparation af boligen"
+              },
+              {
+                "id": "04311",
+                "text": "04.3.1.1 Materialer til vedligeholdelse og reparation af bolig"
+              },
+              {
+                "id": "0432",
+                "text": "04.3.2 Tjenester til vedligeholdelse, reparation og sikring af boligen"
+              },
+              {
+                "id": "04320",
+                "text": "04.3.2.0 Tjenester til vedligeholdelse, reparation og sikring af boligen"
+              },
+              {
+                "id": "044",
+                "text": "04.4 Vandforsyning og andre tjenester i forbindelse med boligen"
+              },
+              {
+                "id": "0441",
+                "text": "04.4.1 Vandforsyning"
+              },
+              {
+                "id": "04411",
+                "text": "04.4.1.1 Vandforsyning"
+              },
+              {
+                "id": "0442",
+                "text": "04.4.2 Affaldsdeponering"
+              },
+              {
+                "id": "04420",
+                "text": "04.4.2.0 Renovation"
+              },
+              {
+                "id": "0443",
+                "text": "04.4.3 Opsamling af spildevand"
+              },
+              {
+                "id": "04431",
+                "text": "04.4.3.1 Opsamling af spildevand gennem kloaknettet"
+              },
+              {
+                "id": "04432",
+                "text": "04.4.3.2 Opsamling af spildevand gennem sanitetssystemer på stedet"
+              },
+              {
+                "id": "0444",
+                "text": "04.4.4 Andre boligrelaterede tjenester"
+              },
+              {
+                "id": "04449",
+                "text": "04.4.4.9 Andre tjenester relateret til bolig"
+              },
+              {
+                "id": "045",
+                "text": "04.5 Elektricitet, gas og andet brændsel"
+              },
+              {
+                "id": "0451",
+                "text": "04.5.1 Elektricitet"
+              },
+              {
+                "id": "04510",
+                "text": "04.5.1.0 Elektricitet"
+              },
+              {
+                "id": "0452",
+                "text": "04.5.2 Gas"
+              },
+              {
+                "id": "04521",
+                "text": "04.5.2.1 Naturgas"
+              },
+              {
+                "id": "04522",
+                "text": "04.5.2.2 Flydende kulbrinter"
+              },
+              {
+                "id": "0453",
+                "text": "04.5.3 Flydende brændsel"
+              },
+              {
+                "id": "04530",
+                "text": "04.5.3.0 Flydende brændsel"
+              },
+              {
+                "id": "0454",
+                "text": "04.5.4 Fast brændsel"
+              },
+              {
+                "id": "04541",
+                "text": "04.5.4.1 Kul, kulbriketter, tørv og tørvebriketter"
+              },
+              {
+                "id": "04542",
+                "text": "04.5.4.2 Træbrændsel, herunder piller og briketter"
+              },
+              {
+                "id": "04543",
+                "text": "04.5.4.3 Trækul"
+              },
+              {
+                "id": "0455",
+                "text": "04.5.5 Fjernvarme"
+              },
+              {
+                "id": "04550",
+                "text": "04.5.5.0 Fjernvarme"
+              },
+              {
+                "id": "05",
+                "text": "05 Bolig-, husholdningsudstyr samt husholdningstjenester"
+              },
+              {
+                "id": "051",
+                "text": "05.1 Møbler, boliginventar og gulvtæpper"
+              },
+              {
+                "id": "0511",
+                "text": "05.1.1 Møbler, boliginventar og løstliggende gulvtæpper"
+              },
+              {
+                "id": "05111",
+                "text": "05.1.1.1 Boligmøbler"
+              },
+              {
+                "id": "05112",
+                "text": "05.1.1.2 Have- og campingmøbler"
+              },
+              {
+                "id": "05113",
+                "text": "05.1.1.3 Belysningsudstyr"
+              },
+              {
+                "id": "05114",
+                "text": "05.1.1.4 Boliginventar og gulvtæpper"
+              },
+              {
+                "id": "0512",
+                "text": "05.1.2 Reparation, montering og leje af møbler o.l."
+              },
+              {
+                "id": "05120",
+                "text": "05.1.2.0 Reparation, montering og leje af møbler o.l."
+              },
+              {
+                "id": "052",
+                "text": "05.2 Boligtekstiler"
+              },
+              {
+                "id": "0521",
+                "text": "05.2.1 Boligtekstiler"
+              },
+              {
+                "id": "05211",
+                "text": "05.2.1.1 Møbelstof og gardiner"
+              },
+              {
+                "id": "05212",
+                "text": "05.2.1.2 Sengelinned og sengetøj"
+              },
+              {
+                "id": "05213",
+                "text": "05.2.1.3 Bord- og badeværelseslinned"
+              },
+              {
+                "id": "05219",
+                "text": "05.2.1.9 Andre boligtekstiler"
+              },
+              {
+                "id": "053",
+                "text": "05.3 Husholdningsapparater"
+              },
+              {
+                "id": "0531",
+                "text": "05.3.1 Større elektriske husholdningsapparater og andre husholdningsapparater"
+              },
+              {
+                "id": "05311",
+                "text": "05.3.1.1 Hårde hvidvarer"
+              },
+              {
+                "id": "05312",
+                "text": "05.3.1.2 Vaskemaskiner o.l"
+              },
+              {
+                "id": "05313",
+                "text": "05.3.1.3 Varmeapparater, klimaanlæg"
+              },
+              {
+                "id": "05314",
+                "text": "05.3.1.4 Rengøringsudstyr"
+              },
+              {
+                "id": "05319",
+                "text": "05.3.1.9 Andre større husholdningsapparater"
+              },
+              {
+                "id": "0532",
+                "text": "05.3.2 Mindre husholdningsapparater"
+              },
+              {
+                "id": "05321",
+                "text": "05.3.2.1 Mindre apparater til madlavning og forarbejdning af fødevarer"
+              },
+              {
+                "id": "05322",
+                "text": "05.3.2.2 Mindre apparater til tilberedning af drikkevarer"
+              },
+              {
+                "id": "05329",
+                "text": "05.3.2.9 Andre mindre husholdningsapparater"
+              },
+              {
+                "id": "0533",
+                "text": "05.3.3 Reparation, montering og leje af husholdningsapparater"
+              },
+              {
+                "id": "05330",
+                "text": "05.3.3.0 Reparation, montering og leje af husholdningsapparater"
+              },
+              {
+                "id": "054",
+                "text": "05.4 Glas, service og husholdningsredskaber"
+              },
+              {
+                "id": "0540",
+                "text": "05.4.0 Glas, service og husholdningsredskaber"
+              },
+              {
+                "id": "05401",
+                "text": "05.4.0.1 Glasvarer, krystalglasvarer, lertøj og porcelænsartikler"
+              },
+              {
+                "id": "05402",
+                "text": "05.4.0.2 Spisebestik, fade og sølvtøj"
+              },
+              {
+                "id": "05403",
+                "text": "05.4.0.3 Køkkenredskaber og -artikler"
+              },
+              {
+                "id": "055",
+                "text": "05.5 Værktøj og udstyr til hus og have"
+              },
+              {
+                "id": "0551",
+                "text": "05.5.1 Motoriseret værktøj og udstyr"
+              },
+              {
+                "id": "05510",
+                "text": "05.5.1.0 Motoriseret værktøj og udstyr"
+              },
+              {
+                "id": "0552",
+                "text": "05.5.2 Ikke-motoriserede værktøjer og diverse tilbehør"
+              },
+              {
+                "id": "05521",
+                "text": "05.5.2.1 Ikke-motoriserede værktøjer"
+              },
+              {
+                "id": "05522",
+                "text": "05.5.2.2 El-, og andre boligartikler"
+              },
+              {
+                "id": "056",
+                "text": "05.6 Andre varer og tjenester til husholdningen"
+              },
+              {
+                "id": "0561",
+                "text": "05.6.1 Ikkevarige forbrugsgoder til husholdningen"
+              },
+              {
+                "id": "05611",
+                "text": "05.6.1.1 Rengørings- og vedligeholdelsesprodukter i husholdningen"
+              },
+              {
+                "id": "05619",
+                "text": "05.6.1.9 Andre ikke-varige forbrugsgoder til husholdningen"
+              },
+              {
+                "id": "0562",
+                "text": "05.6.2 Hushjælp og tjenesteydelser i hjemmet"
+              },
+              {
+                "id": "05629",
+                "text": "05.6.2.9 Andre tjenesteydelser i hjemmet"
+              },
+              {
+                "id": "06",
+                "text": "06 Sundhed"
+              },
+              {
+                "id": "061",
+                "text": "06.1 Lægemidler"
+              },
+              {
+                "id": "0611",
+                "text": "06.1.1 Lægemidler"
+              },
+              {
+                "id": "06111",
+                "text": "06.1.1.1 Lægemidler, vacciner og andre farmaceutiske præparater"
+              },
+              {
+                "id": "0612",
+                "text": "06.1.2 Medicinske produkter"
+              },
+              {
+                "id": "06121",
+                "text": "06.1.2.1 Medicinske diagnostiske produkter"
+              },
+              {
+                "id": "06122",
+                "text": "06.1.2.2 Præventionsmidler"
+              },
+              {
+                "id": "06123",
+                "text": "06.1.2.3 Behandlingsanordninger til personlig brug"
+              },
+              {
+                "id": "0613",
+                "text": "06.1.3 Hjælpemidler"
+              },
+              {
+                "id": "06131",
+                "text": "06.1.3.1 Synshjælpemidler"
+              },
+              {
+                "id": "062",
+                "text": "06.2 Ambulant behandling"
+              },
+              {
+                "id": "0621",
+                "text": "06.2.1 Forebyggende sundhedsydelser"
+              },
+              {
+                "id": "06219",
+                "text": "06.2.1.9 Andre forebyggende sundhedsydelser"
+              },
+              {
+                "id": "0622",
+                "text": "06.2.2 Ambulant tandlægebehandling"
+              },
+              {
+                "id": "06221",
+                "text": "06.2.2.1 Forebyggende tandlægebehandling"
+              },
+              {
+                "id": "06229",
+                "text": "06.2.2.9 Anden ambulant tandlægebehandling"
+              },
+              {
+                "id": "0623",
+                "text": "06.2.3 Anden ambulant behandling"
+              },
+              {
+                "id": "06231",
+                "text": "06.2.3.1 Ambulant kurativ behandling og rehabilitering"
+              },
+              {
+                "id": "063",
+                "text": "06.3 Hospitalsindlæggelser"
+              },
+              {
+                "id": "0632",
+                "text": "06.3.2 Langtidsindlæggelse"
+              },
+              {
+                "id": "06320",
+                "text": "06.3.2.0 Langtidsindlæggelse"
+              },
+              {
+                "id": "07",
+                "text": "07 Transport"
+              },
+              {
+                "id": "071",
+                "text": "07.1 Køb af køretøjer"
+              },
+              {
+                "id": "0711",
+                "text": "07.1.1 Biler"
+              },
+              {
+                "id": "07111",
+                "text": "07.1.1.1 Nye biler"
+              },
+              {
+                "id": "07112",
+                "text": "07.1.1.2 Brugte biler"
+              },
+              {
+                "id": "0712",
+                "text": "07.1.2 Motorcykler"
+              },
+              {
+                "id": "07120",
+                "text": "07.1.2.0 Motorcykler"
+              },
+              {
+                "id": "0713",
+                "text": "07.1.3 Cykler"
+              },
+              {
+                "id": "07130",
+                "text": "07.1.3.0 Cykler"
+              },
+              {
+                "id": "072",
+                "text": "07.2 Drift af personlige transportmidler"
+              },
+              {
+                "id": "0721",
+                "text": "07.2.1 Dele og tilbehør til personlige transportmidler"
+              },
+              {
+                "id": "07211",
+                "text": "07.2.1.1 Dæk"
+              },
+              {
+                "id": "07212",
+                "text": "07.2.1.2 Dele til personlige transportmidler"
+              },
+              {
+                "id": "07213",
+                "text": "07.2.1.3 Tilbehør til personlige transportmidler"
+              },
+              {
+                "id": "0722",
+                "text": "07.2.2 Brændstof og smøremidler til personlige transportmidler"
+              },
+              {
+                "id": "07221",
+                "text": "07.2.2.1 Diesel"
+              },
+              {
+                "id": "07222",
+                "text": "07.2.2.2 Benzin"
+              },
+              {
+                "id": "07223",
+                "text": "07.2.2.3 Andre brændstoffer til personlige transportmidler"
+              },
+              {
+                "id": "07224",
+                "text": "07.2.2.4 Smøremidler"
+              },
+              {
+                "id": "0723",
+                "text": "07.2.3 Vedligeholdelse og reparation af personlige transportmidler"
+              },
+              {
+                "id": "07230",
+                "text": "07.2.3.0 Vedligeholdelse og reparation af personlige transportmidler"
+              },
+              {
+                "id": "0724",
+                "text": "07.2.4 Andre tjenesteydelser i forbindelse med personlige transportmidler"
+              },
+              {
+                "id": "07241",
+                "text": "07.2.4.1 Parkeringsfaciliteter"
+              },
+              {
+                "id": "07242",
+                "text": "07.2.4.2 Bro-, og vejskat o.l"
+              },
+              {
+                "id": "07243",
+                "text": "07.2.4.3 Køretimer og ¿prøver samt syn af køretøj"
+              },
+              {
+                "id": "07244",
+                "text": "07.2.4.4 Leje af personlige transportmidler uden fører"
+              },
+              {
+                "id": "073",
+                "text": "07.3 Personbefordring"
+              },
+              {
+                "id": "0731",
+                "text": "07.3.1 Skinnebåren personbefordring"
+              },
+              {
+                "id": "07311",
+                "text": "07.3.1.1 Personbefordring med tog"
+              },
+              {
+                "id": "07312",
+                "text": "07.3.1.2 Personbefordring med metro og  letbane"
+              },
+              {
+                "id": "0732",
+                "text": "07.3.2 Personbefordring ad vej"
+              },
+              {
+                "id": "07321",
+                "text": "07.3.2.1 Personbefordring med bus og rutebil"
+              },
+              {
+                "id": "07322",
+                "text": "07.3.2.2 Personbefordring med taxi og lejet køretøj med chauffør"
+              },
+              {
+                "id": "0733",
+                "text": "07.3.3 Personbefordring med fly"
+              },
+              {
+                "id": "07331",
+                "text": "07.3.3.1 Personbefordring med fly, indenrigs"
+              },
+              {
+                "id": "07332",
+                "text": "07.3.3.2 Personbefordring med fly, udenrigs"
+              },
+              {
+                "id": "0734",
+                "text": "07.3.4 Personbefordring med færge"
+              },
+              {
+                "id": "07340",
+                "text": "07.3.4.0 Personbefordring med færge"
+              },
+              {
+                "id": "0735",
+                "text": "07.3.5 Kombineret personbefordring"
+              },
+              {
+                "id": "07350",
+                "text": "07.3.5.0 Kombineret personbefordring"
+              },
+              {
+                "id": "074",
+                "text": "07.4 Transport af varer"
+              },
+              {
+                "id": "0741",
+                "text": "07.4.1 Postbefordring og kurertjenester"
+              },
+              {
+                "id": "07411",
+                "text": "07.4.1.1 Brevomdeling"
+              },
+              {
+                "id": "07412",
+                "text": "07.4.1.2 Kurertjenester og pakkeomdeling"
+              },
+              {
+                "id": "0749",
+                "text": "07.4.9 Anden varebefordring"
+              },
+              {
+                "id": "07491",
+                "text": "07.4.9.1 Flytning og opmagasinering"
+              },
+              {
+                "id": "07492",
+                "text": "07.4.9.2 Levering af varer"
+              },
+              {
+                "id": "08",
+                "text": "08 Information og kommunikation"
+              },
+              {
+                "id": "081",
+                "text": "08.1 Informations- og kommunikationsudstyr"
+              },
+              {
+                "id": "0811",
+                "text": "08.1.1 Fastnettelefonudstyr"
+              },
+              {
+                "id": "08110",
+                "text": "08.1.1.0 Fastnettelefonudstyr"
+              },
+              {
+                "id": "0812",
+                "text": "08.1.2 Mobiltelefonudstyr"
+              },
+              {
+                "id": "08120",
+                "text": "08.1.2.0 Mobiltelefonudstyr"
+              },
+              {
+                "id": "0813",
+                "text": "08.1.3 Databehandlingsudstyr"
+              },
+              {
+                "id": "08131",
+                "text": "08.1.3.1 Computere og tablets"
+              },
+              {
+                "id": "08132",
+                "text": "08.1.3.2 Printere o.l."
+              },
+              {
+                "id": "0814",
+                "text": "08.1.4 Udstyr til modtagelse, indspilning og reproduktion af lyd og billeder"
+              },
+              {
+                "id": "08140",
+                "text": "08.1.4.0 Udstyr til modtagelse, indspilning og reproduktion af lyd og billeder"
+              },
+              {
+                "id": "0815",
+                "text": "08.1.5 Uindspillede optagemedier"
+              },
+              {
+                "id": "08150",
+                "text": "08.1.5.0 Uindspillede optagemedier"
+              },
+              {
+                "id": "0819",
+                "text": "08.1.9 Andet informations- og kommunikationsudstyr og -tilbehør"
+              },
+              {
+                "id": "08191",
+                "text": "08.1.9.1 Andet informations- og kommunikationsudstyr"
+              },
+              {
+                "id": "08192",
+                "text": "08.1.9.2 Andet informations- og kommunikationstilbehør"
+              },
+              {
+                "id": "082",
+                "text": "08.2 Software, undtagen spil"
+              },
+              {
+                "id": "0820",
+                "text": "08.2.0 Software, undtagen spil"
+              },
+              {
+                "id": "08200",
+                "text": "08.2.0.0 Software, undtagen spil"
+              },
+              {
+                "id": "083",
+                "text": "08.3 Informations- og kommunikationstjenester"
+              },
+              {
+                "id": "0831",
+                "text": "08.3.1 Fastnetkommunikationstjenester"
+              },
+              {
+                "id": "08310",
+                "text": "08.3.1.0 Fastnetkommunikationstjenester"
+              },
+              {
+                "id": "0832",
+                "text": "08.3.2 Mobilkommunikationstjenester"
+              },
+              {
+                "id": "08320",
+                "text": "08.3.2.0 Mobilkommunikationstjenester"
+              },
+              {
+                "id": "0833",
+                "text": "08.3.3 Internetadgangstjenester og onlinelagringstjenester"
+              },
+              {
+                "id": "08330",
+                "text": "08.3.3.0 Internetadgangstjenester og onlinelagringstjenester"
+              },
+              {
+                "id": "0834",
+                "text": "08.3.4 Kombinerede telekommunikationstjenester"
+              },
+              {
+                "id": "08340",
+                "text": "08.3.4.0 Kombinerede telekommunikationstjenester"
+              },
+              {
+                "id": "0835",
+                "text": "08.3.5 Reparation og leje af informations- og kommunikationsudstyr"
+              },
+              {
+                "id": "08350",
+                "text": "08.3.5.0 Reparation og leje af informations- og kommunikationsudstyr"
+              },
+              {
+                "id": "0839",
+                "text": "08.3.9 Andre informations- og kommunikationstjenester"
+              },
+              {
+                "id": "08391",
+                "text": "08.3.9.1 Tv- og radiolicens og -afgifter"
+              },
+              {
+                "id": "08392",
+                "text": "08.3.9.2 Abonnementer på streamingtjenester og leje af film o.l."
+              },
+              {
+                "id": "09",
+                "text": "09 Fritid, sport og kultur"
+              },
+              {
+                "id": "091",
+                "text": "09.1 Varige forbrugsgoder til fritidsaktiviteter"
+              },
+              {
+                "id": "0911",
+                "text": "09.1.1 Fotografisk og kinematografisk udstyr og optiske instrumenter"
+              },
+              {
+                "id": "09111",
+                "text": "09.1.1.1 Kameraer"
+              },
+              {
+                "id": "09112",
+                "text": "09.1.1.2 Tilbehør til fotografisk og kinematografisk udstyr"
+              },
+              {
+                "id": "0912",
+                "text": "09.1.2 Større varige forbrugsgoder til fritidsaktiviteter"
+              },
+              {
+                "id": "09121",
+                "text": "09.1.2.1 Autocampere, campingvogne og påhængsvogne"
+              },
+              {
+                "id": "09123",
+                "text": "09.1.2.3 Både, lystbåde, påhængsmotorer og andet udstyr til vandsport"
+              },
+              {
+                "id": "092",
+                "text": "09.2 Ikke varige forbrugsgoder til fritidsaktiviteter"
+              },
+              {
+                "id": "0921",
+                "text": "09.2.1 Spil, legetøj og hobbyartikler"
+              },
+              {
+                "id": "09211",
+                "text": "09.2.1.1 Videospilcomputere, konsoller og spilapplikationer og -software"
+              },
+              {
+                "id": "09212",
+                "text": "09.2.1.2 Andet inden for spil, legetøj og hobbyartikler"
+              },
+              {
+                "id": "0922",
+                "text": "09.2.2 Sportsudstyr, campingudstyr og udstyr til udendørs fritidsaktiviteter"
+              },
+              {
+                "id": "09221",
+                "text": "09.2.2.1 Sportsudstyr"
+              },
+              {
+                "id": "09222",
+                "text": "09.2.2.2 Campingudstyr og udstyr til udendørs fritidsaktiviteter"
+              },
+              {
+                "id": "093",
+                "text": "09.3 Haveprodukter og kæledyr"
+              },
+              {
+                "id": "0931",
+                "text": "09.3.1 Haveprodukter, planter og blomster"
+              },
+              {
+                "id": "09311",
+                "text": "09.3.1.1 Haveprodukter"
+              },
+              {
+                "id": "09312",
+                "text": "09.3.1.2 Planter, frø og blomster"
+              },
+              {
+                "id": "0932",
+                "text": "09.3.2 Kæledyr og artikler til kæledyr"
+              },
+              {
+                "id": "09321",
+                "text": "09.3.2.1 Kæledyr"
+              },
+              {
+                "id": "09322",
+                "text": "09.3.2.2 Produkter til kæledyr og andre husdyr"
+              },
+              {
+                "id": "094",
+                "text": "09.4 Tjenester i forbindelse med fritidsaktiviteter"
+              },
+              {
+                "id": "0945",
+                "text": "09.4.5 Dyrlægetjenester og andre tjenester i forbindelse med kæledyr"
+              },
+              {
+                "id": "09450",
+                "text": "09.4.5.0 Dyrlægetjenester og andre tjenester i forbindelse med kæledyr"
+              },
+              {
+                "id": "0946",
+                "text": "09.4.6 Tjenester i forbindelse med sportsaktiviteter"
+              },
+              {
+                "id": "09461",
+                "text": "09.4.6.1 Tjenester i forbindelse med fritidsaktiviteter"
+              },
+              {
+                "id": "09462",
+                "text": "09.4.6.2 Tjenester i forbindelse med udøvelse af sport"
+              },
+              {
+                "id": "09463",
+                "text": "09.4.6.3 Tjenester i forbindelse med deltagelse i sportsbegivenheder"
+              },
+              {
+                "id": "0947",
+                "text": "09.4.7 Hasardspil"
+              },
+              {
+                "id": "09470",
+                "text": "09.4.7.0 Hasardspil"
+              },
+              {
+                "id": "095",
+                "text": "09.5 Kulturgoder"
+              },
+              {
+                "id": "0951",
+                "text": "09.5.1 Musikinstrumenter"
+              },
+              {
+                "id": "09510",
+                "text": "09.5.1.0 Musikinstrumenter"
+              },
+              {
+                "id": "0952",
+                "text": "09.5.2 Audiovisuelle medier"
+              },
+              {
+                "id": "09520",
+                "text": "09.5.2.0 Audiovisuelle medier"
+              },
+              {
+                "id": "096",
+                "text": "09.6 Kulturtjenester"
+              },
+              {
+                "id": "0961",
+                "text": "09.6.1 Tjenester ydet af biografer, teatre og koncertsteder"
+              },
+              {
+                "id": "09610",
+                "text": "09.6.1.0 Tjenester ydet af biografer, teatre og koncertsteder"
+              },
+              {
+                "id": "0962",
+                "text": "09.6.2 Tjenester ydet af museer, biblioteker og kultursteder"
+              },
+              {
+                "id": "09620",
+                "text": "09.6.2.0 Tjenester ydet af museer, biblioteker og kultursteder"
+              },
+              {
+                "id": "0963",
+                "text": "09.6.3 Fotografiske tjenester"
+              },
+              {
+                "id": "09630",
+                "text": "09.6.3.0 Fotografiske tjenester"
+              },
+              {
+                "id": "097",
+                "text": "09.7 Aviser, bøger og papirvarer"
+              },
+              {
+                "id": "0971",
+                "text": "09.7.1 Bøger"
+              },
+              {
+                "id": "09711",
+                "text": "09.7.1.1 Uddannelses- og lærebøger"
+              },
+              {
+                "id": "09719",
+                "text": "09.7.1.9 Andre bøger"
+              },
+              {
+                "id": "0972",
+                "text": "09.7.2 Aviser og tidsskrifter"
+              },
+              {
+                "id": "09721",
+                "text": "09.7.2.1 Aviser"
+              },
+              {
+                "id": "09722",
+                "text": "09.7.2.2 Blade og tidsskrifter"
+              },
+              {
+                "id": "0973",
+                "text": "09.7.3 Diverse tryksager"
+              },
+              {
+                "id": "09730",
+                "text": "09.7.3.0 Diverse tryksager"
+              },
+              {
+                "id": "0974",
+                "text": "09.7.4 Papir og tegnematerialer"
+              },
+              {
+                "id": "09740",
+                "text": "09.7.4.0 Papir og tegnematerialer"
+              },
+              {
+                "id": "098",
+                "text": "09.8 Pakkerejser"
+              },
+              {
+                "id": "0980",
+                "text": "09.8.0 Pakkerejser"
+              },
+              {
+                "id": "09800",
+                "text": "09.8.0.0 Pakkerejser"
+              },
+              {
+                "id": "10",
+                "text": "10 Undervisning"
+              },
+              {
+                "id": "101",
+                "text": "10.1 Førskole- og grundskole"
+              },
+              {
+                "id": "1010",
+                "text": "10.1.0 Førskole- og grundskole"
+              },
+              {
+                "id": "10102",
+                "text": "10.1.0.2 Grundskole"
+              },
+              {
+                "id": "102",
+                "text": "10.2 Efterskoler"
+              },
+              {
+                "id": "1020",
+                "text": "10.2.0 Efterskoler"
+              },
+              {
+                "id": "10200",
+                "text": "10.2.0.0 Efterskoler"
+              },
+              {
+                "id": "104",
+                "text": "10.4 Videregående uddannelse"
+              },
+              {
+                "id": "1040",
+                "text": "10.4.0 Videregående uddannelse"
+              },
+              {
+                "id": "10400",
+                "text": "10.4.0.0 Videregående uddannelse"
+              },
+              {
+                "id": "105",
+                "text": "10.5 Anden undervisning"
+              },
+              {
+                "id": "1050",
+                "text": "10.5.0 Anden undervisning uden for niveauplacering"
+              },
+              {
+                "id": "10509",
+                "text": "10.5.0.9 Anden undervisning uden for niveauplacering"
+              },
+              {
+                "id": "11",
+                "text": "11 Restauranter og hoteller"
+              },
+              {
+                "id": "111",
+                "text": "11.1 Restaurationstjenester"
+              },
+              {
+                "id": "1111",
+                "text": "11.1.1 Restauranter, caféer, take away o.l."
+              },
+              {
+                "id": "11111",
+                "text": "11.1.1.1 Restauranter, caféer o.l."
+              },
+              {
+                "id": "11112",
+                "text": "11.1.1.2 Take away"
+              },
+              {
+                "id": "1112",
+                "text": "11.1.2 Kantine"
+              },
+              {
+                "id": "11129",
+                "text": "11.1.2.9 Kantine"
+              },
+              {
+                "id": "112",
+                "text": "11.2 Overnatningsfaciliteter"
+              },
+              {
+                "id": "1120",
+                "text": "11.2.0 Overnatningsfaciliteter"
+              },
+              {
+                "id": "11201",
+                "text": "11.2.0.1 Hoteller, moteller, kroer og lignende overnatningsfaciliteter"
+              },
+              {
+                "id": "11202",
+                "text": "11.2.0.2 Feriecentre, campingpladser, vandrehjem o.l."
+              },
+              {
+                "id": "12",
+                "text": "12 Forsikring og finansielle tjenesteydelser"
+              },
+              {
+                "id": "121",
+                "text": "12.1 Forsikring"
+              },
+              {
+                "id": "1211",
+                "text": "12.1.1 Livs- og ulykkesforsikring"
+              },
+              {
+                "id": "12110",
+                "text": "12.1.1.0 Livs- og ulykkesforsikring"
+              },
+              {
+                "id": "1212",
+                "text": "12.1.2 Sygeforsikring"
+              },
+              {
+                "id": "12120",
+                "text": "12.1.2.0 Sygeforsikring"
+              },
+              {
+                "id": "1213",
+                "text": "12.1.3 Boligrelateret forsikring"
+              },
+              {
+                "id": "12130",
+                "text": "12.1.3.0 Boligrelateret forsikring"
+              },
+              {
+                "id": "1214",
+                "text": "12.1.4 Forsikring i forbindelse med transport"
+              },
+              {
+                "id": "12141",
+                "text": "12.1.4.1 Transportforsikring"
+              },
+              {
+                "id": "12142",
+                "text": "12.1.4.2 Rejseforsikring"
+              },
+              {
+                "id": "1219",
+                "text": "12.1.9 Anden forsikring"
+              },
+              {
+                "id": "12190",
+                "text": "12.1.9.0 Anden forsikring"
+              },
+              {
+                "id": "122",
+                "text": "12.2 Finansielle tjenesteydelser"
+              },
+              {
+                "id": "1222",
+                "text": "12.2.2 Eksplicitte gebyrer opkrævet af pengeinstitutter"
+              },
+              {
+                "id": "12220",
+                "text": "12.2.2.0 Eksplicitte gebyrer opkrævet af pengeinstitutter"
+              },
+              {
+                "id": "13",
+                "text": "13 Personlig pleje samt diverse varer og tjenester"
+              },
+              {
+                "id": "131",
+                "text": "13.1 Personlig pleje"
+              },
+              {
+                "id": "1311",
+                "text": "13.1.1 Elektriske apparater til personlig pleje"
+              },
+              {
+                "id": "13111",
+                "text": "13.1.1.1 Elektriske apparater til personlig pleje"
+              },
+              {
+                "id": "1312",
+                "text": "13.1.2 Andre apparater, artikler og produkter til personlig pleje"
+              },
+              {
+                "id": "13120",
+                "text": "13.1.2.0 Andre apparater, artikler og produkter til personlig pleje"
+              },
+              {
+                "id": "1313",
+                "text": "13.1.3 Frisør o.l."
+              },
+              {
+                "id": "13131",
+                "text": "13.1.3.1 Frisør"
+              },
+              {
+                "id": "13132",
+                "text": "13.1.3.2 Behandlinger inden for personlig pleje"
+              },
+              {
+                "id": "132",
+                "text": "13.2 Andre personlige effekter"
+              },
+              {
+                "id": "1321",
+                "text": "13.2.1 Smykker og ure"
+              },
+              {
+                "id": "13211",
+                "text": "13.2.1.1 Køb af smykker og ure"
+              },
+              {
+                "id": "13212",
+                "text": "13.2.1.2 Reparation og leje af smykker og ure"
+              },
+              {
+                "id": "1329",
+                "text": "13.2.9 Andre personlige effekter"
+              },
+              {
+                "id": "13291",
+                "text": "13.2.9.1 Rejseartikler, babyudstyr og andre personlige effekter"
+              },
+              {
+                "id": "133",
+                "text": "13.3 Daginstitutioner og social forsorg"
+              },
+              {
+                "id": "1330",
+                "text": "13.3.0 Daginstitutioner og social forsorg"
+              },
+              {
+                "id": "13301",
+                "text": "13.3.0.1 Børnepasning"
+              },
+              {
+                "id": "13302",
+                "text": "13.3.0.2 Plejehjemsudgifter"
+              },
+              {
+                "id": "13303",
+                "text": "13.3.0.3 Hjemmepleje"
+              },
+              {
+                "id": "139",
+                "text": "13.9 Andre tjenesteydelser"
+              },
+              {
+                "id": "1390",
+                "text": "13.9.0 Andre tjenesteydelser"
+              },
+              {
+                "id": "13909",
+                "text": "13.9.0.9 Andre tjenesteydelser"
+              },
+              {
+                "id": "141",
+                "text": "14.1 Varer i alt"
+              },
+              {
+                "id": "142",
+                "text": "14.2 Tjenester i alt"
+              },
+              {
+                "id": "151",
+                "text": "15.1 Forbrugerprisindeks ekskl. energi og ikke-forarbejdede fødevarer (Kerneinflation)"
+              },
+              {
+                "id": "161",
+                "text": "16.1 Forbrugerprisindeks ekskl. energi"
+              }
+            ]
+          },
+          {
+            "id": "ENHED",
+            "text": "enhed",
+            "time": false,
+            "values": [
+              {
+                "id": "100",
+                "text": "Indeks"
+              },
+              {
+                "id": "200",
+                "text": "Ændring i forhold til måneden før (pct.)"
+              },
+              {
+                "id": "300",
+                "text": "Ændring i forhold til samme måned året før (pct.)"
+              }
+            ]
+          },
+          {
+            "id": "Tid",
+            "text": "tid",
+            "time": true,
+            "values": [
+              {
+                "id": "2000M12",
+                "text": "2000M12"
+              },
+              {
+                "id": "2001M01",
+                "text": "2001M01"
+              },
+              {
+                "id": "2001M02",
+                "text": "2001M02"
+              },
+              {
+                "id": "2001M03",
+                "text": "2001M03"
+              },
+              {
+                "id": "2001M04",
+                "text": "2001M04"
+              },
+              {
+                "id": "2001M05",
+                "text": "2001M05"
+              },
+              {
+                "id": "2001M06",
+                "text": "2001M06"
+              },
+              {
+                "id": "2001M07",
+                "text": "2001M07"
+              },
+              {
+                "id": "2001M08",
+                "text": "2001M08"
+              },
+              {
+                "id": "2001M09",
+                "text": "2001M09"
+              },
+              {
+                "id": "2001M10",
+                "text": "2001M10"
+              },
+              {
+                "id": "2001M11",
+                "text": "2001M11"
+              },
+              {
+                "id": "2001M12",
+                "text": "2001M12"
+              },
+              {
+                "id": "2002M01",
+                "text": "2002M01"
+              },
+              {
+                "id": "2002M02",
+                "text": "2002M02"
+              },
+              {
+                "id": "2002M03",
+                "text": "2002M03"
+              },
+              {
+                "id": "2002M04",
+                "text": "2002M04"
+              },
+              {
+                "id": "2002M05",
+                "text": "2002M05"
+              },
+              {
+                "id": "2002M06",
+                "text": "2002M06"
+              },
+              {
+                "id": "2002M07",
+                "text": "2002M07"
+              },
+              {
+                "id": "2002M08",
+                "text": "2002M08"
+              },
+              {
+                "id": "2002M09",
+                "text": "2002M09"
+              },
+              {
+                "id": "2002M10",
+                "text": "2002M10"
+              },
+              {
+                "id": "2002M11",
+                "text": "2002M11"
+              },
+              {
+                "id": "2002M12",
+                "text": "2002M12"
+              },
+              {
+                "id": "2003M01",
+                "text": "2003M01"
+              },
+              {
+                "id": "2003M02",
+                "text": "2003M02"
+              },
+              {
+                "id": "2003M03",
+                "text": "2003M03"
+              },
+              {
+                "id": "2003M04",
+                "text": "2003M04"
+              },
+              {
+                "id": "2003M05",
+                "text": "2003M05"
+              },
+              {
+                "id": "2003M06",
+                "text": "2003M06"
+              },
+              {
+                "id": "2003M07",
+                "text": "2003M07"
+              },
+              {
+                "id": "2003M08",
+                "text": "2003M08"
+              },
+              {
+                "id": "2003M09",
+                "text": "2003M09"
+              },
+              {
+                "id": "2003M10",
+                "text": "2003M10"
+              },
+              {
+                "id": "2003M11",
+                "text": "2003M11"
+              },
+              {
+                "id": "2003M12",
+                "text": "2003M12"
+              },
+              {
+                "id": "2004M01",
+                "text": "2004M01"
+              },
+              {
+                "id": "2004M02",
+                "text": "2004M02"
+              },
+              {
+                "id": "2004M03",
+                "text": "2004M03"
+              },
+              {
+                "id": "2004M04",
+                "text": "2004M04"
+              },
+              {
+                "id": "2004M05",
+                "text": "2004M05"
+              },
+              {
+                "id": "2004M06",
+                "text": "2004M06"
+              },
+              {
+                "id": "2004M07",
+                "text": "2004M07"
+              },
+              {
+                "id": "2004M08",
+                "text": "2004M08"
+              },
+              {
+                "id": "2004M09",
+                "text": "2004M09"
+              },
+              {
+                "id": "2004M10",
+                "text": "2004M10"
+              },
+              {
+                "id": "2004M11",
+                "text": "2004M11"
+              },
+              {
+                "id": "2004M12",
+                "text": "2004M12"
+              },
+              {
+                "id": "2005M01",
+                "text": "2005M01"
+              },
+              {
+                "id": "2005M02",
+                "text": "2005M02"
+              },
+              {
+                "id": "2005M03",
+                "text": "2005M03"
+              },
+              {
+                "id": "2005M04",
+                "text": "2005M04"
+              },
+              {
+                "id": "2005M05",
+                "text": "2005M05"
+              },
+              {
+                "id": "2005M06",
+                "text": "2005M06"
+              },
+              {
+                "id": "2005M07",
+                "text": "2005M07"
+              },
+              {
+                "id": "2005M08",
+                "text": "2005M08"
+              },
+              {
+                "id": "2005M09",
+                "text": "2005M09"
+              },
+              {
+                "id": "2005M10",
+                "text": "2005M10"
+              },
+              {
+                "id": "2005M11",
+                "text": "2005M11"
+              },
+              {
+                "id": "2005M12",
+                "text": "2005M12"
+              },
+              {
+                "id": "2006M01",
+                "text": "2006M01"
+              },
+              {
+                "id": "2006M02",
+                "text": "2006M02"
+              },
+              {
+                "id": "2006M03",
+                "text": "2006M03"
+              },
+              {
+                "id": "2006M04",
+                "text": "2006M04"
+              },
+              {
+                "id": "2006M05",
+                "text": "2006M05"
+              },
+              {
+                "id": "2006M06",
+                "text": "2006M06"
+              },
+              {
+                "id": "2006M07",
+                "text": "2006M07"
+              },
+              {
+                "id": "2006M08",
+                "text": "2006M08"
+              },
+              {
+                "id": "2006M09",
+                "text": "2006M09"
+              },
+              {
+                "id": "2006M10",
+                "text": "2006M10"
+              },
+              {
+                "id": "2006M11",
+                "text": "2006M11"
+              },
+              {
+                "id": "2006M12",
+                "text": "2006M12"
+              },
+              {
+                "id": "2007M01",
+                "text": "2007M01"
+              },
+              {
+                "id": "2007M02",
+                "text": "2007M02"
+              },
+              {
+                "id": "2007M03",
+                "text": "2007M03"
+              },
+              {
+                "id": "2007M04",
+                "text": "2007M04"
+              },
+              {
+                "id": "2007M05",
+                "text": "2007M05"
+              },
+              {
+                "id": "2007M06",
+                "text": "2007M06"
+              },
+              {
+                "id": "2007M07",
+                "text": "2007M07"
+              },
+              {
+                "id": "2007M08",
+                "text": "2007M08"
+              },
+              {
+                "id": "2007M09",
+                "text": "2007M09"
+              },
+              {
+                "id": "2007M10",
+                "text": "2007M10"
+              },
+              {
+                "id": "2007M11",
+                "text": "2007M11"
+              },
+              {
+                "id": "2007M12",
+                "text": "2007M12"
+              },
+              {
+                "id": "2008M01",
+                "text": "2008M01"
+              },
+              {
+                "id": "2008M02",
+                "text": "2008M02"
+              },
+              {
+                "id": "2008M03",
+                "text": "2008M03"
+              },
+              {
+                "id": "2008M04",
+                "text": "2008M04"
+              },
+              {
+                "id": "2008M05",
+                "text": "2008M05"
+              },
+              {
+                "id": "2008M06",
+                "text": "2008M06"
+              },
+              {
+                "id": "2008M07",
+                "text": "2008M07"
+              },
+              {
+                "id": "2008M08",
+                "text": "2008M08"
+              },
+              {
+                "id": "2008M09",
+                "text": "2008M09"
+              },
+              {
+                "id": "2008M10",
+                "text": "2008M10"
+              },
+              {
+                "id": "2008M11",
+                "text": "2008M11"
+              },
+              {
+                "id": "2008M12",
+                "text": "2008M12"
+              },
+              {
+                "id": "2009M01",
+                "text": "2009M01"
+              },
+              {
+                "id": "2009M02",
+                "text": "2009M02"
+              },
+              {
+                "id": "2009M03",
+                "text": "2009M03"
+              },
+              {
+                "id": "2009M04",
+                "text": "2009M04"
+              },
+              {
+                "id": "2009M05",
+                "text": "2009M05"
+              },
+              {
+                "id": "2009M06",
+                "text": "2009M06"
+              },
+              {
+                "id": "2009M07",
+                "text": "2009M07"
+              },
+              {
+                "id": "2009M08",
+                "text": "2009M08"
+              },
+              {
+                "id": "2009M09",
+                "text": "2009M09"
+              },
+              {
+                "id": "2009M10",
+                "text": "2009M10"
+              },
+              {
+                "id": "2009M11",
+                "text": "2009M11"
+              },
+              {
+                "id": "2009M12",
+                "text": "2009M12"
+              },
+              {
+                "id": "2010M01",
+                "text": "2010M01"
+              },
+              {
+                "id": "2010M02",
+                "text": "2010M02"
+              },
+              {
+                "id": "2010M03",
+                "text": "2010M03"
+              },
+              {
+                "id": "2010M04",
+                "text": "2010M04"
+              },
+              {
+                "id": "2010M05",
+                "text": "2010M05"
+              },
+              {
+                "id": "2010M06",
+                "text": "2010M06"
+              },
+              {
+                "id": "2010M07",
+                "text": "2010M07"
+              },
+              {
+                "id": "2010M08",
+                "text": "2010M08"
+              },
+              {
+                "id": "2010M09",
+                "text": "2010M09"
+              },
+              {
+                "id": "2010M10",
+                "text": "2010M10"
+              },
+              {
+                "id": "2010M11",
+                "text": "2010M11"
+              },
+              {
+                "id": "2010M12",
+                "text": "2010M12"
+              },
+              {
+                "id": "2011M01",
+                "text": "2011M01"
+              },
+              {
+                "id": "2011M02",
+                "text": "2011M02"
+              },
+              {
+                "id": "2011M03",
+                "text": "2011M03"
+              },
+              {
+                "id": "2011M04",
+                "text": "2011M04"
+              },
+              {
+                "id": "2011M05",
+                "text": "2011M05"
+              },
+              {
+                "id": "2011M06",
+                "text": "2011M06"
+              },
+              {
+                "id": "2011M07",
+                "text": "2011M07"
+              },
+              {
+                "id": "2011M08",
+                "text": "2011M08"
+              },
+              {
+                "id": "2011M09",
+                "text": "2011M09"
+              },
+              {
+                "id": "2011M10",
+                "text": "2011M10"
+              },
+              {
+                "id": "2011M11",
+                "text": "2011M11"
+              },
+              {
+                "id": "2011M12",
+                "text": "2011M12"
+              },
+              {
+                "id": "2012M01",
+                "text": "2012M01"
+              },
+              {
+                "id": "2012M02",
+                "text": "2012M02"
+              },
+              {
+                "id": "2012M03",
+                "text": "2012M03"
+              },
+              {
+                "id": "2012M04",
+                "text": "2012M04"
+              },
+              {
+                "id": "2012M05",
+                "text": "2012M05"
+              },
+              {
+                "id": "2012M06",
+                "text": "2012M06"
+              },
+              {
+                "id": "2012M07",
+                "text": "2012M07"
+              },
+              {
+                "id": "2012M08",
+                "text": "2012M08"
+              },
+              {
+                "id": "2012M09",
+                "text": "2012M09"
+              },
+              {
+                "id": "2012M10",
+                "text": "2012M10"
+              },
+              {
+                "id": "2012M11",
+                "text": "2012M11"
+              },
+              {
+                "id": "2012M12",
+                "text": "2012M12"
+              },
+              {
+                "id": "2013M01",
+                "text": "2013M01"
+              },
+              {
+                "id": "2013M02",
+                "text": "2013M02"
+              },
+              {
+                "id": "2013M03",
+                "text": "2013M03"
+              },
+              {
+                "id": "2013M04",
+                "text": "2013M04"
+              },
+              {
+                "id": "2013M05",
+                "text": "2013M05"
+              },
+              {
+                "id": "2013M06",
+                "text": "2013M06"
+              },
+              {
+                "id": "2013M07",
+                "text": "2013M07"
+              },
+              {
+                "id": "2013M08",
+                "text": "2013M08"
+              },
+              {
+                "id": "2013M09",
+                "text": "2013M09"
+              },
+              {
+                "id": "2013M10",
+                "text": "2013M10"
+              },
+              {
+                "id": "2013M11",
+                "text": "2013M11"
+              },
+              {
+                "id": "2013M12",
+                "text": "2013M12"
+              },
+              {
+                "id": "2014M01",
+                "text": "2014M01"
+              },
+              {
+                "id": "2014M02",
+                "text": "2014M02"
+              },
+              {
+                "id": "2014M03",
+                "text": "2014M03"
+              },
+              {
+                "id": "2014M04",
+                "text": "2014M04"
+              },
+              {
+                "id": "2014M05",
+                "text": "2014M05"
+              },
+              {
+                "id": "2014M06",
+                "text": "2014M06"
+              },
+              {
+                "id": "2014M07",
+                "text": "2014M07"
+              },
+              {
+                "id": "2014M08",
+                "text": "2014M08"
+              },
+              {
+                "id": "2014M09",
+                "text": "2014M09"
+              },
+              {
+                "id": "2014M10",
+                "text": "2014M10"
+              },
+              {
+                "id": "2014M11",
+                "text": "2014M11"
+              },
+              {
+                "id": "2014M12",
+                "text": "2014M12"
+              },
+              {
+                "id": "2015M01",
+                "text": "2015M01"
+              },
+              {
+                "id": "2015M02",
+                "text": "2015M02"
+              },
+              {
+                "id": "2015M03",
+                "text": "2015M03"
+              },
+              {
+                "id": "2015M04",
+                "text": "2015M04"
+              },
+              {
+                "id": "2015M05",
+                "text": "2015M05"
+              },
+              {
+                "id": "2015M06",
+                "text": "2015M06"
+              },
+              {
+                "id": "2015M07",
+                "text": "2015M07"
+              },
+              {
+                "id": "2015M08",
+                "text": "2015M08"
+              },
+              {
+                "id": "2015M09",
+                "text": "2015M09"
+              },
+              {
+                "id": "2015M10",
+                "text": "2015M10"
+              },
+              {
+                "id": "2015M11",
+                "text": "2015M11"
+              },
+              {
+                "id": "2015M12",
+                "text": "2015M12"
+              },
+              {
+                "id": "2016M01",
+                "text": "2016M01"
+              },
+              {
+                "id": "2016M02",
+                "text": "2016M02"
+              },
+              {
+                "id": "2016M03",
+                "text": "2016M03"
+              },
+              {
+                "id": "2016M04",
+                "text": "2016M04"
+              },
+              {
+                "id": "2016M05",
+                "text": "2016M05"
+              },
+              {
+                "id": "2016M06",
+                "text": "2016M06"
+              },
+              {
+                "id": "2016M07",
+                "text": "2016M07"
+              },
+              {
+                "id": "2016M08",
+                "text": "2016M08"
+              },
+              {
+                "id": "2016M09",
+                "text": "2016M09"
+              },
+              {
+                "id": "2016M10",
+                "text": "2016M10"
+              },
+              {
+                "id": "2016M11",
+                "text": "2016M11"
+              },
+              {
+                "id": "2016M12",
+                "text": "2016M12"
+              },
+              {
+                "id": "2017M01",
+                "text": "2017M01"
+              },
+              {
+                "id": "2017M02",
+                "text": "2017M02"
+              },
+              {
+                "id": "2017M03",
+                "text": "2017M03"
+              },
+              {
+                "id": "2017M04",
+                "text": "2017M04"
+              },
+              {
+                "id": "2017M05",
+                "text": "2017M05"
+              },
+              {
+                "id": "2017M06",
+                "text": "2017M06"
+              },
+              {
+                "id": "2017M07",
+                "text": "2017M07"
+              },
+              {
+                "id": "2017M08",
+                "text": "2017M08"
+              },
+              {
+                "id": "2017M09",
+                "text": "2017M09"
+              },
+              {
+                "id": "2017M10",
+                "text": "2017M10"
+              },
+              {
+                "id": "2017M11",
+                "text": "2017M11"
+              },
+              {
+                "id": "2017M12",
+                "text": "2017M12"
+              },
+              {
+                "id": "2018M01",
+                "text": "2018M01"
+              },
+              {
+                "id": "2018M02",
+                "text": "2018M02"
+              },
+              {
+                "id": "2018M03",
+                "text": "2018M03"
+              },
+              {
+                "id": "2018M04",
+                "text": "2018M04"
+              },
+              {
+                "id": "2018M05",
+                "text": "2018M05"
+              },
+              {
+                "id": "2018M06",
+                "text": "2018M06"
+              },
+              {
+                "id": "2018M07",
+                "text": "2018M07"
+              },
+              {
+                "id": "2018M08",
+                "text": "2018M08"
+              },
+              {
+                "id": "2018M09",
+                "text": "2018M09"
+              },
+              {
+                "id": "2018M10",
+                "text": "2018M10"
+              },
+              {
+                "id": "2018M11",
+                "text": "2018M11"
+              },
+              {
+                "id": "2018M12",
+                "text": "2018M12"
+              },
+              {
+                "id": "2019M01",
+                "text": "2019M01"
+              },
+              {
+                "id": "2019M02",
+                "text": "2019M02"
+              },
+              {
+                "id": "2019M03",
+                "text": "2019M03"
+              },
+              {
+                "id": "2019M04",
+                "text": "2019M04"
+              },
+              {
+                "id": "2019M05",
+                "text": "2019M05"
+              },
+              {
+                "id": "2019M06",
+                "text": "2019M06"
+              },
+              {
+                "id": "2019M07",
+                "text": "2019M07"
+              },
+              {
+                "id": "2019M08",
+                "text": "2019M08"
+              },
+              {
+                "id": "2019M09",
+                "text": "2019M09"
+              },
+              {
+                "id": "2019M10",
+                "text": "2019M10"
+              },
+              {
+                "id": "2019M11",
+                "text": "2019M11"
+              },
+              {
+                "id": "2019M12",
+                "text": "2019M12"
+              },
+              {
+                "id": "2020M01",
+                "text": "2020M01"
+              },
+              {
+                "id": "2020M02",
+                "text": "2020M02"
+              },
+              {
+                "id": "2020M03",
+                "text": "2020M03"
+              },
+              {
+                "id": "2020M04",
+                "text": "2020M04"
+              },
+              {
+                "id": "2020M05",
+                "text": "2020M05"
+              },
+              {
+                "id": "2020M06",
+                "text": "2020M06"
+              },
+              {
+                "id": "2020M07",
+                "text": "2020M07"
+              },
+              {
+                "id": "2020M08",
+                "text": "2020M08"
+              },
+              {
+                "id": "2020M09",
+                "text": "2020M09"
+              },
+              {
+                "id": "2020M10",
+                "text": "2020M10"
+              },
+              {
+                "id": "2020M11",
+                "text": "2020M11"
+              },
+              {
+                "id": "2020M12",
+                "text": "2020M12"
+              },
+              {
+                "id": "2021M01",
+                "text": "2021M01"
+              },
+              {
+                "id": "2021M02",
+                "text": "2021M02"
+              },
+              {
+                "id": "2021M03",
+                "text": "2021M03"
+              },
+              {
+                "id": "2021M04",
+                "text": "2021M04"
+              },
+              {
+                "id": "2021M05",
+                "text": "2021M05"
+              },
+              {
+                "id": "2021M06",
+                "text": "2021M06"
+              },
+              {
+                "id": "2021M07",
+                "text": "2021M07"
+              },
+              {
+                "id": "2021M08",
+                "text": "2021M08"
+              },
+              {
+                "id": "2021M09",
+                "text": "2021M09"
+              },
+              {
+                "id": "2021M10",
+                "text": "2021M10"
+              },
+              {
+                "id": "2021M11",
+                "text": "2021M11"
+              },
+              {
+                "id": "2021M12",
+                "text": "2021M12"
+              },
+              {
+                "id": "2022M01",
+                "text": "2022M01"
+              },
+              {
+                "id": "2022M02",
+                "text": "2022M02"
+              },
+              {
+                "id": "2022M03",
+                "text": "2022M03"
+              },
+              {
+                "id": "2022M04",
+                "text": "2022M04"
+              },
+              {
+                "id": "2022M05",
+                "text": "2022M05"
+              },
+              {
+                "id": "2022M06",
+                "text": "2022M06"
+              },
+              {
+                "id": "2022M07",
+                "text": "2022M07"
+              },
+              {
+                "id": "2022M08",
+                "text": "2022M08"
+              },
+              {
+                "id": "2022M09",
+                "text": "2022M09"
+              },
+              {
+                "id": "2022M10",
+                "text": "2022M10"
+              },
+              {
+                "id": "2022M11",
+                "text": "2022M11"
+              },
+              {
+                "id": "2022M12",
+                "text": "2022M12"
+              },
+              {
+                "id": "2023M01",
+                "text": "2023M01"
+              },
+              {
+                "id": "2023M02",
+                "text": "2023M02"
+              },
+              {
+                "id": "2023M03",
+                "text": "2023M03"
+              },
+              {
+                "id": "2023M04",
+                "text": "2023M04"
+              },
+              {
+                "id": "2023M05",
+                "text": "2023M05"
+              },
+              {
+                "id": "2023M06",
+                "text": "2023M06"
+              },
+              {
+                "id": "2023M07",
+                "text": "2023M07"
+              },
+              {
+                "id": "2023M08",
+                "text": "2023M08"
+              },
+              {
+                "id": "2023M09",
+                "text": "2023M09"
+              },
+              {
+                "id": "2023M10",
+                "text": "2023M10"
+              },
+              {
+                "id": "2023M11",
+                "text": "2023M11"
+              },
+              {
+                "id": "2023M12",
+                "text": "2023M12"
+              },
+              {
+                "id": "2024M01",
+                "text": "2024M01"
+              },
+              {
+                "id": "2024M02",
+                "text": "2024M02"
+              },
+              {
+                "id": "2024M03",
+                "text": "2024M03"
+              },
+              {
+                "id": "2024M04",
+                "text": "2024M04"
+              },
+              {
+                "id": "2024M05",
+                "text": "2024M05"
+              },
+              {
+                "id": "2024M06",
+                "text": "2024M06"
+              },
+              {
+                "id": "2024M07",
+                "text": "2024M07"
+              },
+              {
+                "id": "2024M08",
+                "text": "2024M08"
+              },
+              {
+                "id": "2024M09",
+                "text": "2024M09"
+              },
+              {
+                "id": "2024M10",
+                "text": "2024M10"
+              },
+              {
+                "id": "2024M11",
+                "text": "2024M11"
+              },
+              {
+                "id": "2024M12",
+                "text": "2024M12"
+              },
+              {
+                "id": "2025M01",
+                "text": "2025M01"
+              },
+              {
+                "id": "2025M02",
+                "text": "2025M02"
+              },
+              {
+                "id": "2025M03",
+                "text": "2025M03"
+              },
+              {
+                "id": "2025M04",
+                "text": "2025M04"
+              },
+              {
+                "id": "2025M05",
+                "text": "2025M05"
+              },
+              {
+                "id": "2025M06",
+                "text": "2025M06"
+              },
+              {
+                "id": "2025M07",
+                "text": "2025M07"
+              },
+              {
+                "id": "2025M08",
+                "text": "2025M08"
+              },
+              {
+                "id": "2025M09",
+                "text": "2025M09"
+              },
+              {
+                "id": "2025M10",
+                "text": "2025M10"
+              },
+              {
+                "id": "2025M11",
+                "text": "2025M11"
+              },
+              {
+                "id": "2025M12",
+                "text": "2025M12"
+              },
+              {
+                "id": "2026M01",
+                "text": "2026M01"
+              },
+              {
+                "id": "2026M02",
+                "text": "2026M02"
+              },
+              {
+                "id": "2026M03",
+                "text": "2026M03"
+              },
+              {
+                "id": "2026M04",
+                "text": "2026M04"
+              },
+              {
+                "id": "2026M05",
+                "text": "2026M05"
+              },
+              {
+                "id": "2026M06",
+                "text": "2026M06"
+              },
+              {
+                "id": "2026M07",
+                "text": "2026M07"
+              },
+              {
+                "id": "2026M08",
+                "text": "2026M08"
+              },
+              {
+                "id": "2026M09",
+                "text": "2026M09"
+              }
+            ]
+          }
+        ],
+        "documentation": {
+          "url": "https://www.dst.dk/statistikdokumentation/915908cd-1d27-45e5-91ca-1cbd5b73f1a0"
+        },
+        "footnote": null
+      },
+      "request": {
+        "table": "PRIS01",
+        "variables": [
+          {
+            "code": "VAREGR",
+            "values": [
+              "0451",
+              "0722"
+            ]
+          },
+          {
+            "code": "ENHED",
+            "values": [
+              "100"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "2025M09",
+              "2026M09"
+            ]
+          }
+        ]
+      },
+      "rawCsv": "VAREGR;ENHED;TID;INDHOLD\r\n0451;100;2025M09;89,15\r\n0451;100;2026M09;80,08\r\n0722;100;2025M09;99,18\r\n0722;100;2026M09;130,45\r\n",
+      "rows": [
+        {
+          "VAREGR": "0451",
+          "ENHED": "100",
+          "TID": "2025M09",
+          "INDHOLD": "89,15"
+        },
+        {
+          "VAREGR": "0451",
+          "ENHED": "100",
+          "TID": "2026M09",
+          "INDHOLD": "80,08"
+        },
+        {
+          "VAREGR": "0722",
+          "ENHED": "100",
+          "TID": "2025M09",
+          "INDHOLD": "99,18"
+        },
+        {
+          "VAREGR": "0722",
+          "ENHED": "100",
+          "TID": "2026M09",
+          "INDHOLD": "130,45"
+        }
+      ],
+      "retrievedAt": "2026-10-20T21:48:30.318Z",
+      "status": "public-api-extract",
+      "sourceUrl": "https://www.statistikbanken.dk/PRIS01"
+    },
+    "population": {
+      "metadata": {
+        "id": "FOLK1A",
+        "text": "Befolkningen den 1. i kvartalet",
+        "description": "Befolkningen den 1. i kvartalet efter område, køn, alder, civilstand og tid",
+        "unit": "Antal",
+        "updated": "2026-08-10T08:00:00",
+        "active": true,
+        "variables": [
+          {
+            "id": "OMRÅDE",
+            "text": "område",
+            "time": false,
+            "values": [
+              {
+                "id": "000",
+                "text": "Hele landet"
+              },
+              {
+                "id": "084",
+                "text": "Region Hovedstaden"
+              },
+              {
+                "id": "101",
+                "text": "København"
+              },
+              {
+                "id": "147",
+                "text": "Frederiksberg"
+              },
+              {
+                "id": "155",
+                "text": "Dragør"
+              },
+              {
+                "id": "185",
+                "text": "Tårnby"
+              },
+              {
+                "id": "165",
+                "text": "Albertslund"
+              },
+              {
+                "id": "151",
+                "text": "Ballerup"
+              },
+              {
+                "id": "153",
+                "text": "Brøndby"
+              },
+              {
+                "id": "157",
+                "text": "Gentofte"
+              },
+              {
+                "id": "159",
+                "text": "Gladsaxe"
+              },
+              {
+                "id": "161",
+                "text": "Glostrup"
+              },
+              {
+                "id": "163",
+                "text": "Herlev"
+              },
+              {
+                "id": "167",
+                "text": "Hvidovre"
+              },
+              {
+                "id": "169",
+                "text": "Høje-Taastrup"
+              },
+              {
+                "id": "183",
+                "text": "Ishøj"
+              },
+              {
+                "id": "173",
+                "text": "Lyngby-Taarbæk"
+              },
+              {
+                "id": "175",
+                "text": "Rødovre"
+              },
+              {
+                "id": "187",
+                "text": "Vallensbæk"
+              },
+              {
+                "id": "201",
+                "text": "Allerød"
+              },
+              {
+                "id": "240",
+                "text": "Egedal"
+              },
+              {
+                "id": "210",
+                "text": "Fredensborg"
+              },
+              {
+                "id": "250",
+                "text": "Frederikssund"
+              },
+              {
+                "id": "190",
+                "text": "Furesø"
+              },
+              {
+                "id": "270",
+                "text": "Gribskov"
+              },
+              {
+                "id": "260",
+                "text": "Halsnæs"
+              },
+              {
+                "id": "217",
+                "text": "Helsingør"
+              },
+              {
+                "id": "219",
+                "text": "Hillerød"
+              },
+              {
+                "id": "223",
+                "text": "Hørsholm"
+              },
+              {
+                "id": "230",
+                "text": "Rudersdal"
+              },
+              {
+                "id": "400",
+                "text": "Bornholm"
+              },
+              {
+                "id": "411",
+                "text": "Christiansø"
+              },
+              {
+                "id": "085",
+                "text": "Region Sjælland"
+              },
+              {
+                "id": "253",
+                "text": "Greve"
+              },
+              {
+                "id": "259",
+                "text": "Køge"
+              },
+              {
+                "id": "350",
+                "text": "Lejre"
+              },
+              {
+                "id": "265",
+                "text": "Roskilde"
+              },
+              {
+                "id": "269",
+                "text": "Solrød"
+              },
+              {
+                "id": "320",
+                "text": "Faxe"
+              },
+              {
+                "id": "376",
+                "text": "Guldborgsund"
+              },
+              {
+                "id": "316",
+                "text": "Holbæk"
+              },
+              {
+                "id": "326",
+                "text": "Kalundborg"
+              },
+              {
+                "id": "360",
+                "text": "Lolland"
+              },
+              {
+                "id": "370",
+                "text": "Næstved"
+              },
+              {
+                "id": "306",
+                "text": "Odsherred"
+              },
+              {
+                "id": "329",
+                "text": "Ringsted"
+              },
+              {
+                "id": "330",
+                "text": "Slagelse"
+              },
+              {
+                "id": "340",
+                "text": "Sorø"
+              },
+              {
+                "id": "336",
+                "text": "Stevns"
+              },
+              {
+                "id": "390",
+                "text": "Vordingborg"
+              },
+              {
+                "id": "083",
+                "text": "Region Syddanmark"
+              },
+              {
+                "id": "420",
+                "text": "Assens"
+              },
+              {
+                "id": "430",
+                "text": "Faaborg-Midtfyn"
+              },
+              {
+                "id": "440",
+                "text": "Kerteminde"
+              },
+              {
+                "id": "482",
+                "text": "Langeland"
+              },
+              {
+                "id": "410",
+                "text": "Middelfart"
+              },
+              {
+                "id": "480",
+                "text": "Nordfyns"
+              },
+              {
+                "id": "450",
+                "text": "Nyborg"
+              },
+              {
+                "id": "461",
+                "text": "Odense"
+              },
+              {
+                "id": "479",
+                "text": "Svendborg"
+              },
+              {
+                "id": "492",
+                "text": "Ærø"
+              },
+              {
+                "id": "530",
+                "text": "Billund"
+              },
+              {
+                "id": "561",
+                "text": "Esbjerg"
+              },
+              {
+                "id": "563",
+                "text": "Fanø"
+              },
+              {
+                "id": "607",
+                "text": "Fredericia"
+              },
+              {
+                "id": "510",
+                "text": "Haderslev"
+              },
+              {
+                "id": "621",
+                "text": "Kolding"
+              },
+              {
+                "id": "540",
+                "text": "Sønderborg"
+              },
+              {
+                "id": "550",
+                "text": "Tønder"
+              },
+              {
+                "id": "573",
+                "text": "Varde"
+              },
+              {
+                "id": "575",
+                "text": "Vejen"
+              },
+              {
+                "id": "630",
+                "text": "Vejle"
+              },
+              {
+                "id": "580",
+                "text": "Aabenraa"
+              },
+              {
+                "id": "082",
+                "text": "Region Midtjylland"
+              },
+              {
+                "id": "710",
+                "text": "Favrskov"
+              },
+              {
+                "id": "766",
+                "text": "Hedensted"
+              },
+              {
+                "id": "615",
+                "text": "Horsens"
+              },
+              {
+                "id": "707",
+                "text": "Norddjurs"
+              },
+              {
+                "id": "727",
+                "text": "Odder"
+              },
+              {
+                "id": "730",
+                "text": "Randers"
+              },
+              {
+                "id": "741",
+                "text": "Samsø"
+              },
+              {
+                "id": "740",
+                "text": "Silkeborg"
+              },
+              {
+                "id": "746",
+                "text": "Skanderborg"
+              },
+              {
+                "id": "706",
+                "text": "Syddjurs"
+              },
+              {
+                "id": "751",
+                "text": "Aarhus"
+              },
+              {
+                "id": "657",
+                "text": "Herning"
+              },
+              {
+                "id": "661",
+                "text": "Holstebro"
+              },
+              {
+                "id": "756",
+                "text": "Ikast-Brande"
+              },
+              {
+                "id": "665",
+                "text": "Lemvig"
+              },
+              {
+                "id": "760",
+                "text": "Ringkøbing-Skjern"
+              },
+              {
+                "id": "779",
+                "text": "Skive"
+              },
+              {
+                "id": "671",
+                "text": "Struer"
+              },
+              {
+                "id": "791",
+                "text": "Viborg"
+              },
+              {
+                "id": "081",
+                "text": "Region Nordjylland"
+              },
+              {
+                "id": "810",
+                "text": "Brønderslev"
+              },
+              {
+                "id": "813",
+                "text": "Frederikshavn"
+              },
+              {
+                "id": "860",
+                "text": "Hjørring"
+              },
+              {
+                "id": "849",
+                "text": "Jammerbugt"
+              },
+              {
+                "id": "825",
+                "text": "Læsø"
+              },
+              {
+                "id": "846",
+                "text": "Mariagerfjord"
+              },
+              {
+                "id": "773",
+                "text": "Morsø"
+              },
+              {
+                "id": "840",
+                "text": "Rebild"
+              },
+              {
+                "id": "787",
+                "text": "Thisted"
+              },
+              {
+                "id": "820",
+                "text": "Vesthimmerlands"
+              },
+              {
+                "id": "851",
+                "text": "Aalborg"
+              }
+            ]
+          },
+          {
+            "id": "KØN",
+            "text": "køn",
+            "time": false,
+            "values": [
+              {
+                "id": "TOT",
+                "text": "I alt"
+              },
+              {
+                "id": "1",
+                "text": "Mænd"
+              },
+              {
+                "id": "2",
+                "text": "Kvinder"
+              }
+            ]
+          },
+          {
+            "id": "ALDER",
+            "text": "alder",
+            "time": false,
+            "values": [
+              {
+                "id": "IALT",
+                "text": "Alder i alt"
+              },
+              {
+                "id": "0",
+                "text": "0 år"
+              },
+              {
+                "id": "1",
+                "text": "1 år"
+              },
+              {
+                "id": "2",
+                "text": "2 år"
+              },
+              {
+                "id": "3",
+                "text": "3 år"
+              },
+              {
+                "id": "4",
+                "text": "4 år"
+              },
+              {
+                "id": "5",
+                "text": "5 år"
+              },
+              {
+                "id": "6",
+                "text": "6 år"
+              },
+              {
+                "id": "7",
+                "text": "7 år"
+              },
+              {
+                "id": "8",
+                "text": "8 år"
+              },
+              {
+                "id": "9",
+                "text": "9 år"
+              },
+              {
+                "id": "10",
+                "text": "10 år"
+              },
+              {
+                "id": "11",
+                "text": "11 år"
+              },
+              {
+                "id": "12",
+                "text": "12 år"
+              },
+              {
+                "id": "13",
+                "text": "13 år"
+              },
+              {
+                "id": "14",
+                "text": "14 år"
+              },
+              {
+                "id": "15",
+                "text": "15 år"
+              },
+              {
+                "id": "16",
+                "text": "16 år"
+              },
+              {
+                "id": "17",
+                "text": "17 år"
+              },
+              {
+                "id": "18",
+                "text": "18 år"
+              },
+              {
+                "id": "19",
+                "text": "19 år"
+              },
+              {
+                "id": "20",
+                "text": "20 år"
+              },
+              {
+                "id": "21",
+                "text": "21 år"
+              },
+              {
+                "id": "22",
+                "text": "22 år"
+              },
+              {
+                "id": "23",
+                "text": "23 år"
+              },
+              {
+                "id": "24",
+                "text": "24 år"
+              },
+              {
+                "id": "25",
+                "text": "25 år"
+              },
+              {
+                "id": "26",
+                "text": "26 år"
+              },
+              {
+                "id": "27",
+                "text": "27 år"
+              },
+              {
+                "id": "28",
+                "text": "28 år"
+              },
+              {
+                "id": "29",
+                "text": "29 år"
+              },
+              {
+                "id": "30",
+                "text": "30 år"
+              },
+              {
+                "id": "31",
+                "text": "31 år"
+              },
+              {
+                "id": "32",
+                "text": "32 år"
+              },
+              {
+                "id": "33",
+                "text": "33 år"
+              },
+              {
+                "id": "34",
+                "text": "34 år"
+              },
+              {
+                "id": "35",
+                "text": "35 år"
+              },
+              {
+                "id": "36",
+                "text": "36 år"
+              },
+              {
+                "id": "37",
+                "text": "37 år"
+              },
+              {
+                "id": "38",
+                "text": "38 år"
+              },
+              {
+                "id": "39",
+                "text": "39 år"
+              },
+              {
+                "id": "40",
+                "text": "40 år"
+              },
+              {
+                "id": "41",
+                "text": "41 år"
+              },
+              {
+                "id": "42",
+                "text": "42 år"
+              },
+              {
+                "id": "43",
+                "text": "43 år"
+              },
+              {
+                "id": "44",
+                "text": "44 år"
+              },
+              {
+                "id": "45",
+                "text": "45 år"
+              },
+              {
+                "id": "46",
+                "text": "46 år"
+              },
+              {
+                "id": "47",
+                "text": "47 år"
+              },
+              {
+                "id": "48",
+                "text": "48 år"
+              },
+              {
+                "id": "49",
+                "text": "49 år"
+              },
+              {
+                "id": "50",
+                "text": "50 år"
+              },
+              {
+                "id": "51",
+                "text": "51 år"
+              },
+              {
+                "id": "52",
+                "text": "52 år"
+              },
+              {
+                "id": "53",
+                "text": "53 år"
+              },
+              {
+                "id": "54",
+                "text": "54 år"
+              },
+              {
+                "id": "55",
+                "text": "55 år"
+              },
+              {
+                "id": "56",
+                "text": "56 år"
+              },
+              {
+                "id": "57",
+                "text": "57 år"
+              },
+              {
+                "id": "58",
+                "text": "58 år"
+              },
+              {
+                "id": "59",
+                "text": "59 år"
+              },
+              {
+                "id": "60",
+                "text": "60 år"
+              },
+              {
+                "id": "61",
+                "text": "61 år"
+              },
+              {
+                "id": "62",
+                "text": "62 år"
+              },
+              {
+                "id": "63",
+                "text": "63 år"
+              },
+              {
+                "id": "64",
+                "text": "64 år"
+              },
+              {
+                "id": "65",
+                "text": "65 år"
+              },
+              {
+                "id": "66",
+                "text": "66 år"
+              },
+              {
+                "id": "67",
+                "text": "67 år"
+              },
+              {
+                "id": "68",
+                "text": "68 år"
+              },
+              {
+                "id": "69",
+                "text": "69 år"
+              },
+              {
+                "id": "70",
+                "text": "70 år"
+              },
+              {
+                "id": "71",
+                "text": "71 år"
+              },
+              {
+                "id": "72",
+                "text": "72 år"
+              },
+              {
+                "id": "73",
+                "text": "73 år"
+              },
+              {
+                "id": "74",
+                "text": "74 år"
+              },
+              {
+                "id": "75",
+                "text": "75 år"
+              },
+              {
+                "id": "76",
+                "text": "76 år"
+              },
+              {
+                "id": "77",
+                "text": "77 år"
+              },
+              {
+                "id": "78",
+                "text": "78 år"
+              },
+              {
+                "id": "79",
+                "text": "79 år"
+              },
+              {
+                "id": "80",
+                "text": "80 år"
+              },
+              {
+                "id": "81",
+                "text": "81 år"
+              },
+              {
+                "id": "82",
+                "text": "82 år"
+              },
+              {
+                "id": "83",
+                "text": "83 år"
+              },
+              {
+                "id": "84",
+                "text": "84 år"
+              },
+              {
+                "id": "85",
+                "text": "85 år"
+              },
+              {
+                "id": "86",
+                "text": "86 år"
+              },
+              {
+                "id": "87",
+                "text": "87 år"
+              },
+              {
+                "id": "88",
+                "text": "88 år"
+              },
+              {
+                "id": "89",
+                "text": "89 år"
+              },
+              {
+                "id": "90",
+                "text": "90 år"
+              },
+              {
+                "id": "91",
+                "text": "91 år"
+              },
+              {
+                "id": "92",
+                "text": "92 år"
+              },
+              {
+                "id": "93",
+                "text": "93 år"
+              },
+              {
+                "id": "94",
+                "text": "94 år"
+              },
+              {
+                "id": "95",
+                "text": "95 år"
+              },
+              {
+                "id": "96",
+                "text": "96 år"
+              },
+              {
+                "id": "97",
+                "text": "97 år"
+              },
+              {
+                "id": "98",
+                "text": "98 år"
+              },
+              {
+                "id": "99",
+                "text": "99 år"
+              },
+              {
+                "id": "100",
+                "text": "100 år"
+              },
+              {
+                "id": "101",
+                "text": "101 år"
+              },
+              {
+                "id": "102",
+                "text": "102 år"
+              },
+              {
+                "id": "103",
+                "text": "103 år"
+              },
+              {
+                "id": "104",
+                "text": "104 år"
+              },
+              {
+                "id": "105",
+                "text": "105 år"
+              },
+              {
+                "id": "106",
+                "text": "106 år"
+              },
+              {
+                "id": "107",
+                "text": "107 år"
+              },
+              {
+                "id": "108",
+                "text": "108 år"
+              },
+              {
+                "id": "109",
+                "text": "109 år"
+              },
+              {
+                "id": "110",
+                "text": "110 år"
+              },
+              {
+                "id": "111",
+                "text": "111 år"
+              },
+              {
+                "id": "112",
+                "text": "112 år"
+              },
+              {
+                "id": "113",
+                "text": "113 år"
+              },
+              {
+                "id": "114",
+                "text": "114 år"
+              },
+              {
+                "id": "115",
+                "text": "115 år"
+              },
+              {
+                "id": "116",
+                "text": "116 år"
+              },
+              {
+                "id": "117",
+                "text": "117 år"
+              },
+              {
+                "id": "118",
+                "text": "118 år"
+              },
+              {
+                "id": "119",
+                "text": "119 år"
+              },
+              {
+                "id": "120",
+                "text": "120 år"
+              },
+              {
+                "id": "121",
+                "text": "121 år"
+              },
+              {
+                "id": "122",
+                "text": "122 år"
+              },
+              {
+                "id": "123",
+                "text": "123 år"
+              },
+              {
+                "id": "124",
+                "text": "124 år"
+              },
+              {
+                "id": "125",
+                "text": "125 år"
+              }
+            ]
+          },
+          {
+            "id": "CIVILSTAND",
+            "text": "civilstand",
+            "time": false,
+            "values": [
+              {
+                "id": "TOT",
+                "text": "I alt"
+              },
+              {
+                "id": "U",
+                "text": "Ugift"
+              },
+              {
+                "id": "G",
+                "text": "Gift/separeret"
+              },
+              {
+                "id": "E",
+                "text": "Enke/enkemand"
+              },
+              {
+                "id": "F",
+                "text": "Fraskilt"
+              }
+            ]
+          },
+          {
+            "id": "Tid",
+            "text": "tid",
+            "time": true,
+            "values": [
+              {
+                "id": "2008K1",
+                "text": "2008K1"
+              },
+              {
+                "id": "2008K2",
+                "text": "2008K2"
+              },
+              {
+                "id": "2008K3",
+                "text": "2008K3"
+              },
+              {
+                "id": "2008K4",
+                "text": "2008K4"
+              },
+              {
+                "id": "2009K1",
+                "text": "2009K1"
+              },
+              {
+                "id": "2009K2",
+                "text": "2009K2"
+              },
+              {
+                "id": "2009K3",
+                "text": "2009K3"
+              },
+              {
+                "id": "2009K4",
+                "text": "2009K4"
+              },
+              {
+                "id": "2010K1",
+                "text": "2010K1"
+              },
+              {
+                "id": "2010K2",
+                "text": "2010K2"
+              },
+              {
+                "id": "2010K3",
+                "text": "2010K3"
+              },
+              {
+                "id": "2010K4",
+                "text": "2010K4"
+              },
+              {
+                "id": "2011K1",
+                "text": "2011K1"
+              },
+              {
+                "id": "2011K2",
+                "text": "2011K2"
+              },
+              {
+                "id": "2011K3",
+                "text": "2011K3"
+              },
+              {
+                "id": "2011K4",
+                "text": "2011K4"
+              },
+              {
+                "id": "2012K1",
+                "text": "2012K1"
+              },
+              {
+                "id": "2012K2",
+                "text": "2012K2"
+              },
+              {
+                "id": "2012K3",
+                "text": "2012K3"
+              },
+              {
+                "id": "2012K4",
+                "text": "2012K4"
+              },
+              {
+                "id": "2013K1",
+                "text": "2013K1"
+              },
+              {
+                "id": "2013K2",
+                "text": "2013K2"
+              },
+              {
+                "id": "2013K3",
+                "text": "2013K3"
+              },
+              {
+                "id": "2013K4",
+                "text": "2013K4"
+              },
+              {
+                "id": "2014K1",
+                "text": "2014K1"
+              },
+              {
+                "id": "2014K2",
+                "text": "2014K2"
+              },
+              {
+                "id": "2014K3",
+                "text": "2014K3"
+              },
+              {
+                "id": "2014K4",
+                "text": "2014K4"
+              },
+              {
+                "id": "2015K1",
+                "text": "2015K1"
+              },
+              {
+                "id": "2015K2",
+                "text": "2015K2"
+              },
+              {
+                "id": "2015K3",
+                "text": "2015K3"
+              },
+              {
+                "id": "2015K4",
+                "text": "2015K4"
+              },
+              {
+                "id": "2016K1",
+                "text": "2016K1"
+              },
+              {
+                "id": "2016K2",
+                "text": "2016K2"
+              },
+              {
+                "id": "2016K3",
+                "text": "2016K3"
+              },
+              {
+                "id": "2016K4",
+                "text": "2016K4"
+              },
+              {
+                "id": "2017K1",
+                "text": "2017K1"
+              },
+              {
+                "id": "2017K2",
+                "text": "2017K2"
+              },
+              {
+                "id": "2017K3",
+                "text": "2017K3"
+              },
+              {
+                "id": "2017K4",
+                "text": "2017K4"
+              },
+              {
+                "id": "2018K1",
+                "text": "2018K1"
+              },
+              {
+                "id": "2018K2",
+                "text": "2018K2"
+              },
+              {
+                "id": "2018K3",
+                "text": "2018K3"
+              },
+              {
+                "id": "2018K4",
+                "text": "2018K4"
+              },
+              {
+                "id": "2019K1",
+                "text": "2019K1"
+              },
+              {
+                "id": "2019K2",
+                "text": "2019K2"
+              },
+              {
+                "id": "2019K3",
+                "text": "2019K3"
+              },
+              {
+                "id": "2019K4",
+                "text": "2019K4"
+              },
+              {
+                "id": "2020K1",
+                "text": "2020K1"
+              },
+              {
+                "id": "2020K2",
+                "text": "2020K2"
+              },
+              {
+                "id": "2020K3",
+                "text": "2020K3"
+              },
+              {
+                "id": "2020K4",
+                "text": "2020K4"
+              },
+              {
+                "id": "2021K1",
+                "text": "2021K1"
+              },
+              {
+                "id": "2021K2",
+                "text": "2021K2"
+              },
+              {
+                "id": "2021K3",
+                "text": "2021K3"
+              },
+              {
+                "id": "2021K4",
+                "text": "2021K4"
+              },
+              {
+                "id": "2022K1",
+                "text": "2022K1"
+              },
+              {
+                "id": "2022K2",
+                "text": "2022K2"
+              },
+              {
+                "id": "2022K3",
+                "text": "2022K3"
+              },
+              {
+                "id": "2022K4",
+                "text": "2022K4"
+              },
+              {
+                "id": "2023K1",
+                "text": "2023K1"
+              },
+              {
+                "id": "2023K2",
+                "text": "2023K2"
+              },
+              {
+                "id": "2023K3",
+                "text": "2023K3"
+              },
+              {
+                "id": "2023K4",
+                "text": "2023K4"
+              },
+              {
+                "id": "2024K1",
+                "text": "2024K1"
+              },
+              {
+                "id": "2024K2",
+                "text": "2024K2"
+              },
+              {
+                "id": "2024K3",
+                "text": "2024K3"
+              },
+              {
+                "id": "2024K4",
+                "text": "2024K4"
+              },
+              {
+                "id": "2025K1",
+                "text": "2025K1"
+              },
+              {
+                "id": "2025K2",
+                "text": "2025K2"
+              },
+              {
+                "id": "2025K3",
+                "text": "2025K3"
+              },
+              {
+                "id": "2025K4",
+                "text": "2025K4"
+              },
+              {
+                "id": "2026K1",
+                "text": "2026K1"
+              },
+              {
+                "id": "2026K2",
+                "text": "2026K2"
+              },
+              {
+                "id": "2026K3",
+                "text": "2026K3"
+              }
+            ]
+          }
+        ],
+        "documentation": {
+          "url": "https://www.dst.dk/statistikdokumentation/4a12721d-a8b0-4bde-82d7-1d1c6f319de3"
+        },
+        "footnote": null
+      },
+      "request": {
+        "table": "FOLK1A",
+        "variables": [
+          {
+            "code": "OMRÅDE",
+            "values": [
+              "326"
+            ]
+          },
+          {
+            "code": "KØN",
+            "values": [
+              "TOT"
+            ]
+          },
+          {
+            "code": "ALDER",
+            "values": [
+              "IALT"
+            ]
+          },
+          {
+            "code": "CIVILSTAND",
+            "values": [
+              "TOT"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "2025K3",
+              "2026K3"
+            ]
+          }
+        ]
+      },
+      "rawCsv": "OMRÅDE;KØN;ALDER;CIVILSTAND;TID;INDHOLD\r\n326;TOT;IALT;TOT;2025K3;47905\r\n326;TOT;IALT;TOT;2026K3;47822\r\n",
+      "rows": [
+        {
+          "OMRÅDE": "326",
+          "KØN": "TOT",
+          "ALDER": "IALT",
+          "CIVILSTAND": "TOT",
+          "TID": "2025K3",
+          "INDHOLD": "47905"
+        },
+        {
+          "OMRÅDE": "326",
+          "KØN": "TOT",
+          "ALDER": "IALT",
+          "CIVILSTAND": "TOT",
+          "TID": "2026K3",
+          "INDHOLD": "47822"
+        }
+      ],
+      "retrievedAt": "2026-10-20T21:48:30.532Z",
+      "status": "public-api-extract",
+      "sourceUrl": "https://www.statistikbanken.dk/FOLK1A"
+    },
+    "movements": {
+      "metadata": {
+        "id": "BEV107",
+        "text": "Befolkningens udvikling",
+        "description": "Befolkningens udvikling efter område, bevægelsesart, køn og tid",
+        "unit": "Antal",
+        "updated": "2026-02-12T08:00:00",
+        "active": true,
+        "variables": [
+          {
+            "id": "OMRÅDE",
+            "text": "område",
+            "time": false,
+            "values": [
+              {
+                "id": "101",
+                "text": "København"
+              },
+              {
+                "id": "147",
+                "text": "Frederiksberg"
+              },
+              {
+                "id": "155",
+                "text": "Dragør"
+              },
+              {
+                "id": "185",
+                "text": "Tårnby"
+              },
+              {
+                "id": "165",
+                "text": "Albertslund"
+              },
+              {
+                "id": "151",
+                "text": "Ballerup"
+              },
+              {
+                "id": "153",
+                "text": "Brøndby"
+              },
+              {
+                "id": "157",
+                "text": "Gentofte"
+              },
+              {
+                "id": "159",
+                "text": "Gladsaxe"
+              },
+              {
+                "id": "161",
+                "text": "Glostrup"
+              },
+              {
+                "id": "163",
+                "text": "Herlev"
+              },
+              {
+                "id": "167",
+                "text": "Hvidovre"
+              },
+              {
+                "id": "169",
+                "text": "Høje-Taastrup"
+              },
+              {
+                "id": "183",
+                "text": "Ishøj"
+              },
+              {
+                "id": "173",
+                "text": "Lyngby-Taarbæk"
+              },
+              {
+                "id": "175",
+                "text": "Rødovre"
+              },
+              {
+                "id": "187",
+                "text": "Vallensbæk"
+              },
+              {
+                "id": "201",
+                "text": "Allerød"
+              },
+              {
+                "id": "240",
+                "text": "Egedal"
+              },
+              {
+                "id": "210",
+                "text": "Fredensborg"
+              },
+              {
+                "id": "250",
+                "text": "Frederikssund"
+              },
+              {
+                "id": "190",
+                "text": "Furesø"
+              },
+              {
+                "id": "270",
+                "text": "Gribskov"
+              },
+              {
+                "id": "260",
+                "text": "Halsnæs"
+              },
+              {
+                "id": "217",
+                "text": "Helsingør"
+              },
+              {
+                "id": "219",
+                "text": "Hillerød"
+              },
+              {
+                "id": "223",
+                "text": "Hørsholm"
+              },
+              {
+                "id": "230",
+                "text": "Rudersdal"
+              },
+              {
+                "id": "400",
+                "text": "Bornholm"
+              },
+              {
+                "id": "411",
+                "text": "Christiansø"
+              },
+              {
+                "id": "253",
+                "text": "Greve"
+              },
+              {
+                "id": "259",
+                "text": "Køge"
+              },
+              {
+                "id": "350",
+                "text": "Lejre"
+              },
+              {
+                "id": "265",
+                "text": "Roskilde"
+              },
+              {
+                "id": "269",
+                "text": "Solrød"
+              },
+              {
+                "id": "320",
+                "text": "Faxe"
+              },
+              {
+                "id": "376",
+                "text": "Guldborgsund"
+              },
+              {
+                "id": "316",
+                "text": "Holbæk"
+              },
+              {
+                "id": "326",
+                "text": "Kalundborg"
+              },
+              {
+                "id": "360",
+                "text": "Lolland"
+              },
+              {
+                "id": "370",
+                "text": "Næstved"
+              },
+              {
+                "id": "306",
+                "text": "Odsherred"
+              },
+              {
+                "id": "329",
+                "text": "Ringsted"
+              },
+              {
+                "id": "330",
+                "text": "Slagelse"
+              },
+              {
+                "id": "340",
+                "text": "Sorø"
+              },
+              {
+                "id": "336",
+                "text": "Stevns"
+              },
+              {
+                "id": "390",
+                "text": "Vordingborg"
+              },
+              {
+                "id": "420",
+                "text": "Assens"
+              },
+              {
+                "id": "430",
+                "text": "Faaborg-Midtfyn"
+              },
+              {
+                "id": "440",
+                "text": "Kerteminde"
+              },
+              {
+                "id": "482",
+                "text": "Langeland"
+              },
+              {
+                "id": "410",
+                "text": "Middelfart"
+              },
+              {
+                "id": "480",
+                "text": "Nordfyns"
+              },
+              {
+                "id": "450",
+                "text": "Nyborg"
+              },
+              {
+                "id": "461",
+                "text": "Odense"
+              },
+              {
+                "id": "479",
+                "text": "Svendborg"
+              },
+              {
+                "id": "492",
+                "text": "Ærø"
+              },
+              {
+                "id": "530",
+                "text": "Billund"
+              },
+              {
+                "id": "561",
+                "text": "Esbjerg"
+              },
+              {
+                "id": "563",
+                "text": "Fanø"
+              },
+              {
+                "id": "607",
+                "text": "Fredericia"
+              },
+              {
+                "id": "510",
+                "text": "Haderslev"
+              },
+              {
+                "id": "621",
+                "text": "Kolding"
+              },
+              {
+                "id": "540",
+                "text": "Sønderborg"
+              },
+              {
+                "id": "550",
+                "text": "Tønder"
+              },
+              {
+                "id": "573",
+                "text": "Varde"
+              },
+              {
+                "id": "575",
+                "text": "Vejen"
+              },
+              {
+                "id": "630",
+                "text": "Vejle"
+              },
+              {
+                "id": "580",
+                "text": "Aabenraa"
+              },
+              {
+                "id": "710",
+                "text": "Favrskov"
+              },
+              {
+                "id": "766",
+                "text": "Hedensted"
+              },
+              {
+                "id": "615",
+                "text": "Horsens"
+              },
+              {
+                "id": "707",
+                "text": "Norddjurs"
+              },
+              {
+                "id": "727",
+                "text": "Odder"
+              },
+              {
+                "id": "730",
+                "text": "Randers"
+              },
+              {
+                "id": "741",
+                "text": "Samsø"
+              },
+              {
+                "id": "740",
+                "text": "Silkeborg"
+              },
+              {
+                "id": "746",
+                "text": "Skanderborg"
+              },
+              {
+                "id": "706",
+                "text": "Syddjurs"
+              },
+              {
+                "id": "751",
+                "text": "Aarhus"
+              },
+              {
+                "id": "657",
+                "text": "Herning"
+              },
+              {
+                "id": "661",
+                "text": "Holstebro"
+              },
+              {
+                "id": "756",
+                "text": "Ikast-Brande"
+              },
+              {
+                "id": "665",
+                "text": "Lemvig"
+              },
+              {
+                "id": "760",
+                "text": "Ringkøbing-Skjern"
+              },
+              {
+                "id": "779",
+                "text": "Skive"
+              },
+              {
+                "id": "671",
+                "text": "Struer"
+              },
+              {
+                "id": "791",
+                "text": "Viborg"
+              },
+              {
+                "id": "810",
+                "text": "Brønderslev"
+              },
+              {
+                "id": "813",
+                "text": "Frederikshavn"
+              },
+              {
+                "id": "860",
+                "text": "Hjørring"
+              },
+              {
+                "id": "849",
+                "text": "Jammerbugt"
+              },
+              {
+                "id": "825",
+                "text": "Læsø"
+              },
+              {
+                "id": "846",
+                "text": "Mariagerfjord"
+              },
+              {
+                "id": "773",
+                "text": "Morsø"
+              },
+              {
+                "id": "840",
+                "text": "Rebild"
+              },
+              {
+                "id": "787",
+                "text": "Thisted"
+              },
+              {
+                "id": "820",
+                "text": "Vesthimmerlands"
+              },
+              {
+                "id": "851",
+                "text": "Aalborg"
+              }
+            ]
+          },
+          {
+            "id": "BEVÆGELSE",
+            "text": "bevægelsesart",
+            "time": false,
+            "values": [
+              {
+                "id": "B01A",
+                "text": "Befolkningen ultimo forrige år"
+              },
+              {
+                "id": "B02",
+                "text": "Levendefødte"
+              },
+              {
+                "id": "B03",
+                "text": "Døde"
+              },
+              {
+                "id": "B04",
+                "text": "Fødselsoverskud"
+              },
+              {
+                "id": "B05",
+                "text": "Tilflyttede"
+              },
+              {
+                "id": "B06",
+                "text": "Fraflyttede"
+              },
+              {
+                "id": "B07",
+                "text": "Nettotilflyttede"
+              },
+              {
+                "id": "B08AA",
+                "text": "Indvandrede i alt"
+              },
+              {
+                "id": "B08A",
+                "text": "Indvandret i indeværende år"
+              },
+              {
+                "id": "B08B",
+                "text": "Indvandret før indeværende år"
+              },
+              {
+                "id": "B09BA",
+                "text": "Udvandrede i alt"
+              },
+              {
+                "id": "B09A",
+                "text": "Udvandret i indeværende år"
+              },
+              {
+                "id": "B09B",
+                "text": "Udvandret før indeværende år"
+              },
+              {
+                "id": "B10",
+                "text": "Nettoindvandrede"
+              },
+              {
+                "id": "B12",
+                "text": "Korrektioner"
+              },
+              {
+                "id": "B11",
+                "text": "Befolkningstilvækst"
+              },
+              {
+                "id": "B20A",
+                "text": "Befolkningen ultimo indeværende år"
+              }
+            ]
+          },
+          {
+            "id": "KØN",
+            "text": "køn",
+            "time": false,
+            "values": [
+              {
+                "id": "M",
+                "text": "Mænd"
+              },
+              {
+                "id": "K",
+                "text": "Kvinder"
+              }
+            ]
+          },
+          {
+            "id": "Tid",
+            "text": "tid",
+            "time": true,
+            "values": [
+              {
+                "id": "2006",
+                "text": "2006"
+              },
+              {
+                "id": "2007",
+                "text": "2007"
+              },
+              {
+                "id": "2008",
+                "text": "2008"
+              },
+              {
+                "id": "2009",
+                "text": "2009"
+              },
+              {
+                "id": "2010",
+                "text": "2010"
+              },
+              {
+                "id": "2011",
+                "text": "2011"
+              },
+              {
+                "id": "2012",
+                "text": "2012"
+              },
+              {
+                "id": "2013",
+                "text": "2013"
+              },
+              {
+                "id": "2014",
+                "text": "2014"
+              },
+              {
+                "id": "2015",
+                "text": "2015"
+              },
+              {
+                "id": "2016",
+                "text": "2016"
+              },
+              {
+                "id": "2017",
+                "text": "2017"
+              },
+              {
+                "id": "2018",
+                "text": "2018"
+              },
+              {
+                "id": "2019",
+                "text": "2019"
+              },
+              {
+                "id": "2020",
+                "text": "2020"
+              },
+              {
+                "id": "2021",
+                "text": "2021"
+              },
+              {
+                "id": "2022",
+                "text": "2022"
+              },
+              {
+                "id": "2023",
+                "text": "2023"
+              },
+              {
+                "id": "2024",
+                "text": "2024"
+              },
+              {
+                "id": "2025",
+                "text": "2025"
+              }
+            ]
+          }
+        ],
+        "documentation": {
+          "url": "https://www.dst.dk/statistikdokumentation/4a12721d-a8b0-4bde-82d7-1d1c6f319de3"
+        },
+        "footnote": {
+          "text": "Antal fødte i 2017 er rettet med 125 flere fødte den 21. februar 2018.  Hele tidsserien er den 11. maj 2016 revideret i forhold til tidligere offentliggjorte tal. Se mere på http://dst.dk/doku/flytninger-til-og-fra-udlandet",
+          "mandatory": false
+        }
+      },
+      "request": {
+        "table": "BEV107",
+        "variables": [
+          {
+            "code": "OMRÅDE",
+            "values": [
+              "326"
+            ]
+          },
+          {
+            "code": "BEVÆGELSE",
+            "values": [
+              "B02",
+              "B03",
+              "B05",
+              "B06",
+              "B08AA",
+              "B09BA"
+            ]
+          },
+          {
+            "code": "KØN",
+            "values": [
+              "M",
+              "K"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "2025"
+            ]
+          }
+        ]
+      },
+      "rawCsv": "OMRÅDE;BEVÆGELSE;KØN;TID;INDHOLD\r\n326;B02;M;2025;151\r\n326;B02;K;2025;159\r\n326;B03;M;2025;356\r\n326;B03;K;2025;273\r\n326;B05;M;2025;1145\r\n326;B05;K;2025;1066\r\n326;B06;M;2025;1260\r\n326;B06;K;2025;1246\r\n326;B08AA;M;2025;545\r\n326;B08AA;K;2025;307\r\n326;B09BA;M;2025;270\r\n326;B09BA;K;2025;127\r\n",
+      "rows": [
+        {
+          "OMRÅDE": "326",
+          "BEVÆGELSE": "B02",
+          "KØN": "M",
+          "TID": "2025",
+          "INDHOLD": "151"
+        },
+        {
+          "OMRÅDE": "326",
+          "BEVÆGELSE": "B02",
+          "KØN": "K",
+          "TID": "2025",
+          "INDHOLD": "159"
+        },
+        {
+          "OMRÅDE": "326",
+          "BEVÆGELSE": "B03",
+          "KØN": "M",
+          "TID": "2025",
+          "INDHOLD": "356"
+        },
+        {
+          "OMRÅDE": "326",
+          "BEVÆGELSE": "B03",
+          "KØN": "K",
+          "TID": "2025",
+          "INDHOLD": "273"
+        },
+        {
+          "OMRÅDE": "326",
+          "BEVÆGELSE": "B05",
+          "KØN": "M",
+          "TID": "2025",
+          "INDHOLD": "1145"
+        },
+        {
+          "OMRÅDE": "326",
+          "BEVÆGELSE": "B05",
+          "KØN": "K",
+          "TID": "2025",
+          "INDHOLD": "1066"
+        },
+        {
+          "OMRÅDE": "326",
+          "BEVÆGELSE": "B06",
+          "KØN": "M",
+          "TID": "2025",
+          "INDHOLD": "1260"
+        },
+        {
+          "OMRÅDE": "326",
+          "BEVÆGELSE": "B06",
+          "KØN": "K",
+          "TID": "2025",
+          "INDHOLD": "1246"
+        },
+        {
+          "OMRÅDE": "326",
+          "BEVÆGELSE": "B08AA",
+          "KØN": "M",
+          "TID": "2025",
+          "INDHOLD": "545"
+        },
+        {
+          "OMRÅDE": "326",
+          "BEVÆGELSE": "B08AA",
+          "KØN": "K",
+          "TID": "2025",
+          "INDHOLD": "307"
+        },
+        {
+          "OMRÅDE": "326",
+          "BEVÆGELSE": "B09BA",
+          "KØN": "M",
+          "TID": "2025",
+          "INDHOLD": "270"
+        },
+        {
+          "OMRÅDE": "326",
+          "BEVÆGELSE": "B09BA",
+          "KØN": "K",
+          "TID": "2025",
+          "INDHOLD": "127"
+        }
+      ],
+      "retrievedAt": "2026-10-20T21:48:34.486Z",
+      "status": "public-api-extract",
+      "sourceUrl": "https://www.statistikbanken.dk/BEV107"
+    }
+  },
+  "unitNote": "PRIS01: indeks, 2025 = 100, verificeret i Danmarks Statistiks faglige dokumentation. FOLK1A og BEV107: antal personer.",
+  "unitSourceUrl": "https://www.dst.dk/da/Statistik/emner/oekonomi/prisindeks/forbrugerprisindeks",
+  "contentHash": "998b4fc080fb6aaf7f42f29cb420df64048a3c74bca7b4966e5de4d908273315"
+}

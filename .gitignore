@@ -1,6 +1,12 @@
 node_modules/
-frontend/dist/
-.env
-.env.local
+.next/
+.env*
+!.env.example
+*.tsbuildinfo
+playwright-report/
+test-results/
+.local/
 .DS_Store
-*.log
+coverage/
+.vercel/
+.vercel

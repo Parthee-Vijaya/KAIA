@@ -1,0 +1,162 @@
+{
+  "testedAt": "2026-10-20T22:00:18.871Z",
+  "mode": "local development fixtures, real Postgres, no external credentials",
+  "checks": [
+    {
+      "name": "unauthenticated workspace",
+      "result": "passed",
+      "actual": 401
+    },
+    {
+      "name": "four suggestions",
+      "result": "passed",
+      "actual": 4
+    },
+    {
+      "name": "persisted ledger count",
+      "result": "passed",
+      "actual": 224532
+    },
+    {
+      "name": "analysis status",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "analysis done event",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "save insight",
+      "result": "passed",
+      "actual": 201
+    },
+    {
+      "name": "saved insight persisted",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "owner conversation GET",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "different owner conversation denied",
+      "result": "passed",
+      "actual": 404
+    },
+    {
+      "name": "different owner insight-save denied",
+      "result": "passed",
+      "actual": 404
+    },
+    {
+      "name": "different owner export denied",
+      "result": "passed",
+      "actual": 404
+    },
+    {
+      "name": "owner CSV export",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "school user admin providers denied",
+      "result": "passed",
+      "actual": 403
+    },
+    {
+      "name": "school user forbidden area denied",
+      "result": "passed",
+      "actual": 403
+    },
+    {
+      "name": "school user internal social doc denied",
+      "result": "passed",
+      "actual": 404
+    },
+    {
+      "name": "council internal school doc denied",
+      "result": "passed",
+      "actual": 404
+    },
+    {
+      "name": "council political school doc allowed",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "scenario calculated",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "save scenario",
+      "result": "passed",
+      "actual": 201
+    },
+    {
+      "name": "forged client analysis snapshot denied",
+      "result": "passed",
+      "actual": 400
+    },
+    {
+      "name": "provider secret never public",
+      "result": "passed",
+      "actual": false
+    },
+    {
+      "name": "owner preview accepted",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "preview original version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v3"
+    },
+    {
+      "name": "preview calculated energy change",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "preview reset zero effect",
+      "result": "passed",
+      "actual": 0
+    },
+    {
+      "name": "preview baseline stays unchanged",
+      "result": "passed",
+      "actual": 32182910305
+    },
+    {
+      "name": "preview uses no AI",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "other owner preview denied",
+      "result": "passed",
+      "actual": 404
+    },
+    {
+      "name": "client scope rejected",
+      "result": "passed",
+      "actual": 400
+    },
+    {
+      "name": "preview does not persist conversations",
+      "result": "passed",
+      "actual": 6
+    },
+    {
+      "name": "preview does not persist analyses",
+      "result": "passed",
+      "actual": 1
+    }
+  ],
+  "previewTestedAt": "2026-10-20T22:05:09.597Z"
+}

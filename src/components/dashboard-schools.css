@@ -1,0 +1,323 @@
+.kaia-schools {
+  min-width: 0;
+  border: 1px solid #e4e5e8;
+  border-radius: 14px;
+  background: #fff;
+  padding: 22px 24px 10px;
+  color: #252525;
+}
+.kaia-schools * {
+  box-sizing: border-box;
+}
+.kaia-schools h2,
+.kaia-schools p {
+  margin: 0;
+}
+.kaia-schools button {
+  font: inherit;
+}
+.kaia-schools button:focus-visible {
+  outline: 2px solid #006f71;
+  outline-offset: 3px;
+}
+.kaia-schools button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.kaia-schools-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+.kaia-schools-heading h2 {
+  font-size: 16px;
+  font-weight: 550;
+  letter-spacing: -0.3px;
+  line-height: 1.5;
+}
+.kaia-schools-heading p {
+  color: #535e70;
+  font-size: 11px;
+  line-height: 1.6;
+  margin-top: 4px;
+}
+.kaia-schools-intro {
+  color: #535e70;
+  font-size: 11px;
+  line-height: 1.7;
+  margin-top: 12px !important;
+}
+.kaia-schools-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.kaia-schools-columns,
+.kaia-schools-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 1.5fr) repeat(2, minmax(145px, 1fr)) minmax(150px, 1.1fr);
+  column-gap: 18px;
+}
+.kaia-schools-columns {
+  margin-top: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e4e5e8;
+  color: #535e70;
+  font-size: 10px;
+  line-height: 1.6;
+}
+.kaia-schools-row {
+  align-items: center;
+  padding: 13px 0;
+  border-bottom: 1px solid #e4e5e8;
+}
+.kaia-schools-row:last-child {
+  border-bottom: 0;
+}
+.kaia-schools-name {
+  min-width: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.kaia-schools-year {
+  min-width: 0;
+}
+.kaia-schools-year-label,
+.kaia-schools-change-label {
+  display: none;
+}
+.kaia-schools-amount {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  min-height: 44px;
+  padding: 3px 0;
+  border: 0;
+  border-radius: 5px;
+  background: none !important;
+  text-align: left;
+  color: #252525;
+  cursor: pointer;
+}
+.kaia-schools-amount > span {
+  display: grid;
+  gap: 3px;
+}
+.kaia-schools-amount strong {
+  font-family: 'Geist Mono', monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.kaia-schools-amount > span > span {
+  font-size: 10px;
+  line-height: 1.5;
+}
+.kaia-schools-amount--over > span > span {
+  color: #9b4028;
+}
+.kaia-schools-amount--under > span > span {
+  color: #006f71;
+}
+.kaia-schools-amount--balanced > span > span {
+  color: #535e70;
+}
+.kaia-schools-amount > .kaia-icon {
+  color: #535e70;
+}
+.kaia-schools-amount:hover:not(:disabled) strong {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.kaia-schools-prior-missing {
+  padding: 4px 0;
+  color: #535e70;
+}
+.kaia-schools-prior-missing strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.kaia-schools-prior-missing p {
+  margin-top: 3px;
+  font-size: 9px;
+  line-height: 1.6;
+}
+.kaia-schools-change {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  color: #535e70;
+  font-size: 10px;
+  line-height: 1.6;
+}
+.kaia-schools-change strong {
+  color: #252525;
+  font-size: 11px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.kaia-schools-change p {
+  font-size: 10px;
+  line-height: 1.7;
+}
+.kaia-schools-track {
+  grid-column: 1 / -1;
+  height: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #f6f7f8;
+  margin-top: 6px;
+}
+.kaia-schools-track > span {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background: #bc4d30;
+}
+.kaia-schools-row--under .kaia-schools-track > span {
+  background: #006f71;
+}
+.kaia-schools-row--balanced .kaia-schools-track > span {
+  background: #464f5e;
+}
+.kaia-schools-note {
+  margin-top: 12px !important;
+  color: #535e70;
+  font-size: 10px;
+  line-height: 1.8;
+  max-width: 850px;
+}
+.kaia-schools-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  border-top: 1px solid #e4e5e8;
+  margin-top: 12px;
+  padding-top: 1px;
+}
+.kaia-schools-sources {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: #535e70;
+  font-size: 10px;
+}
+.kaia-schools-sources button {
+  display: inline-grid;
+  place-items: center;
+  min-width: 28px;
+  min-height: 44px;
+  padding: 4px;
+  border: 0;
+  border-radius: 5px;
+  background: none !important;
+  color: #006f71;
+  cursor: pointer;
+  font-size: 10px;
+}
+.kaia-schools-sources button:hover {
+  text-decoration: underline;
+}
+.kaia-schools-toggle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 4px 0;
+  border: 0;
+  border-radius: 5px;
+  background: none !important;
+  font-size: 11px !important;
+  color: #535e70;
+  cursor: pointer;
+}
+.kaia-schools-chevron-up {
+  transform: rotate(180deg);
+}
+.kaia-schools-missing {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 24px 0 18px;
+  color: #535e70;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.kaia-schools-missing > .kaia-icon {
+  margin-top: 3px;
+}
+@media (max-width: 960px) {
+  .kaia-schools-columns {
+    display: none;
+  }
+  .kaia-schools-list {
+    margin-top: 5px;
+  }
+  .kaia-schools-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px 20px;
+    align-items: start;
+    padding: 17px 0;
+  }
+  .kaia-schools-name {
+    grid-column: 1 / -1;
+  }
+  .kaia-schools-year-label,
+  .kaia-schools-change-label {
+    display: block;
+    color: #535e70;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+  .kaia-schools-change {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 3px 7px;
+  }
+  .kaia-schools-track {
+    margin-top: 0;
+  }
+}
+@media (max-width: 600px) {
+  .kaia-schools {
+    padding: 20px 16px 9px;
+  }
+  .kaia-schools-heading {
+    align-items: flex-start;
+  }
+  .kaia-schools-heading h2 {
+    font-size: 15px;
+  }
+  .kaia-schools-row {
+    column-gap: 14px;
+  }
+  .kaia-schools-name {
+    font-size: 12px;
+  }
+  .kaia-schools-amount {
+    gap: 6px;
+  }
+  .kaia-schools-amount strong {
+    font-size: 12px;
+  }
+}
+@media (max-width: 380px) {
+  .kaia-schools-amount {
+    gap: 4px;
+  }
+  .kaia-schools-amount strong {
+    font-size: 10px;
+  }
+}

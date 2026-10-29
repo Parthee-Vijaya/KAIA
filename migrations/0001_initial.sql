@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS kaia_users(id text PRIMARY KEY, tenant_id text NOT NULL, object_id text NOT NULL, roles jsonb NOT NULL DEFAULT '[]', display_name text NOT NULL, title text NOT NULL, updated_at timestamptz NOT NULL DEFAULT now(), UNIQUE(tenant_id,object_id));
+CREATE TABLE IF NOT EXISTS kaia_grants(user_id text PRIMARY KEY REFERENCES kaia_users(id),unit_ids jsonb NOT NULL DEFAULT '[]', areas jsonb NOT NULL DEFAULT '[]');
+CREATE TABLE IF NOT EXISTS kaia_sessions(id_hash text PRIMARY KEY, user_id text NOT NULL REFERENCES kaia_users(id),expires_at timestamptz NOT NULL,test_only integer NOT NULL DEFAULT 0);
+CREATE INDEX IF NOT EXISTS kaia_sessions_user ON kaia_sessions(user_id);
+CREATE TABLE IF NOT EXISTS kaia_datasets(version text PRIMARY KEY,seed text NOT NULL,reference_date text NOT NULL,row_count integer NOT NULL,document_count integer NOT NULL,demography jsonb NOT NULL DEFAULT '[]',ingested_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS kaia_entities(dataset_version text NOT NULL,id text NOT NULL,area text NOT NULL,data jsonb NOT NULL,PRIMARY KEY(dataset_version,id));
+CREATE TABLE IF NOT EXISTS kaia_ledger(dataset_version text NOT NULL,id text NOT NULL,entity_id text NOT NULL,year integer NOT NULL,month integer NOT NULL CHECK(month BETWEEN 1 AND 12),category text NOT NULL,kind text NOT NULL,amount_ore bigint NOT NULL,quantity numeric,unit_price_ore bigint,PRIMARY KEY(dataset_version,id));
+CREATE INDEX IF NOT EXISTS kaia_ledger_scope_idx ON kaia_ledger(dataset_version,entity_id,year,kind);
+CREATE TABLE IF NOT EXISTS kaia_documents(dataset_version text NOT NULL,id text NOT NULL,area text NOT NULL,classification text NOT NULL,data jsonb NOT NULL,PRIMARY KEY(dataset_version,id));
+CREATE INDEX IF NOT EXISTS kaia_document_search_idx ON kaia_documents USING gin(to_tsvector('danish',data->>'text'));
+CREATE TABLE IF NOT EXISTS kaia_conversations(id text PRIMARY KEY,owner_id text NOT NULL REFERENCES kaia_users(id),title text NOT NULL,updated_at timestamptz NOT NULL DEFAULT now());
+CREATE INDEX IF NOT EXISTS kaia_conversation_owner ON kaia_conversations(owner_id,updated_at DESC);
+CREATE TABLE IF NOT EXISTS kaia_analyses(id text PRIMARY KEY,conversation_id text NOT NULL REFERENCES kaia_conversations(id),owner_id text NOT NULL REFERENCES kaia_users(id),data jsonb NOT NULL,created_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS kaia_insights(id text PRIMARY KEY,owner_id text NOT NULL REFERENCES kaia_users(id),title text NOT NULL,analysis jsonb NOT NULL,created_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS kaia_scenarios(id text PRIMARY KEY,owner_id text NOT NULL REFERENCES kaia_users(id),title text NOT NULL,analysis jsonb NOT NULL,created_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS kaia_configuration(key text PRIMARY KEY,data jsonb NOT NULL,encrypted_secret text,updated_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS kaia_usage(user_id text NOT NULL,window_start timestamptz NOT NULL,count integer NOT NULL,PRIMARY KEY(user_id,window_start));
+CREATE TABLE IF NOT EXISTS kaia_audit(id bigserial PRIMARY KEY,user_id text NOT NULL,action text NOT NULL,target text NOT NULL,created_at timestamptz NOT NULL DEFAULT now());
+
+ALTER TABLE kaia_datasets ADD COLUMN IF NOT EXISTS content_hash text;

@@ -1,0 +1,72 @@
+{
+  "testedAt": "2026-10-20T23:02:13.016Z",
+  "environment": "actual-hybrid-production-postgres-on-local-Mac",
+  "version": "KAIA-DEMO-2026.09-v4",
+  "checks": [
+    {
+      "name": "expanded financial rows persisted",
+      "result": "passed",
+      "actual": 1245024
+    },
+    {
+      "name": "metadata agrees with ledger count",
+      "result": "passed",
+      "actual": 1245024
+    },
+    {
+      "name": "historical coverage",
+      "result": "passed",
+      "actual": 2020
+    },
+    {
+      "name": "forecast coverage",
+      "result": "passed",
+      "actual": 2032
+    },
+    {
+      "name": "no invented future actuals",
+      "result": "passed",
+      "actual": 0
+    },
+    {
+      "name": "searchable documents persisted",
+      "result": "passed",
+      "actual": 1742
+    },
+    {
+      "name": "metadata agrees with document count",
+      "result": "passed",
+      "actual": 1742
+    },
+    {
+      "name": "six municipality profiles persisted",
+      "result": "passed",
+      "actual": 6
+    },
+    {
+      "name": "versioned area benchmarks persisted",
+      "result": "passed",
+      "actual": 16506
+    },
+    {
+      "name": "every canonical municipal area/month/kind total agrees with own ledger",
+      "result": "passed",
+      "actual": 0
+    },
+    {
+      "name": "raw snapshot uses bounded chunks",
+      "result": "passed",
+      "actual": 125
+    },
+    {
+      "name": "complete raw snapshot reconstructed with original SHA256",
+      "result": "passed",
+      "actual": "b2a94fa2edf7a3b496bc261a1a1f08035a4ff0b878197a7c5aea7588c7f89e62"
+    },
+    {
+      "name": "lake and curated dataset have same immutable content hash",
+      "result": "passed",
+      "actual": "b2a94fa2edf7a3b496bc261a1a1f08035a4ff0b878197a7c5aea7588c7f89e62"
+    }
+  ]
+}

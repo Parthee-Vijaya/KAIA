@@ -1,0 +1,197 @@
+{
+  "testedAt": "2026-10-20T22:39:46.416Z",
+  "url": "https://kaia-sand.vercel.app",
+  "mode": "Actual Vercel frontend to HMAC protected HTTPS tunnel, local production Node server and local PostgreSQL; public demo auth; no Microsoft or model credentials",
+  "checks": [
+    {
+      "name": "public frontend responds",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "login is clearly marked as demo",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "anonymous workspace denied",
+      "result": "passed",
+      "actual": 401
+    },
+    {
+      "name": "demo login school",
+      "result": "passed",
+      "actual": 303
+    },
+    {
+      "name": "HttpOnly Secure session cookie",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "redirect stays on configured frontend",
+      "result": "passed",
+      "actual": "https://kaia-sand.vercel.app/"
+    },
+    {
+      "name": "four relevant suggestions",
+      "result": "passed",
+      "actual": 4
+    },
+    {
+      "name": "school role is server assigned",
+      "result": "passed",
+      "actual": "KAIA.DepartmentHead"
+    },
+    {
+      "name": "no synthetic unit properties in client navigation",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "analysis HTTP",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "NDJSON stream completed",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "analysis has a reproducible version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v3"
+    },
+    {
+      "name": "public demo never invokes paid model",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "chart and metric share value",
+      "result": "passed",
+      "actual": 24026569349
+    },
+    {
+      "name": "analysis supplies readable document evidence",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "source document opens",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "document clearly simulated",
+      "result": "passed",
+      "actual": "simulated"
+    },
+    {
+      "name": "save insight in local database through Vercel",
+      "result": "passed",
+      "actual": 201
+    },
+    {
+      "name": "saved insight survives new request",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "analysis HTTP",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "NDJSON stream completed",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "analysis has a reproducible version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v3"
+    },
+    {
+      "name": "public demo never invokes paid model",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "followup changes year",
+      "result": "passed",
+      "actual": 2025
+    },
+    {
+      "name": "followup preserves month coverage",
+      "result": "passed",
+      "actual": 9
+    },
+    {
+      "name": "scenario recalculates on local backend",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "scenario increases only relevant energy expenditure",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "scenario saved",
+      "result": "passed",
+      "actual": 201
+    },
+    {
+      "name": "scenario reopens",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "server enforces school scope through proxy",
+      "result": "passed",
+      "actual": 403
+    },
+    {
+      "name": "public demo cannot open provider administration",
+      "result": "passed",
+      "actual": 403
+    },
+    {
+      "name": "demo login school",
+      "result": "passed",
+      "actual": 303
+    },
+    {
+      "name": "HttpOnly Secure session cookie",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "redirect stays on configured frontend",
+      "result": "passed",
+      "actual": "https://kaia-sand.vercel.app/"
+    },
+    {
+      "name": "same display profile creates different private identity",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "other visitor cannot open private conversation",
+      "result": "passed",
+      "actual": 404
+    },
+    {
+      "name": "other visitor cannot export private analysis",
+      "result": "passed",
+      "actual": 404
+    },
+    {
+      "name": "other visitor cannot see saved insight",
+      "result": "passed",
+      "actual": true
+    }
+  ]
+}

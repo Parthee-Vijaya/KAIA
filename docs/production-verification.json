@@ -1,0 +1,60 @@
+{
+  "testedAt": "2026-10-20T22:24:17.771Z",
+  "mode": "real local Next.js production server, local Postgres, explicit development fixtures; no Entra credentials",
+  "checks": [
+    {
+      "name": "local fixture established",
+      "actual": 303,
+      "expected": 303,
+      "result": "passed"
+    },
+    {
+      "name": "fixture valid only in development",
+      "actual": 200,
+      "expected": 200,
+      "result": "passed"
+    },
+    {
+      "name": "production hides local fixture form",
+      "actual": false,
+      "expected": false,
+      "result": "passed"
+    },
+    {
+      "name": "production retains Microsoft login setup",
+      "actual": true,
+      "expected": true,
+      "result": "passed"
+    },
+    {
+      "name": "production fixture route disabled",
+      "actual": 404,
+      "expected": 404,
+      "result": "passed"
+    },
+    {
+      "name": "production rejects issued development fixture session",
+      "actual": 401,
+      "expected": 401,
+      "result": "passed"
+    },
+    {
+      "name": "private API disables public cache",
+      "actual": true,
+      "expected": true,
+      "result": "passed"
+    },
+    {
+      "name": "council navigation omits private unit properties",
+      "actual": true,
+      "expected": true,
+      "result": "passed"
+    },
+    {
+      "name": "council has four authorized suggestions",
+      "actual": 4,
+      "expected": 4,
+      "result": "passed"
+    }
+  ]
+}

@@ -1,0 +1,785 @@
+/* Product chrome for the approved Fremblik dashboard. */
+.workspace {
+  --sidebar-width: 216px;
+  --warm: #f3f4f5;
+  --cool: #eef0f2;
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+  background: var(--canvas);
+}
+.workspace .sidebar {
+  background: var(--paper);
+  padding: 26px 15px 0;
+}
+.workspace .workspace-main {
+  background: var(--canvas);
+}
+.workspace .main-content {
+  width: min(1050px, calc(100% - 72px));
+}
+.workspace .main-content.dashboard-home {
+  width: min(1240px, calc(100% - 72px));
+  padding-top: 30px;
+}
+.workspace .topbar {
+  min-height: 70px;
+  height: auto;
+  padding: 17px 36px;
+  border-color: var(--line);
+  gap: 20px;
+}
+.workspace .topbar-status {
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.workspace .badge,
+.workspace .badge.simulated,
+.workspace .auth-demo-badge {
+  background: var(--paper);
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  font-weight: 400;
+}
+.workspace .badge.simulated > span {
+  background: var(--muted);
+}
+.workspace .status-dot.demo {
+  background: var(--petrol);
+}
+.workspace .avatar {
+  color: var(--ink);
+  background: #f1f2f3;
+  border: 1px solid var(--line);
+  font-weight: 500;
+}
+.workspace .sidebar-brand {
+  gap: 8px;
+  margin-bottom: 29px;
+}
+.workspace .sidebar nav button {
+  font-size: 12px;
+  font-weight: 400;
+  min-height: 44px;
+  gap: 11px;
+  position: relative;
+}
+.workspace .sidebar nav button.selected {
+  background: #f3f4f5;
+  color: var(--ink);
+  font-weight: 500;
+}
+.workspace .sidebar nav button.selected::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 13px;
+  bottom: 13px;
+  width: 2px;
+  background: var(--primary);
+}
+.workspace .sidebar nav button:hover,
+.workspace .sidebar-bottom > button:hover,
+.workspace .new-conversation:hover {
+  background: #f6f7f8;
+}
+.workspace .sidebar nav .kaia-icon {
+  width: 19px;
+  height: 19px;
+}
+.workspace .new-conversation {
+  box-shadow: none;
+  padding: 11px 10px;
+  gap: 9px;
+  font-weight: 500;
+  color: var(--ink);
+}
+.workspace .new-conversation .new-conversation-arrow {
+  margin-left: auto;
+  color: var(--muted);
+}
+.workspace .sidebar-bottom > button > .kaia-icon:last-child:not(:first-child) {
+  margin-left: auto;
+}
+.workspace .sidebar-bottom > button,
+.workspace .profile button {
+  min-height: 38px;
+}
+.workspace .select-wrap > .kaia-icon {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  color: var(--muted);
+}
+.workspace .dashboard-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin: 0 0 20px;
+}
+.workspace .dashboard-welcome .eyebrow {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+.workspace .dashboard-welcome h1 {
+  font-size: clamp(29px, 2.7vw, 36px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  margin: 8px 0 9px;
+}
+.workspace .dashboard-welcome h1 > span {
+  color: var(--primary);
+}
+.workspace .dashboard-welcome p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+.workspace .dashboard-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  padding-left: 15px;
+  border-left: 2px solid var(--primary);
+  max-width: 265px;
+}
+.workspace .dashboard-identity > span {
+  font-size: 10px;
+  color: var(--muted);
+}
+.workspace .dashboard-identity strong {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 2px 0;
+}
+.workspace .dashboard-identity small {
+  font-size: 11px;
+  color: var(--muted);
+}
+.workspace .dashboard-identity .identity-area {
+  margin-top: 5px;
+  font-size: 10px;
+}
+.workspace .dashboard-home .analysis-scope {
+  padding: 0 0 15px;
+  gap: 15px;
+  font-size: 11px;
+}
+.workspace .analysis-scope .select-wrap select {
+  font-size: 11px;
+  color: var(--ink);
+  max-width: 195px;
+  min-height: 30px;
+}
+.workspace .dashboard-home .analysis-scope > span:first-child,
+.workspace .dashboard-home .analysis-scope > .scope-divider {
+  display: none;
+}
+.workspace .welcome-composer {
+  margin: 0;
+  border: 1px solid #c5c9ce;
+  border-radius: 12px;
+  padding: 21px 22px 16px;
+  box-shadow: 0 4px 18px #25252504;
+  background: white;
+}
+.workspace .welcome-composer:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px #bc4d3012;
+}
+.workspace .welcome-composer textarea {
+  min-height: 65px;
+  padding: 0;
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+.workspace .welcome-composer textarea::placeholder {
+  color: #767d86;
+}
+.workspace .composer-bottom {
+  padding: 4px 0 0;
+}
+.workspace .composer-bottom > span {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 11px;
+  color: var(--muted);
+}
+.workspace .composer .send-button {
+  width: auto;
+  height: 39px;
+  border-radius: 7px;
+  min-width: 103px;
+  padding: 9px 13px;
+  gap: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+.workspace .composer .send-button.stop {
+  min-width: 39px;
+  width: 39px;
+}
+.workspace .dashboard-suggestions {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin: 14px 0 29px;
+}
+.workspace .dashboard-suggestions > button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: left;
+  background: none;
+  border-radius: 0;
+  border-bottom: 1px solid #dadde1;
+  padding: 9px 2px 11px;
+}
+.workspace .dashboard-suggestions > button:hover {
+  border-color: var(--primary);
+}
+.workspace .dashboard-suggestions strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.workspace .dashboard-suggestions small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+  margin-top: 3px;
+}
+.workspace .dashboard-suggestions .kaia-icon {
+  color: var(--muted);
+  margin-top: 1px;
+}
+.workspace .welcome-footer {
+  margin: 23px 0 0;
+  padding: 0;
+  font-size: 10px;
+  justify-content: flex-start;
+}
+.workspace .workspace-footer {
+  background: transparent;
+  border-top: 0;
+  font-size: 10px;
+  padding: 17px 36px;
+}
+.workspace .analysis {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 23px;
+}
+.workspace .analysis .chart-panel {
+  border-radius: 10px;
+}
+.workspace .conversation-heading {
+  padding-top: 28px;
+}
+.workspace .sticky-composer {
+  background: linear-gradient(transparent, var(--canvas) 24px);
+}
+.workspace .collection {
+  padding: 38px 0;
+}
+.workspace .collection-row {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  padding: 16px 18px;
+  margin-bottom: 10px;
+}
+.workspace .scenario-grid > button {
+  background: white;
+  border: 1px solid var(--line);
+}
+.workspace .scenario-result,
+.workspace .inline-notice,
+.workspace .context-series,
+.workspace .source-type,
+.workspace .status-pill.active {
+  background: #f6f7f8;
+  border-color: var(--line);
+}
+.settings-content .provider-monogram,
+.settings-content .status-pill.active,
+.source-detail .source-type {
+  background: #f3f4f5;
+  border-color: var(--line);
+}
+/* Fremblik has a full-width top navigation, like its approved prototype. */
+.workspace.layout-fremblik {
+  display: block;
+}
+.workspace.layout-fremblik .sidebar {
+  position: sticky;
+  inset: auto;
+  top: 0;
+  width: 100%;
+  min-height: 78px;
+  height: auto;
+  padding: 15px 38px 0;
+  display: grid;
+  grid-template-columns: 150px 37px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 20px;
+  border-right: 0;
+  border-bottom: 1px solid var(--line);
+  z-index: 25;
+}
+.workspace.layout-fremblik .sidebar-brand {
+  padding: 0 0 15px;
+  margin: 0;
+  justify-content: flex-start;
+}
+.workspace.layout-fremblik .collapse-button {
+  display: none;
+}
+.workspace.layout-fremblik .new-conversation {
+  display: flex;
+  width: 37px;
+  height: 37px;
+  padding: 0;
+  justify-content: center;
+  margin: 0 0 15px;
+}
+.workspace.layout-fremblik .new-conversation > span:not(.kaia-icon),
+.workspace.layout-fremblik .new-conversation-arrow {
+  display: none;
+}
+.workspace.layout-fremblik .sidebar nav {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-self: stretch;
+  gap: 22px;
+  min-width: 0;
+}
+.workspace.layout-fremblik .sidebar nav button {
+  min-height: 47px;
+  padding: 0 0 15px;
+  border-radius: 0;
+  justify-content: center;
+  width: auto;
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: 11px;
+}
+.workspace.layout-fremblik .sidebar nav button > .kaia-icon,
+.workspace.layout-fremblik .sidebar nav small {
+  display: none;
+}
+.workspace.layout-fremblik .sidebar nav button.selected {
+  background: transparent;
+  color: var(--ink);
+}
+.workspace.layout-fremblik .sidebar nav button.selected::before {
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  top: auto;
+  width: auto;
+  height: 2px;
+}
+.workspace.layout-fremblik .recent-conversations {
+  display: none;
+}
+.workspace.layout-fremblik .sidebar-bottom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 0 15px;
+  margin: 0;
+}
+.workspace.layout-fremblik .sidebar-bottom > button {
+  min-height: 36px;
+  width: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.workspace.layout-fremblik .sidebar-bottom > button > span:not(.kaia-icon),
+.workspace.layout-fremblik .sidebar-bottom > button > .kaia-icon:last-child:not(:first-child) {
+  display: none;
+}
+.workspace.layout-fremblik .sidebar-bottom .profile {
+  padding: 0 0 0 9px;
+  margin: 0;
+  border: 0;
+}
+.workspace.layout-fremblik .profile > div {
+  min-width: 80px;
+}
+.workspace.layout-fremblik .profile strong {
+  font-size: 12px;
+}
+.workspace.layout-fremblik .profile small {
+  font-size: 10px;
+}
+.workspace.layout-fremblik .profile form {
+  margin-left: 7px;
+}
+.workspace.layout-fremblik .workspace-main {
+  min-height: calc(100svh - 78px);
+}
+.workspace.layout-fremblik .topbar {
+  position: static;
+  background: var(--canvas);
+  min-height: 52px;
+  border-bottom: 0;
+  padding-top: 13px;
+  padding-bottom: 8px;
+}
+.workspace.layout-fremblik .main-content.dashboard-home {
+  width: min(1320px, calc(100% - 88px));
+  padding-top: 17px;
+}
+.workspace.layout-fremblik .dashboard-welcome h1 {
+  font-size: clamp(30px, 2.7vw, 38px);
+}
+@media (min-width: 1700px) {
+  .workspace .main-content.dashboard-home {
+    padding-top: 40px;
+  }
+  .workspace.layout-fremblik .main-content.dashboard-home {
+    padding-top: 24px;
+  }
+}
+@media (max-width: 1150px) {
+  .workspace {
+    --sidebar-width: 196px;
+  }
+  .workspace .sidebar {
+    padding-inline: 12px;
+  }
+  .workspace .main-content,
+  .workspace .main-content.dashboard-home {
+    width: calc(100% - 48px);
+  }
+  .workspace .topbar {
+    padding-inline: 24px;
+  }
+  .workspace .topbar-status {
+    gap: 11px;
+  }
+  .workspace .dashboard-suggestions {
+    gap: 13px;
+  }
+  .workspace .dashboard-suggestions strong {
+    font-size: 10px;
+  }
+  .workspace .dashboard-suggestions small {
+    font-size: 10px;
+  }
+  .workspace.layout-fremblik .sidebar {
+    grid-template-columns: 135px 35px minmax(0, 1fr) auto;
+    padding-inline: 25px;
+    gap: 16px;
+  }
+  .workspace.layout-fremblik .sidebar nav {
+    gap: 17px;
+  }
+  .workspace.layout-fremblik .profile > div {
+    display: none;
+  }
+  .workspace.layout-fremblik .sidebar-bottom {
+    gap: 3px;
+  }
+  .workspace.layout-fremblik .main-content.dashboard-home {
+    width: calc(100% - 56px);
+  }
+}
+@media (max-width: 900px) {
+  .workspace .dashboard-welcome h1 {
+    font-size: 30px;
+  }
+  .workspace .dashboard-welcome p {
+    font-size: 12px;
+  }
+  .workspace .dashboard-identity {
+    max-width: 220px;
+  }
+  .workspace .topbar-status {
+    gap: 10px;
+  }
+  .workspace .badge {
+    font-size: 9px;
+  }
+  .workspace.layout-fremblik .sidebar {
+    grid-template-columns: minmax(0, 1fr) 35px auto;
+    row-gap: 0;
+    padding: 16px 25px 0;
+  }
+  .workspace.layout-fremblik .sidebar-brand {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .workspace.layout-fremblik .new-conversation {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .workspace.layout-fremblik .sidebar-bottom {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .workspace.layout-fremblik .sidebar nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .workspace.layout-fremblik .sidebar nav button {
+    display: flex;
+    min-height: 40px;
+    padding-bottom: 11px;
+  }
+  .workspace.layout-fremblik .sidebar nav button > span:not(.kaia-icon) {
+    display: inline;
+  }
+  .workspace.layout-fremblik .analysis {
+    scroll-margin-top: 145px;
+  }
+}
+@media (max-width: 650px) {
+  .workspace .main-content,
+  .workspace .main-content.dashboard-home {
+    width: calc(100% - 34px);
+  }
+  .workspace .main-content.dashboard-home {
+    padding-top: 23px;
+  }
+  .workspace .topbar {
+    padding: 12px 17px;
+    gap: 12px;
+    flex-wrap: wrap;
+    position: static;
+  }
+  .workspace .breadcrumb {
+    font-size: 10px;
+    gap: 8px;
+  }
+  .workspace .topbar-status {
+    flex: 1;
+    justify-content: flex-end;
+    gap: 9px;
+  }
+  .workspace .topbar .badge:not(.simulated) {
+    display: none;
+  }
+  .workspace .dashboard-welcome {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .workspace .dashboard-welcome h1 {
+    font-size: 29px;
+  }
+  .workspace .dashboard-welcome p {
+    font-size: 12px;
+  }
+  .workspace .dashboard-identity {
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3px 7px;
+    padding-left: 10px;
+    margin-top: 16px;
+  }
+  .workspace .dashboard-identity strong {
+    font-size: 12px;
+    margin: 0;
+  }
+  .workspace .dashboard-identity small,
+  .workspace .dashboard-identity > span {
+    font-size: 10px;
+  }
+  .workspace .dashboard-identity .identity-area {
+    width: 100%;
+    margin-top: 2px;
+    font-size: 10px;
+  }
+  .workspace .dashboard-home .analysis-scope {
+    gap: 6px 13px;
+    padding-bottom: 12px;
+  }
+  .workspace .analysis-scope .select-wrap select {
+    font-size: 10px;
+    min-height: 30px;
+    max-width: 155px;
+  }
+  .workspace .welcome-composer {
+    padding: 18px 17px 14px;
+  }
+  .workspace .welcome-composer textarea {
+    font-size: 20px;
+    min-height: 75px;
+  }
+  .workspace .composer-bottom > span {
+    font-size: 10px;
+    max-width: 58%;
+    line-height: 1.5;
+  }
+  .workspace .composer-bottom > span > .kaia-icon {
+    display: none;
+  }
+  .workspace .composer .send-button {
+    min-width: 93px;
+    font-size: 11px;
+    padding-inline: 10px;
+    gap: 8px;
+  }
+  .workspace .dashboard-suggestions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3px 16px;
+    margin: 13px 0 25px;
+  }
+  .workspace .dashboard-suggestions strong {
+    font-size: 11px;
+  }
+  .workspace .dashboard-suggestions small {
+    font-size: 10px;
+  }
+  .workspace .dashboard-suggestions > button {
+    gap: 7px;
+  }
+  .workspace .welcome-footer {
+    font-size: 9px;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .workspace .workspace-footer {
+    padding-inline: 18px;
+    gap: 5px;
+    font-size: 9px;
+  }
+  .workspace .analysis {
+    padding: 18px;
+  }
+  .workspace.layout-fremblik .sidebar {
+    padding-inline: 19px;
+    gap: 0 11px;
+  }
+  .workspace.layout-fremblik .sidebar-brand .brand > span {
+    font-size: 21px;
+  }
+  .workspace.layout-fremblik .sidebar-bottom .profile {
+    padding-left: 3px;
+    gap: 5px;
+  }
+  .workspace.layout-fremblik .sidebar-bottom > button {
+    width: 29px;
+    min-height: 35px;
+  }
+  .workspace.layout-fremblik .sidebar-bottom .profile .avatar {
+    width: 29px;
+    height: 29px;
+    font-size: 9px;
+  }
+  .workspace.layout-fremblik .main-content.dashboard-home {
+    width: calc(100% - 36px);
+    padding-top: 20px;
+  }
+}
+@media (max-width: 560px) {
+  .workspace .topbar .breadcrumb {
+    display: none;
+  }
+  .workspace .topbar-status {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+  .workspace .provider-status {
+    font-size: 9px;
+    max-width: 115px;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+  .workspace .provider-status small {
+    display: none;
+  }
+  .workspace .badge.simulated {
+    font-size: 8px;
+    padding: 4px 5px;
+    white-space: nowrap;
+  }
+  .workspace .dashboard-welcome h1 {
+    font-size: 27px;
+  }
+  .workspace .dashboard-welcome p {
+    font-size: 11px;
+  }
+  .workspace .welcome-composer {
+    padding: 16px 14px 13px;
+  }
+  .workspace .welcome-composer textarea {
+    min-height: 83px;
+    font-size: 19px;
+  }
+  .workspace .composer-bottom > span {
+    font-size: 9px;
+    max-width: 52%;
+  }
+  .workspace .dashboard-suggestions strong {
+    font-size: 10px;
+  }
+  .workspace .dashboard-suggestions small {
+    font-size: 9px;
+  }
+  .workspace .analysis-scope .select-wrap select {
+    max-width: 140px;
+  }
+  .workspace .analysis {
+    padding: 16px;
+  }
+  .workspace.layout-fremblik .sidebar nav {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    padding: 0;
+  }
+  .workspace.layout-fremblik .sidebar nav button {
+    font-size: 10px;
+    width: auto;
+  }
+  .workspace.layout-fremblik .sidebar nav button > span:not(.kaia-icon) {
+    display: inline;
+  }
+  .workspace.layout-fremblik .sidebar-bottom {
+    display: flex;
+  }
+  .workspace.layout-fremblik .sidebar-brand .brand {
+    display: inline-flex;
+  }
+  .workspace.layout-fremblik .sidebar-brand .brand > svg {
+    width: 27px;
+    height: 27px;
+  }
+  .workspace.layout-fremblik .sidebar-bottom .profile {
+    display: flex;
+  }
+}
+
+.workspace.layout-fremblik .new-conversation > .kaia-icon:first-child,
+.workspace.layout-fremblik .sidebar-bottom > button > .kaia-icon:first-child {
+  display: inline-block;
+}
+.workspace.layout-fremblik .profile form {
+  display: block;
+}

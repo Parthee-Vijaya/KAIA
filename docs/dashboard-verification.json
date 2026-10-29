@@ -1,0 +1,85 @@
+{
+  "verifiedOn": "2026-10-21",
+  "product": "K.A.I.A.",
+  "dashboard": "Fremblik",
+  "url": "https://kaia-sand.vercel.app/",
+  "datasetVersion": "KAIA-DEMO-2026.09-v4",
+  "sourceCommit": "733d84319ac487a0dad93683fb6877bbe9031096",
+  "deployment": {
+    "id": "dpl_GEyskMwCQD86oq7jibL5pdEtPX6D",
+    "state": "READY",
+    "target": "production",
+    "aliasVerified": true,
+    "project": "kaia",
+    "team": "parthee-vijayas-projects"
+  },
+  "backend": {
+    "runtime": "1792597368862",
+    "port": 3212,
+    "database": "persistent-postgres",
+    "gateway": "HMAC",
+    "tunnelRestarted": false,
+    "migrationsRequired": false
+  },
+  "automated": {
+    "testFiles": 15,
+    "testsPassed": 296,
+    "testsFailed": 0,
+    "realDatabaseIncluded": true,
+    "newTests": 103,
+    "finalUiStateTestsPassed": 20,
+    "typecheck": "passed",
+    "lint": "passed",
+    "localProductionBuild": "passed",
+    "vercelBuild": "passed"
+  },
+  "http": {
+    "localChecksPassed": 14,
+    "publicChecksPassed": 14,
+    "normalDemoLogin": true,
+    "mocks": false,
+    "publicTimingsMs": {
+      "dashboard": 2669,
+      "singleSchool2025": 411,
+      "energy15Percent": 446,
+      "reset": 456
+    },
+    "energyDeltaOre": 110732133,
+    "resetDeltaOre": 0
+  },
+  "browser": {
+    "publicLogin": "passed",
+    "forecastTableLegendAndSources": "passed",
+    "csvAllSeries": "passed",
+    "svgXmlAndVersion": "passed",
+    "budgetThenPreviousYear": "passed",
+    "sameMonths": "passed",
+    "saveReloadReopenInsight": "passed",
+    "saveReloadScenarioLocal": "passed",
+    "reduceMotionPersistence": "passed",
+    "expandedChartFinalWarnings": 0,
+    "finalConsoleErrors": 0,
+    "viewports": [
+      [1440, 1100],
+      [834, 1112],
+      [390, 844],
+      [1920, 1080]
+    ],
+    "mobileTabletOverflow": false,
+    "physicalIpadKeyboardTested": false
+  },
+  "secrets": {
+    "clientFilesScanned": 13,
+    "credentialLiteralMatches": 0,
+    "environmentFilesInPublishedRuntime": 0
+  },
+  "externalCredentials": {
+    "entra": "not-run",
+    "mistral": "not-run",
+    "corti": "not-run",
+    "azureOpenAI": "not-run",
+    "openAI": "not-run"
+  },
+  "operatingRequirement": "Den lokale Mac og tunnel skal være online.",
+  "developmentObservation": "En forbigående databasefejl under hot reload blev ikke reproduceret i afsluttende produktion. Årsag ikke fastlagt."
+}

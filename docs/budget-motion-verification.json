@@ -1,0 +1,47 @@
+{
+  "verifiedOn": "2026-10-21",
+  "product": "K.A.I.A.",
+  "feature": "Fremblik budget status, prior year comparison and request activity",
+  "publicUrl": "https://kaia-sand.vercel.app/",
+  "deploymentId": "dpl_7tqtxYYKpruSNo6ZBXmZJYkpCSDK",
+  "codeCommit": "f2afcfe44fbb8e455b54ec81038a3ebb42a09ce5",
+  "datasetVersion": "KAIA-DEMO-2026.09-v4",
+  "referenceDate": "2026-09-30",
+  "runtime": "Node 24.19.0",
+  "typecheck": "passed",
+  "lint": "passed",
+  "localProductionBuild": "passed",
+  "vercelProductionBuild": "passed",
+  "tests": { "passed": 336, "files": 17, "realPostgresEnabled": true },
+  "publicHttp": {
+    "passed": 16,
+    "auth": "normal demo login",
+    "path": "Vercel to gateway to local backend to Postgres",
+    "dashboardMs": 2628,
+    "singleSchool2025Ms": 527,
+    "scenarioMs": 398,
+    "resetMs": 351
+  },
+  "browser": {
+    "budgetVisibleWithoutChat": true,
+    "priorYearTableAndSource": "passed",
+    "yearComparisonChatShortcut": "passed",
+    "realAnalysisActivity": "passed",
+    "realSimulationActivity": "passed",
+    "reducedMotionSetting": "passed",
+    "localScenarioPreviewAndReset": "passed",
+    "consoleWarnings": 0,
+    "consoleErrors": 0,
+    "publicViewports": ["1440x1250", "834x1112", "390x844"],
+    "physicalIpad": "not run"
+  },
+  "backend": {
+    "changed": false,
+    "runtime": "1792597368862",
+    "migrationRequired": false,
+    "requiresOnlineMacAndTunnel": true
+  },
+  "realEntraIntegration": "not run",
+  "credentialBasedModelIntegrations": "not run",
+  "providerContractTests": "fixtures"
+}

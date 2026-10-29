@@ -1,0 +1,403 @@
+.kaia-flow {
+  padding: 22px 0;
+  border-top: 1px solid var(--line, #e4e5e8);
+  border-bottom: 1px solid var(--line, #e4e5e8);
+  margin: 20px 0;
+  color: var(--text, #252525);
+}
+.kaia-flow header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+}
+.kaia-flow h3 {
+  font-size: 19px;
+  margin: 8px 0 0;
+  letter-spacing: -0.025em;
+}
+.kaia-flow header > small {
+  color: #535e70;
+  font-size: 11px;
+  padding-top: 4px;
+}
+.kaia-flow-steps {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 6px;
+  margin: 20px 0;
+}
+.kaia-flow-steps button {
+  background: #fff;
+  border: 1px solid #e4e5e8;
+  border-radius: 8px;
+  padding: 12px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: #535e70;
+  min-width: 0;
+  font: inherit;
+  cursor: pointer;
+}
+.kaia-flow-steps button > span {
+  font: 11px var(--font-mono, monospace);
+}
+.kaia-flow-steps strong {
+  font-size: 12px;
+  font-weight: 600;
+}
+.kaia-flow-steps small {
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.4;
+}
+.kaia-flow-steps button[aria-pressed='true'] {
+  color: #9b4028;
+  border-color: #bc4d30;
+  background: #f8edea;
+}
+.kaia-flow-steps button[data-state='running'] > span {
+  animation: kaia-flow-pulse 1.3s ease-in-out infinite;
+}
+.kaia-flow-detail h4 {
+  font-size: 15px;
+  margin: 0 0 16px;
+}
+.kaia-flow-detail dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+}
+.kaia-flow-detail dt {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.kaia-flow-detail dd {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #535e70;
+  overflow-wrap: anywhere;
+}
+.kaia-flow-time {
+  font-size: 11px;
+  color: #535e70;
+  margin-top: 16px;
+}
+.kaia-flow-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.kaia-flow-sources button {
+  font: inherit;
+  font-size: 11px;
+  padding: 7px 9px;
+  border: 1px solid #e4e5e8;
+  border-radius: 6px;
+  background: #fff;
+  color: #006f71;
+  cursor: pointer;
+}
+.kaia-flow-journal {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #535e70;
+}
+.kaia-flow-journal summary {
+  cursor: pointer;
+}
+.kaia-flow-journal code {
+  display: block;
+  overflow-wrap: anywhere;
+  font-size: 11px;
+  margin: 12px 0;
+}
+.kaia-flow-journal ol {
+  padding-left: 18px;
+  display: grid;
+  gap: 10px;
+}
+.kaia-flow-journal li span {
+  display: block;
+  margin-top: 3px;
+  line-height: 1.5;
+}
+.kaia-demo-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e4e5e8;
+  margin: 0 0 20px;
+}
+.kaia-demo-entry div {
+  display: grid;
+  gap: 4px;
+}
+.kaia-demo-entry strong {
+  font-size: 13px;
+}
+.kaia-demo-entry small {
+  font-size: 12px;
+  color: #535e70;
+}
+.kaia-demo-entry button {
+  flex-shrink: 0;
+}
+
+.mobility-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 24px 0;
+}
+.mobility-controls label {
+  font-size: 12px;
+  display: grid;
+  gap: 8px;
+}
+.mobility-controls strong {
+  font-size: 16px;
+}
+.mobility-controls input {
+  width: 100%;
+  accent-color: #bc4d30;
+}
+.mobility-controls small {
+  color: #535e70;
+  line-height: 1.5;
+}
+.mobility-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.mobility-note {
+  color: #535e70;
+  font-size: 12px;
+  line-height: 1.65;
+}
+.mobility-figures {
+  display: grid;
+  gap: 22px;
+  margin: 24px 0;
+}
+.mobility-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.mobility-table td,
+.mobility-table th {
+  text-align: right;
+  border-bottom: 1px solid #e4e5e8;
+  padding: 10px 6px;
+}
+.mobility-table td:first-child,
+.mobility-table th:first-child {
+  text-align: left;
+}
+.mobility-table caption {
+  text-align: left;
+  font-weight: 600;
+  padding: 12px 0;
+}
+.mobility-table-wrap {
+  overflow-x: auto;
+}
+.mobility-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 22px 0;
+}
+.mobility-kpis small {
+  font-size: 11px;
+  color: #535e70;
+  display: block;
+  margin-bottom: 7px;
+}
+.mobility-kpis strong {
+  font-size: 21px;
+}
+.mobility-plan {
+  margin-top: 20px;
+  border-top: 1px solid #e4e5e8;
+  padding-top: 18px;
+}
+.mobility-plan h4 {
+  margin: 0 0 12px;
+}
+.mobility-plan p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.mobility-plan details {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 14px 0;
+}
+.mobility-plan ul {
+  padding-left: 18px;
+}
+.mobility-plan dl {
+  margin: 18px 0;
+}
+.mobility-plan .mobility-approval {
+  display: flex;
+  align-items: start;
+  gap: 9px;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 16px 0;
+}
+.mobility-plan code {
+  font-size: 11px;
+  overflow-wrap: anywhere;
+  display: block;
+  color: #535e70;
+}
+.mobility-plan .success {
+  color: #006f71;
+  font-weight: 600;
+}
+@keyframes kaia-flow-pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+@media (max-width: 800px) {
+  .kaia-flow-steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .mobility-controls {
+    grid-template-columns: 1fr;
+  }
+  .mobility-kpis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .kaia-flow header {
+    display: block;
+  }
+  .kaia-flow header > small {
+    display: block;
+    margin-top: 8px;
+  }
+}
+@media (max-width: 500px) {
+  .kaia-flow-detail dl {
+    grid-template-columns: 1fr;
+  }
+  .kaia-demo-entry {
+    align-items: start;
+    flex-direction: column;
+  }
+  .brand .brand-name small {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kaia-flow-steps button[data-state='running'] > span {
+    animation: none;
+  }
+}
+
+.mobility-panel {
+  padding: 0 28px 30px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.mobility-controls label {
+  min-width: 0;
+}
+.mobility-controls input {
+  min-width: 0;
+  box-sizing: border-box;
+}
+.mobility-plan code,
+.kaia-flow-journal code {
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+.dialog .mobility-panel .chart-panel {
+  margin: 0;
+  min-width: 0;
+}
+.kaia-flow-steps small {
+  font-size: 11px;
+}
+@media (max-width: 500px) {
+  .mobility-panel {
+    padding: 0 16px 24px;
+  }
+}
+
+.kaia-flow-playback {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+  padding: 14px 0;
+  border-top: 1px solid #e4e5e8;
+  border-bottom: 1px solid #e4e5e8;
+}
+.kaia-flow-playback label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #535e70;
+}
+.kaia-flow-playback select {
+  border: 1px solid #e4e5e8;
+  border-radius: 6px;
+  padding: 8px;
+  background: #fff;
+  font: inherit;
+  color: #252525;
+}
+.kaia-flow-playback [role='status'] {
+  font-size: 11px;
+  color: #535e70;
+  margin-left: auto;
+}
+.kaia-flow-focus {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  margin: 24px 0;
+}
+.kaia-flow-focus > span {
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -0.08em;
+  font-weight: 400;
+  color: #bc4d30;
+  min-width: 62px;
+}
+.kaia-flow-focus p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 10px;
+  color: #252525;
+  max-width: 650px;
+}
+.kaia-flow-focus h4 {
+  font-size: 12px;
+  color: #535e70;
+  font-weight: 450;
+  margin: 0;
+}
+.kaia-flow-steps button[aria-pressed='true'] {
+  background: #fff;
+  box-shadow: inset 0 -3px #bc4d30;
+}

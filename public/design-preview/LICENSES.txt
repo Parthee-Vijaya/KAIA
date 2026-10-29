@@ -1,0 +1,304 @@
+K.A.I.A. – lokale assets til selvstændig design-preview
+
+Verificeret/hentet UTC: 2026-10-21T14:44:42+00:00
+
+1. Phosphor Icons
+
+Pakke: @phosphor-icons/core
+Version: 2.1.1 (npm registry dist-tag latest ved hentningen)
+Vægt: regular
+Licens: MIT
+Officiel kilde: https://github.com/phosphor-icons/core
+Registry: https://registry.npmjs.org/@phosphor-icons/core/2.1.1
+Tarball: https://registry.npmjs.org/@phosphor-icons/core/-/core-2.1.1.tgz
+Pakkeintegritet kontrolleret: sha512-v4ARvrip4qBCImOE5rmPUylOEK4iiED9ZyKjcvzuezqMaiRASCHKcRIuvvxL/twvLpkfnEODCOJp5dM4eZilxQ==
+
+Filerne er kopieret uændret fra package/assets/regular/. Ingen runtime-CDN eller ikonfont.
+
+MIT License
+
+Copyright (c) 2023 Phosphor Icons
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+2. geist-sans
+
+Pakke: @fontsource/geist-sans
+Installeret pakkeversion: 5.3.0
+Licens: OFL-1.1
+Kilde: https://www.npmjs.com/package/@fontsource/geist-sans/v/5.3.0
+Lokalt kopieret fra node_modules/@fontsource/geist-sans/files/geist-sans-latin-<vægt>-normal.woff2.
+Filerne er uændrede; kun filnavnene er forkortet. Hver fil bruges med sin konkrete statiske font-weight, ikke som et vægtinterval.
+
+Geist Sans and Geist Mono Font
+(C) 2023 Vercel, made in collaboration with basement.studio
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: http://scripts.sil.org/OFL and copied below
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION AND CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+3. geist-mono
+
+Pakke: @fontsource/geist-mono
+Installeret pakkeversion: 5.3.0
+Licens: OFL-1.1
+Kilde: https://www.npmjs.com/package/@fontsource/geist-mono/v/5.3.0
+Lokalt kopieret fra node_modules/@fontsource/geist-mono/files/geist-mono-latin-<vægt>-normal.woff2.
+Filerne er uændrede; kun filnavnene er forkortet. Hver fil bruges med sin konkrete statiske font-weight, ikke som et vægtinterval.
+
+Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font.git) GeistMono-Italic[wght].ttf: Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font.git)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+
+4. Lokale filer og SHA-256
+
+fonts/geist-mono-400.woff2  sha256:3f98383b122fe015a48536cd4a1cda855a201718923ffe74931a01597107b9b5
+fonts/geist-mono-500.woff2  sha256:72971bd4908d3984fa1b1426bb363730e4957e16a0f58bfbca76993095715488
+fonts/geist-sans-400.woff2  sha256:e6ef6abb39c762ed2259cc814e6f16888c540cd84835962227b56ab2354f27f1
+fonts/geist-sans-500.woff2  sha256:40073e90816315c92e4f4381bd50b6fdc950b22b0dd010a4179046cf588d4f12
+fonts/geist-sans-600.woff2  sha256:9d99fbd791968493fa507ac846de561cee47b00f8100c23cad333b3cb78392d6
+fonts/geist-sans-700.woff2  sha256:3d59addfafec3452d44717aa0a18911d5c3812487ed06af47f2ef27192ea1eed
+icons/arrow-counter-clockwise.svg  sha256:4eb160d5ae781107c674481ac081962e6bce6281a646129e6c3f960b9dd5dac6
+icons/arrow-right.svg  sha256:e45bc4a12592b8723110db42c6deffdf177e4fe7704cf50324963fa0a59b2d74
+icons/arrow-up-right.svg  sha256:44db5257b360ec04863eb6daaa41f220c8b714d23fb81403517d0a30acfda9f4
+icons/arrow-up.svg  sha256:361aa9f9c52a759bf598faf6ed38ccd426f949f541d662c65b5b5d868fa76980
+icons/arrows-left-right.svg  sha256:84c43373542a3ac2e7de3d22ddef0c8eb61ef6ba7a270c6aca5aa493dd40f8b4
+icons/bookmark-simple.svg  sha256:493a836009ab98f8d4ca84f088cc03f2785cdee86daa1643e003865ff3168b41
+icons/buildings.svg  sha256:76f3325b87588fc6786953e8b964d5b7cae58983b3dc1399f7b7a672a6c1b553
+icons/calendar-blank.svg  sha256:6268583ae0ea04e93fd24f1e70d47a8e8d79c88fc304af397b95b318980215d6
+icons/caret-down.svg  sha256:53f0cf2d0b144ac3cb07e353e0cd0853ffb3ed432d741460ce288edfcb0924b1
+icons/caret-right.svg  sha256:e6dec01e074807965b7f3146b976a9b5e82c31d9c2c88aeb52e77cc2ab16c1d7
+icons/caret-up-down.svg  sha256:d2e93459514746d53d152c8624fbf89356ee4e0932ab3efd094e8dce9bb0d793
+icons/chart-bar.svg  sha256:d161e503af4f5386a370ffd742d19d85e98625fd6d6eadbabbdb36d58dcca22c
+icons/chat-circle.svg  sha256:09e36aa820a39bbc8cffe705ad84c836d1e5733f83dc1d2212a965fdacdf4a67
+icons/check.svg  sha256:cbb89a8c42f283d4f846eb935e05d88c1be04462f16480e068c0f82b9ce40b12
+icons/dots-three.svg  sha256:ca4e748007101155641ec3041cd129bb03a8030d0eed16e313b9dd75e6beac77
+icons/download-simple.svg  sha256:c48678aa09b44ba4974954690ee6cc846379c448a7214f8c802604c2a1562014
+icons/files.svg  sha256:bb4cec5fc4ae78d9bfc38378db6d991a4f9b89e0e58db97a95a083b68a4c5a9e
+icons/gear-six.svg  sha256:2bb05ec80cc37505a3f21c74989dbb297ab8442a668f5ffbd6a8f7c1d5794c7b
+icons/info.svg  sha256:438a1f319d53d86e840af73fb7b1d224c9224a437b9fa449a4e2cb45a82a3552
+icons/magnifying-glass.svg  sha256:f9fa2561978a9a3291e8ae0ebfcb651104f5069fade8f84871627bca68889cde
+icons/plus.svg  sha256:d688feb9dd2e41c1721d6906a05a2a42e18cd774762fe706d72b2bdfd91cddc4
+icons/shield-check.svg  sha256:bb04d552c0baaaabd90f7eb60760cb0c7ddb7e9f47e4b76e9599ddd7dfd8eaa7
+icons/sidebar-simple.svg  sha256:36818e1212cb24f5e1aa7e10480b0f4dc399d2c61d9b9b53c062d799dde162a3
+icons/sliders-horizontal.svg  sha256:1d937baa3bc51ec4052364edf30cf8991d550920534f5d413eb9f60535cc1916
+icons/squares-four.svg  sha256:f70d6b20e08e028ab5b1714077681910a2431092cf7a23b82366ddaec554ab87
+icons/trend-up.svg  sha256:d99a74c39fecc099ed7e774f6306fc8137ff63011edea27e06e17c9582454ffb
+icons/user-circle.svg  sha256:5aee25838c1915058940900df322afc36b76f4ea7e48499c33603cf121258b2a
+icons/x.svg  sha256:7397b15e1fa66eaf6ff9b59fe91d483cb5c3bcf75b2fe052097ab6f0593b513a
+
+5. Udvidet Phosphor Regular-delmængde til React-grænsefladen
+
+Kopieret uændret fra samme officielle @phosphor-icons/core 2.1.1-tarball som ovenfor, med samme verificerede SHA-512 og MIT-licens. Ingen nye biblioteker eller runtime-CDN.
+
+icons/stop.svg  sha256:90c8296c46c18d913784d0c3d6c66bbbfcf536b161a0387659d65dc2548ba623
+icons/spinner-gap.svg  sha256:c6cd667951de0c9a64e1831e11866b51f8af9b2da56623f58634f3448fb450cd
+icons/sign-out.svg  sha256:511fe7958ef31f8904185631fd7045c11f35c8034a2a64ccb3bdcc4dfa81df77
+icons/clock-counter-clockwise.svg  sha256:06aa1cb0d2664789232f4addb1c5932c8ce14e48465c8e8fb09a651b619b44e3
+icons/table.svg  sha256:2ab06ee519b223e43937aa6f632dd89b08caa9ef28477d04b59f137e3e65029c
+icons/database.svg  sha256:da7d3598430cbe3b334c308c03ca41e8c4c7bbbfa7891e914d7aa8e87d847423
+icons/graduation-cap.svg  sha256:855b9f61c75900768c0265f671456554215e37b5bf15af9afa7acef36ec31c48
+icons/lightning.svg  sha256:3a50c776266b21812f8ec5b5a841a81f54aa942569a31eb03a36fb0a5bfbe66e
+icons/book-open.svg  sha256:b38cdb3a15dcf00cfa4811e318b021e25c6a87b47acbb11888e16d107a5642da
+icons/key.svg  sha256:61694102f24a2eb4ce68f337fb6bf81090aef219328cb10dc2bd3f3c9e2ea266
+icons/arrows-out-simple.svg  sha256:df766bb615bf2ec178d2fa0e095684b4da0ecc6eba1f228ffba00139f16a4611
+icons/plugs-connected.svg  sha256:cca84487a9a3b1a3c413576efe1fc400f119cfff59bcc5fc336e5b3d8e1788ea
+icons/lock-key.svg  sha256:a8177687fb7b376afa1cf3bc0b16599c91b96a323687e2145f772b93ed0f2c95
+icons/stack.svg  sha256:ee9eaaeb345e8a28c9662cf8a59147cb86080bd922e41f143444189e0116ea7e
+icons/shield.svg  sha256:ac5af74bb9729d9ba0e3a8796e300e016e2f07997f2d4b67071defce18503f1f
+icons/arrow-left.svg  sha256:3c2001cf957d182fc54927e4b286cc8cf66dd97830f441ca2650d42a63a9006a
+icons/building-office.svg  sha256:7e9122694d519b36e94c10b90456255de15f1cb3b0b9cdb19a50e04d5ec6472d

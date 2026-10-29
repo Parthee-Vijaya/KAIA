@@ -1,0 +1,200 @@
+{
+  "testedAt": "2026-10-20T22:02:28.012Z",
+  "mode": "real local HTTP+Postgres, explicit local fixtures; no external credentials",
+  "checks": [
+    {
+      "question": "Giv mig et overblik over budgetstatus på skoleområdet.",
+      "status": 200,
+      "intent": "budget",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 3,
+      "chart": "bar",
+      "missingData": false
+    },
+    {
+      "question": "Hvilke skoler har de største simulerede afvigelser i år?",
+      "status": 200,
+      "intent": "comparison",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 4,
+      "chart": "bar",
+      "missingData": false
+    },
+    {
+      "question": "Sammenlign Skolen på Herredsåsen, Høng Skole og Svebølle Skole.",
+      "status": 200,
+      "intent": "comparison",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 4,
+      "chart": "bar",
+      "missingData": false
+    },
+    {
+      "question": "Vis udviklingen i udgift pr. elev fra 2023 til 2026.",
+      "status": 200,
+      "intent": "trend",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 4,
+      "chart": "line",
+      "missingData": false
+    },
+    {
+      "question": "Hvordan ser årsprognosen ud i forhold til det vedtagne demobudget?",
+      "status": 200,
+      "intent": "forecast",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 4,
+      "chart": "line",
+      "missingData": false
+    },
+    {
+      "question": "Hvilke typer udgifter bidrager mest til afvigelsen?",
+      "status": 200,
+      "intent": "category",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 4,
+      "chart": "waterfall",
+      "missingData": false
+    },
+    {
+      "question": "Sammenlign energiudgifterne på de valgte kommunale bygninger.",
+      "status": 200,
+      "intent": "energy",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 5,
+      "chart": "bar",
+      "missingData": false
+    },
+    {
+      "question": "Hvad sker der, hvis energiprisen stiger 15 procent resten af året?",
+      "status": 200,
+      "intent": "scenario",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 4,
+      "chart": "scenario",
+      "missingData": false
+    },
+    {
+      "question": "Hvad sker der, hvis vikarforbruget falder 10 procent på skoleområdet?",
+      "status": 200,
+      "intent": "scenario",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 4,
+      "chart": "scenario",
+      "missingData": false
+    },
+    {
+      "question": "Vis baseline og scenarie i samme graf.",
+      "status": 200,
+      "intent": "scenario",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 3,
+      "chart": "scenario",
+      "missingData": false
+    },
+    {
+      "question": "Hvilke simulerede politiske beslutninger er relevante for skoleområdets budget?",
+      "status": 200,
+      "intent": "documents",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 4,
+      "chart": null,
+      "missingData": false
+    },
+    {
+      "question": "Find den simulerede strategi, som opfølgningen henviser til.",
+      "status": 200,
+      "intent": "documents",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 4,
+      "chart": null,
+      "missingData": false
+    },
+    {
+      "question": "Lav en kort opsummering til et udvalg med tal og kildehenvisninger.",
+      "status": 200,
+      "intent": "budget",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 3,
+      "chart": "bar",
+      "missingData": false
+    },
+    {
+      "question": "Vis samme analyse for 2025.",
+      "status": 200,
+      "intent": "budget",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 3,
+      "chart": "bar",
+      "missingData": false
+    },
+    {
+      "question": "Sammenlign de relevante kultur- og idrætsfaciliteter.",
+      "status": 200,
+      "intent": "comparison",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 4,
+      "chart": "bar",
+      "missingData": false
+    },
+    {
+      "question": "Forklar beregningen bag udgift pr. elev.",
+      "status": 200,
+      "intent": "trend",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 3,
+      "chart": "line",
+      "missingData": false
+    },
+    {
+      "question": "Hvor mange borgere fik en individuel social bevilling i går?",
+      "status": 200,
+      "intent": "missing",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 0,
+      "chart": null,
+      "missingData": true
+    },
+    {
+      "question": "Forklar energiudgifternes ændring med pris, mængde og samspil på skoleområdet.",
+      "status": 200,
+      "intent": "pricequantity",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 4,
+      "chart": "waterfall",
+      "missingData": false
+    },
+    {
+      "question": "Hvordan påvirker ændret demografi de variable skoleudgifter?",
+      "status": 200,
+      "intent": "demography",
+      "datasetVersion": "KAIA-DEMO-2026.09-v3",
+      "sourceCount": 4,
+      "chart": "waterfall",
+      "missingData": false
+    },
+    {
+      "question": "Historical snapshot binding",
+      "datasetVersion": "KAIA-DEMO-2026.09-v1",
+      "status": 200
+    },
+    {
+      "question": "Historical snapshot binding",
+      "datasetVersion": "KAIA-DEMO-2026.09-v1",
+      "status": 200
+    },
+    {
+      "question": "Mixed-version conversation rejected",
+      "status": 409
+    },
+    {
+      "question": "Historical document version",
+      "datasetVersion": "KAIA-DEMO-2026.09-v1",
+      "status": 200
+    },
+    {
+      "question": "Council detailed comparison denied before stream",
+      "status": 403
+    }
+  ]
+}

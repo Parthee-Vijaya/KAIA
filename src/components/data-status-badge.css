@@ -1,0 +1,24 @@
+.kaia-data-status {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(12px, env(safe-area-inset-bottom));
+  z-index: 45;
+  padding: 6px 10px;
+  border: 1px solid #e4e5e8;
+  border-radius: 8px;
+  background: #fff;
+  color: #535e70;
+  font:
+    400 10px / 1.4 'Geist Sans',
+    sans-serif;
+  letter-spacing: 0.1px;
+  pointer-events: none;
+}
+@media (max-width: 600px) {
+  .kaia-data-status {
+    right: max(10px, env(safe-area-inset-right));
+    bottom: max(8px, env(safe-area-inset-bottom));
+    padding: 5px 8px;
+    font-size: 9px;
+  }
+}

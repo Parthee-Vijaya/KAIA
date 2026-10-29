@@ -1,0 +1,50 @@
+{
+  "verifiedOn": "2026-10-21",
+  "publicUrl": "https://kaia-sand.vercel.app/",
+  "feature": "School variance ranking with scoped drilldown",
+  "deploymentId": "dpl_8WVUeTMjuiqyfTiMWbw2E2cn7tdS",
+  "codeCommit": "984b5b09b3e8b71e70cf51fa2ca538a2a9cf8c3b",
+  "datasetVersion": "KAIA-DEMO-2026.09-v4",
+  "referenceDate": "2026-09-30",
+  "nodeVersion": "24.19.0",
+  "typecheck": "passed",
+  "lint": "passed",
+  "localProductionBuild": "passed",
+  "vercelProductionBuild": "passed",
+  "tests": {
+    "passed": 390,
+    "files": 19,
+    "realPostgresEnabled": true,
+    "newPresentationFixtureTests": 43,
+    "newDomainContractTests": 11
+  },
+  "publicHttp": {
+    "passed": 17,
+    "auth": "normal demo login",
+    "path": "Vercel to gateway to local backend to Postgres",
+    "dashboardMs": 2372,
+    "singleSchool2025Ms": 387,
+    "scenarioMs": 415,
+    "resetMs": 417,
+    "schoolSourceMatchesVariance": true
+  },
+  "browser": {
+    "topFiveVisibleWithoutChat": true,
+    "expandShows16Schools": true,
+    "keyboardDrilldown": "passed",
+    "schoolAndPeriodPreserved": true,
+    "waterfallTableMatchesClickedAmount": true,
+    "simulatedFollowupOpens": true,
+    "consoleWarnings": 0,
+    "consoleErrors": 0,
+    "publicViewport": "1440x1100",
+    "localAdditionalViewports": ["834x1112", "390x844"],
+    "physicalIpad": "not run"
+  },
+  "backendChanged": false,
+  "databaseMigrationRequired": false,
+  "requiresOnlineMacAndTunnel": true,
+  "realEntraIntegration": "not run",
+  "credentialBasedModelIntegrations": "not run",
+  "providerContractTests": "fixtures"
+}

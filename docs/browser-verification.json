@@ -1,0 +1,35 @@
+{
+  "testedAtLocalDate": "2026-10-21",
+  "timezone": "Europe/Copenhagen",
+  "url": "http://127.0.0.1:3210",
+  "datasetVersion": "KAIA-DEMO-2026.09-v3",
+  "mode": "Actual interactive local browser, explicit development identities, real Postgres, no Entra or model credentials",
+  "viewports": [
+    { "width": 1280, "height": 720, "horizontalOverflow": false },
+    { "width": 1920, "height": 1080, "horizontalOverflow": false },
+    { "width": 1024, "height": 768, "horizontalOverflow": false },
+    { "width": 768, "height": 1024, "horizontalOverflow": false },
+    { "width": 390, "height": 844, "horizontalOverflow": false }
+  ],
+  "checks": [
+    { "name": "Four working authorized insight suggestions", "result": "passed" },
+    { "name": "Budget conclusion, metrics, chart and source version agree", "result": "passed" },
+    { "name": "Readable simulated document opened from citation", "result": "passed" },
+    { "name": "Saved insight and conversation persist after reload", "result": "passed" },
+    { "name": "Followup changes year to 2025 and preserves month range", "result": "passed" },
+    { "name": "Explicit school in question replaces prior institution filter", "result": "passed" },
+    { "name": "Energy 15 percent remaining-year effect computed", "baselineKr": 321829103, "scenarioKr": 322936426, "differenceKr": 1107323, "result": "passed" },
+    { "name": "Keyboard slider change to 21 percent automatically recomputed", "baselineKr": 321829103, "scenarioKr": 323379355, "differenceKr": 1550252, "result": "passed" },
+    { "name": "Scenario table changes only October through December", "result": "passed" },
+    { "name": "Named scenario saved and reopened", "result": "passed" },
+    { "name": "Reset gives zero difference and preserves saved original", "result": "passed" },
+    { "name": "School-only profile omits admin access and other areas", "result": "passed" },
+    { "name": "Forbidden social-area question returns actual 403 with visible message", "result": "passed" },
+    { "name": "Real municipal budget question gives missing-data explanation", "result": "passed" },
+    { "name": "All 16 school labels readable in horizontal comparison", "result": "passed" },
+    { "name": "Dampened motion survives reload and hides welcome animation", "result": "passed" },
+    { "name": "Input is 16px and mobile new-conversation control is visible", "result": "passed" }
+  ],
+  "notRun": ["Physical iPad", "Screen reader", "Real Entra login", "Credential-based model stream", "Vercel deployment"],
+  "finalViewport": "Default restored"
+}

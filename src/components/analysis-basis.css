@@ -1,0 +1,456 @@
+.kaia-basis {
+  padding: 26px 30px 32px;
+  color: var(--ink);
+}
+.kaia-basis-header {
+  max-width: 760px;
+  margin-bottom: 27px;
+}
+.kaia-basis-kicker {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--petrol);
+}
+.kaia-basis-header h3 {
+  font-size: clamp(21px, 3vw, 28px);
+  font-weight: 520;
+  letter-spacing: -0.045em;
+  line-height: 1.25;
+  margin: 9px 0;
+}
+.kaia-basis-header p {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 0;
+}
+.kaia-basis-path {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+  gap: 17px;
+}
+.kaia-basis-path > li {
+  min-width: 0;
+  position: relative;
+}
+.kaia-basis-path > li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: 50px;
+  right: -9px;
+  height: 1px;
+  background: var(--line);
+}
+.kaia-basis-step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--petrol);
+  margin-bottom: 12px;
+}
+.kaia-basis-path > li:last-child .kaia-basis-step-icon {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+.kaia-basis-path small {
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+}
+.kaia-basis-path strong,
+.kaia-basis-path li > div > span {
+  display: block;
+}
+.kaia-basis-path strong {
+  font-size: 12px;
+  font-weight: 550;
+  margin: 4px 0;
+}
+.kaia-basis-path li > div > span {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.kaia-basis-scope {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 13px 25px;
+  padding: 19px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 23px;
+}
+.kaia-basis-scope > div > span {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+.kaia-basis-scope strong {
+  font-size: 12px;
+  font-weight: 550;
+}
+.kaia-basis code {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  overflow-wrap: anywhere;
+}
+.kaia-basis-scope details {
+  grid-column: 1 / -1;
+}
+.kaia-basis summary {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 550;
+  list-style: none;
+}
+.kaia-basis summary::-webkit-details-marker {
+  display: none;
+}
+.kaia-basis details[open] > summary .kaia-icon {
+  transform: rotate(180deg);
+}
+.kaia-basis-scope ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 7px 24px;
+  margin: 13px 0 0;
+}
+.kaia-basis-scope li {
+  font-size: 11px;
+  color: var(--muted);
+}
+.kaia-basis-scope li code {
+  display: block;
+}
+.kaia-basis-missing,
+.kaia-basis-problems {
+  display: flex;
+  gap: 13px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--primary);
+  border-radius: 8px;
+  margin-bottom: 22px;
+}
+.kaia-basis-missing > .kaia-icon,
+.kaia-basis-problems > .kaia-icon {
+  color: var(--primary);
+  margin-top: 3px;
+}
+.kaia-basis h4 {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+}
+.kaia-basis-missing p,
+.kaia-basis-problems ul {
+  margin: 5px 0 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.kaia-basis-problems ul {
+  margin: 0;
+  padding-left: 14px;
+}
+.kaia-basis-formulas {
+  display: grid;
+  gap: 16px;
+}
+.kaia-basis-formula {
+  padding: 21px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.kaia-basis-formula-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.kaia-basis-expression {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 13px 0 18px;
+  color: var(--slate);
+  text-wrap: pretty;
+}
+.kaia-basis-citation {
+  color: var(--petrol);
+  font-size: 10px;
+  font-family: var(--font-mono);
+  padding: 4px 5px;
+  background: transparent;
+  border-radius: 4px;
+}
+.kaia-basis-citation:hover {
+  text-decoration: underline;
+}
+.kaia-basis-inputs,
+.kaia-basis-metrics dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px 20px;
+  margin: 0;
+}
+.kaia-basis dt {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+}
+.kaia-basis dd {
+  font-size: 14px;
+  letter-spacing: -0.025em;
+  font-variant-numeric: tabular-nums;
+  font-weight: 520;
+  margin: 3px 0 0;
+  overflow-wrap: anywhere;
+}
+.kaia-basis-equation-result {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid var(--line);
+  margin-top: 20px;
+  padding-top: 15px;
+}
+.kaia-basis-equation-result > span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.kaia-basis-equation-result strong {
+  color: var(--petrol);
+  font-size: 23px;
+  font-weight: 540;
+  letter-spacing: -0.045em;
+  font-variant-numeric: tabular-nums;
+}
+.kaia-basis-formula-note {
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin: 14px 0 0;
+}
+.kaia-basis-parameters {
+  margin: 23px 0;
+}
+.kaia-basis-parameters dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px 20px;
+  margin: 14px 0 0;
+}
+.kaia-basis-parameters dd {
+  font-size: 13px;
+}
+.kaia-basis-coverage {
+  margin: 24px 0;
+}
+.kaia-basis-coverage h4 {
+  margin-bottom: 13px;
+}
+.kaia-basis-coverage-row {
+  display: grid;
+  grid-template-columns: 42px 100px 1fr;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+}
+.kaia-basis-coverage-row > strong {
+  font-size: 10px;
+  font-weight: 550;
+}
+.kaia-basis-coverage-row > span:last-child {
+  font-size: 10px;
+  color: var(--muted);
+}
+.kaia-basis-coverage-bar {
+  display: flex;
+  height: 5px;
+  overflow: hidden;
+  gap: 2px;
+  border-radius: 3px;
+}
+.kaia-basis-coverage-bar i {
+  background: var(--petrol);
+  min-width: 0;
+}
+.kaia-basis-coverage-bar i:last-child {
+  background: var(--primary);
+}
+.kaia-basis-coverage-bar i[style*='flex: 0'] {
+  display: none;
+}
+.kaia-basis-chart .chart-panel {
+  margin: 24px 0 16px;
+}
+.kaia-basis-metrics {
+  border-bottom: 1px solid var(--line);
+  padding: 17px 0;
+}
+.kaia-basis-metrics dl {
+  padding-top: 17px;
+}
+.kaia-basis-notes {
+  padding-left: 16px;
+  margin: 19px 0;
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.kaia-basis-notes li + li {
+  margin-top: 7px;
+}
+.kaia-basis-assumptions {
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.kaia-basis-assumptions ul {
+  font-size: 11px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin: 15px 0 0;
+  padding-left: 16px;
+}
+.kaia-basis-assumptions li + li {
+  margin-top: 9px;
+}
+.kaia-basis-sources {
+  margin-top: 27px;
+}
+.kaia-basis-sources-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.kaia-basis-sources-heading > span {
+  font-size: 10px;
+  color: var(--muted);
+}
+.kaia-basis-sources ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.kaia-basis-sources li + li {
+  border-top: 1px solid var(--line);
+}
+.kaia-basis-sources button {
+  background: transparent;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+  width: 100%;
+  padding: 13px 0;
+  border-radius: 5px;
+}
+.kaia-basis-sources button:hover strong {
+  color: var(--petrol);
+}
+.kaia-basis-source-number {
+  flex: 0 0 23px;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+.kaia-basis-sources button > span:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+.kaia-basis-sources button > .kaia-icon {
+  margin-top: 3px;
+  color: var(--muted);
+}
+.kaia-basis-sources strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 550;
+}
+.kaia-basis-sources small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  margin-top: 4px;
+  line-height: 1.7;
+}
+.kaia-basis-sources > p {
+  color: var(--muted);
+  font-size: 11px;
+}
+@media (max-width: 700px) {
+  .kaia-basis {
+    padding: 22px;
+  }
+  .kaia-basis-path {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .kaia-basis-path > li:nth-child(2)::after {
+    display: none;
+  }
+  .kaia-basis-inputs,
+  .kaia-basis-metrics dl,
+  .kaia-basis-parameters dl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .kaia-basis-equation-result {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+@media (max-width: 420px) {
+  .kaia-basis {
+    padding: 18px;
+  }
+  .kaia-basis-scope {
+    grid-template-columns: 1fr;
+  }
+  .kaia-basis-formula {
+    padding: 17px;
+  }
+  .kaia-basis-coverage-row {
+    grid-template-columns: 38px 65px 1fr;
+    gap: 8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kaia-basis *,
+  .kaia-basis *::before,
+  .kaia-basis *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

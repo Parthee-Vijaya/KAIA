@@ -1,0 +1,542 @@
+{
+  "testedAt": "2026-10-20T23:04:14.712Z",
+  "url": "https://kaia-sand.vercel.app",
+  "mode": "Actual Vercel frontend to HMAC protected HTTPS tunnel, local production Node server and local PostgreSQL; public demo auth; no Microsoft or model credentials",
+  "checks": [
+    {
+      "name": "public frontend responds",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "login is clearly marked as demo",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "anonymous workspace denied",
+      "result": "passed",
+      "actual": 401
+    },
+    {
+      "name": "demo login school",
+      "result": "passed",
+      "actual": 303
+    },
+    {
+      "name": "HttpOnly Secure session cookie",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "redirect stays on configured frontend",
+      "result": "passed",
+      "actual": "https://kaia-sand.vercel.app/"
+    },
+    {
+      "name": "expanded posting count",
+      "result": "passed",
+      "actual": 1245024
+    },
+    {
+      "name": "expanded document count",
+      "result": "passed",
+      "actual": 1742
+    },
+    {
+      "name": "history starts in 2020",
+      "result": "passed",
+      "actual": 2020
+    },
+    {
+      "name": "forecast coverage ends in 2032",
+      "result": "passed",
+      "actual": 2032
+    },
+    {
+      "name": "four relevant suggestions",
+      "result": "passed",
+      "actual": 4
+    },
+    {
+      "name": "school role is server assigned",
+      "result": "passed",
+      "actual": "KAIA.DepartmentHead"
+    },
+    {
+      "name": "no synthetic unit properties in client navigation",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "analysis HTTP",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "NDJSON stream completed",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "analysis has a reproducible version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v4"
+    },
+    {
+      "name": "public demo never invokes paid model",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "chart and metric share value",
+      "result": "passed",
+      "actual": 24026568051
+    },
+    {
+      "name": "analysis supplies readable document evidence",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "source document opens",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "document clearly simulated",
+      "result": "passed",
+      "actual": "simulated"
+    },
+    {
+      "name": "save insight in local database through Vercel",
+      "result": "passed",
+      "actual": 201
+    },
+    {
+      "name": "saved insight survives new request",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "analysis HTTP",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "NDJSON stream completed",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "analysis has a reproducible version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v4"
+    },
+    {
+      "name": "public demo never invokes paid model",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "followup changes year",
+      "result": "passed",
+      "actual": 2025
+    },
+    {
+      "name": "followup preserves month coverage",
+      "result": "passed",
+      "actual": 9
+    },
+    {
+      "name": "scenario recalculates on local backend",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "scenario increases only relevant energy expenditure",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "scenario saved",
+      "result": "passed",
+      "actual": 201
+    },
+    {
+      "name": "scenario reopens",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "server enforces school scope through proxy",
+      "result": "passed",
+      "actual": 403
+    },
+    {
+      "name": "public demo cannot open provider administration",
+      "result": "passed",
+      "actual": 403
+    },
+    {
+      "name": "demo login school",
+      "result": "passed",
+      "actual": 303
+    },
+    {
+      "name": "HttpOnly Secure session cookie",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "redirect stays on configured frontend",
+      "result": "passed",
+      "actual": "https://kaia-sand.vercel.app/"
+    },
+    {
+      "name": "same display profile creates different private identity",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "other visitor cannot open private conversation",
+      "result": "passed",
+      "actual": 404
+    },
+    {
+      "name": "other visitor cannot export private analysis",
+      "result": "passed",
+      "actual": 404
+    },
+    {
+      "name": "other visitor cannot see saved insight",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "analysis HTTP",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "NDJSON stream completed",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "analysis has a reproducible version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v4"
+    },
+    {
+      "name": "public demo never invokes paid model",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "analysis HTTP",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "NDJSON stream completed",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "analysis has a reproducible version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v4"
+    },
+    {
+      "name": "public demo never invokes paid model",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "natural language year comparison",
+      "result": "passed",
+      "actual": "yearComparison"
+    },
+    {
+      "name": "comparison retains current conversation year",
+      "result": "passed",
+      "actual": 2025
+    },
+    {
+      "name": "compares previous year",
+      "result": "passed",
+      "actual": 2024
+    },
+    {
+      "name": "comparison retains same months",
+      "result": "passed",
+      "actual": 9
+    },
+    {
+      "name": "year comparison graph uses same prior metric",
+      "result": "passed",
+      "actual": 22563426564
+    },
+    {
+      "name": "year comparison graph uses same current metric",
+      "result": "passed",
+      "actual": 23252515355
+    },
+    {
+      "name": "analysis HTTP",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "NDJSON stream completed",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "analysis has a reproducible version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v4"
+    },
+    {
+      "name": "public demo never invokes paid model",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "municipality comparison recognizes user typo",
+      "result": "passed",
+      "actual": "municipalBenchmark"
+    },
+    {
+      "name": "school municipality comparison normalizes by pupils",
+      "result": "passed",
+      "actual": "perPupil"
+    },
+    {
+      "name": "peer selected and identified",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "financial benchmark source is simulated",
+      "result": "passed",
+      "actual": "simulated"
+    },
+    {
+      "name": "official names do not prove simulated economics",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "peer comparison graph agrees with local metric",
+      "result": "passed",
+      "actual": 5745618
+    },
+    {
+      "name": "analysis HTTP",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "NDJSON stream completed",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "analysis has a reproducible version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v4"
+    },
+    {
+      "name": "public demo never invokes paid model",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "explicit peer changes comparison",
+      "result": "passed",
+      "actual": "municipality-holbaek"
+    },
+    {
+      "name": "analysis HTTP",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "NDJSON stream completed",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "analysis has a reproducible version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v4"
+    },
+    {
+      "name": "public demo never invokes paid model",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "explanation retains chosen peer",
+      "result": "passed",
+      "actual": "municipality-holbaek"
+    },
+    {
+      "name": "peer explanation exposes synthetic structural assumptions",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "analysis HTTP",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "NDJSON stream completed",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "analysis has a reproducible version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v4"
+    },
+    {
+      "name": "public demo never invokes paid model",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "unknown peer produces honest missing-data response",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "unknown peer does not invent a graph",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "analysis HTTP",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "NDJSON stream completed",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "analysis has a reproducible version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v4"
+    },
+    {
+      "name": "public demo never invokes paid model",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "multi-year forecast intent",
+      "result": "passed",
+      "actual": "projection"
+    },
+    {
+      "name": "multi-year forecast has seven annual points",
+      "result": "passed",
+      "actual": 7
+    },
+    {
+      "name": "last forecast year",
+      "result": "passed",
+      "actual": 2032
+    },
+    {
+      "name": "forecast low/base/high ordered",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "forecast graph baseline matches metric",
+      "result": "passed",
+      "actual": 32182907634
+    },
+    {
+      "name": "forecast graph endpoint matches metric",
+      "result": "passed",
+      "actual": 38983376224
+    },
+    {
+      "name": "forecast distinguishes sensitivity from statistical confidence",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "forecast insight saved",
+      "result": "passed",
+      "actual": 201
+    },
+    {
+      "name": "forecast snapshot persists including dataversion",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "analysis HTTP",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "NDJSON stream completed",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "analysis has a reproducible version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v3"
+    },
+    {
+      "name": "public demo never invokes paid model",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "analysis HTTP",
+      "result": "passed",
+      "actual": 200
+    },
+    {
+      "name": "NDJSON stream completed",
+      "result": "passed",
+      "actual": "done"
+    },
+    {
+      "name": "analysis has a reproducible version",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v3"
+    },
+    {
+      "name": "public demo never invokes paid model",
+      "result": "passed",
+      "actual": "demo"
+    },
+    {
+      "name": "existing version remains pinned",
+      "result": "passed",
+      "actual": "KAIA-DEMO-2026.09-v3"
+    },
+    {
+      "name": "old snapshot explains missing new forecast years",
+      "result": "passed",
+      "actual": true
+    },
+    {
+      "name": "conversation version cannot be silently replaced",
+      "result": "passed",
+      "actual": 409
+    }
+  ]
+}

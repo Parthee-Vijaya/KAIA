@@ -4,6 +4,8 @@ Alle kommunale tal og beslutninger er simulerede. Bevar serverbaseret adgangskon
 Den tidligere BudgetIndsigt-kode er bevaret i legacy/ og indgår ikke i den nye app.
 Kør npm run typecheck, npm run lint, npm test og npm run build ved afslutning. Produktionsintegrationer må kun kaldes verificerede efter reelle credentials-baserede prøver.
 
+Aktiv udviklingscheckout: `/Volumes/J.A.R.V.I.S/ks-sources/kaia`. Brug denne selvstændige Git-checkout frem for den oprindelige iCloud-mappe. Læs `docs/WORKSPACE.md` før flytning eller oprydning. De kørende releases, Postgres-data, credentials og LaunchAgents på Mac'en må ikke flyttes som del af udviklingsoprydning.
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 ## This is NOT the Next.js you know

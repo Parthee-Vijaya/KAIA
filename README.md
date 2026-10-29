@@ -35,6 +35,8 @@ Corti er **credentialsbaseret integrationsafprøvet** gennem den private tildeli
 
 ## Lokal start
 
+Den aktive udviklingscheckout ligger på `/Volumes/J.A.R.V.I.S/ks-sources/kaia`. Se [arbejdsmapper og sikker arkivering](docs/WORKSPACE.md) før oprydning eller flytning; den kørende backend og database har separate placeringer på Mac'en.
+
 Brug Node 24 (`.nvmrc`).
 
 ```sh
